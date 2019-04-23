@@ -112,18 +112,21 @@ public class Typewriter : MonoBehaviour {
 	}
 	
 	IEnumerator WriteSections() {
-		foreach(var section in textSections) {
-			if(string.IsNullOrEmpty(section)) {
+		foreach(var section in textSections)
+        {
+            if (string.IsNullOrEmpty(section)) {
 				continue;
 			}
 			
 			var formattedText = FormatText(section);
 			
-			if(animated) {
+			if(animated)
+            {
 				animating = true;
 				int currentLength = 1;
 				
-				while(animating && currentLength <= formattedText.Length) {
+				while(animating && currentLength <= formattedText.Length)
+                {
 					if(usingGUIText) {
 						guiTextComponent.text = formattedText.Substring(0, currentLength);
 					}
@@ -136,7 +139,7 @@ public class Typewriter : MonoBehaviour {
 					yield return new WaitForSeconds(1/charactersPerSecond);
 					++currentLength;
 				}
-			}
+            }
 			else {
 				if(usingGUIText) {
 					guiTextComponent.text = formattedText;
@@ -155,7 +158,6 @@ public class Typewriter : MonoBehaviour {
 			else {
 				yield return new WaitForSeconds(delayBetweenTextSections);
 			}
-
             OnComplete.Invoke();
 		}
 		
@@ -167,8 +169,7 @@ public class Typewriter : MonoBehaviour {
 				SendMessage(onCompleteEvent, onCompleteArgs);	
 			}
 		}
-
-		finished = true;
+        finished = true;
 	}
 	
 	string FormatText(string text) {

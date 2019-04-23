@@ -8,6 +8,8 @@ public class DialogPlayer : MonoBehaviour
 {
     public static DialogPlayer Instance;
 
+    public Platformer2DUserControl MovementController;
+
     [SerializeField]
     private Typewriter Typewriter;
     [SerializeField]
@@ -19,7 +21,22 @@ public class DialogPlayer : MonoBehaviour
     [SerializeField]
     private TMPro.TextMeshProUGUI LeftName, RightName;
 
+    public Action<bool> OnPlayingStateChanged = (v) => { };
 
+    private bool _playing = false;
+    private bool Playing
+    {
+        get
+        {
+            return _playing;
+        }
+        set
+        {
+            _playing = value;
+            OnPlayingStateChanged(_playing);
+            MovementController.enabled = !_playing;
+        }
+    }
     private Dialog _playingDialog;
     private int _phraseId;
 
@@ -31,6 +48,7 @@ public class DialogPlayer : MonoBehaviour
     public void PlayDialogue(Dialog dialog)
     {
         HideDialogue();
+        Playing = true;
         TextPanel.SetActive(true);
         _playingDialog = dialog;
         PlayNextReplic();
@@ -51,6 +69,7 @@ public class DialogPlayer : MonoBehaviour
 
     private void HideDialogue()
     {
+        Playing = false;
         _phraseId = 0;
         _playingDialog = null;
         TextPanel.gameObject.SetActive(false);
@@ -96,7 +115,8 @@ public class DialogPlayer : MonoBehaviour
                 break;
         }
 
-        Typewriter.initialText = dialoguePhrase.Text.Text;
-        Typewriter.Start();
+       // Typewriter.initialText = dialoguePhrase.Text.Text;
+        Typewriter.Write(dialoguePhrase.Text.Text, new string[] { });
+       // Typewriter.Write();
     }
 }
