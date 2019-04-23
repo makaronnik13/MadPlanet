@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe149a374b18c14f97e85ed607c841d, type: 3}
+  m_Name: Charracters
+  m_EditorClassIdentifier: 
+  localisedStrings:
+  - key: Den
+    translations:
+    - language: 30
+      translation: "\u0414\u0435\u043D"
+    - language: 10
+      translation: Den
+  - key: Marry
+    translations:
+    - language: 30
+      translation: "\u041C\u044D\u0440\u0438"
+    - language: 10
+      translation: Marry
+  - key: Mathew
+    translations:
+    - language: 30
+      translation: "\u041C\u044D\u0442\u044C\u044E"
+    - language: 10
+      translation: Mathew
+  Languages: 1e0000000a000000
+  TableId: 1Gc6mQa8Y6xZ_iJfxvObn1i5u6BAr3T2wH6eG8mbwuhA
+  PageId: 1327031038
