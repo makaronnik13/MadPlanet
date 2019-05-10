@@ -68,8 +68,8 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DistorGlow: 0.01
-    - _DistorSprite: 0.005
+    - _DistorGlow: 0
+    - _DistorSprite: 0
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -87,4 +87,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GlowColor: {r: 0, g: 5.992157, b: 0.65882355, a: 0.22352941}
+    - _GlowColor: {r: 0, g: 5.992157, b: 0.65882355, a: 0.09019608}

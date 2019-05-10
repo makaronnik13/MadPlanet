@@ -8,7 +8,7 @@
 Shader "Shader Forge/LgowingItem" {
     Properties {
         [PerRendererData]_MainTex ("MainTex", 2D) = "white" {}
-        _GlowColor ("GlowColor", Color) = (0.9852941,0,0,1)
+        [HDR]_GlowColor ("GlowColor", Color) = (0.9852941,0,0,1)
         _Glow ("Glow", 2D) = "white" {}
         _DistortionTex ("DistortionTex", 2D) = "black" {}
         _DistorGlow ("DistorGlow", Range(0, 1)) = 0
