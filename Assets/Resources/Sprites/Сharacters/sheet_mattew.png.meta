@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 5a1fe5b12270787459a2a677e9da9614
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sheet_mattew_0
+    21300002: sheet_mattew_1
+    21300004: sheet_mattew_2
+    21300006: sheet_mattew_3
+    21300008: sheet_mattew_4
+    21300010: sheet_mattew_5
+    21300012: sheet_mattew_6
+    21300014: sheet_mattew_7
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheet_mattew_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 6304
+        width: 1250
+        height: 1874
+      alignment: 9
+      pivot: {x: 0.47631958, y: 0.5789775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0ec1f038f9d7449ad5cf0c4dd2d899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_mattew_1
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 6384
+        width: 1208
+        height: 1794
+      alignment: 9
+      pivot: {x: 0.46324432, y: 0.5494996}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e560244ee4db24f85cc14c17e2b16f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_mattew_2
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 6271
+        width: 839
+        height: 1907
+      alignment: 9
+      pivot: {x: 0.5705616, y: 0.5620888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5e900e6404656498005b8a6df657b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_mattew_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 4318
+        width: 880
+        height: 1944
+      alignment: 9
+      pivot: {x: 0.36545146, y: 0.57613367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4dab6895a4c9e04e9492d03593a1084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_mattew_4
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 4378
+        width: 1328
+        height: 1884
+      alignment: 9
+      pivot: {x: 0.4777105, y: 0.57070255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32389a95d6d6f764a9dde9a66e4d0642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_mattew_5
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 4416
+        width: 1176
+        height: 1846
+      alignment: 9
+      pivot: {x: 0.39931753, y: 0.572158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae6325f64bb59741a2c14eb2421fb1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_mattew_6
+      rect:
+        serializedVersion: 2
+        x: 3426
+        y: 4332
+        width: 640
+        height: 1930
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.5690174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e881049883ba0a140bd4ea44137037b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_mattew_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2352
+        width: 892
+        height: 1954
+      alignment: 9
+      pivot: {x: 0.41703856, y: 0.5833184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93058bff5c04da24f9d4c9c4c6a1b07b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 255bc19e454f88541b1a15342570050e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
