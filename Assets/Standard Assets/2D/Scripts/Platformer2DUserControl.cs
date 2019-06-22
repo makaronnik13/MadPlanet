@@ -9,9 +9,10 @@ using UnityStandardAssets.CrossPlatformInput;
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
+        
+   private float w;
 
-
-        private void Awake()
+    private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
         }
@@ -19,6 +20,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
         private void Update()
         {
+        
             if (!m_Jump)
             {
                 // Read the jump input in Update so button presses aren't missed.
@@ -31,10 +33,10 @@ using UnityStandardAssets.CrossPlatformInput;
         {
             // Read the inputs.
             bool crouch = Input.GetKey(KeyCode.LeftControl);
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float w = CrossPlatformInputManager.GetAxis("Vertical");
+            float w = CrossPlatformInputManager.GetAxis("Horizontal");
+            float h = CrossPlatformInputManager.GetAxis("Vertical");
             // Pass all parameters to the character control script.
-            m_Character.Move(h,w, crouch, m_Jump);
+            m_Character.Move(h,-w, crouch, m_Jump);
             m_Jump = false;
         }
     }
