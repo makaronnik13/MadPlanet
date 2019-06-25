@@ -1,19 +1,15 @@
 fileFormatVersion: 2
-guid: 8f23f305993d93144a598ef3bece597b
+guid: def301652c65f134ab4755de1772f855
 TextureImporter:
   fileIDToRecycleName:
-    21300000: jump_forward_03_0
-    21300002: jump_forward_03_1
-    21300004: jump_forward_03_2
-    21300006: jump_forward_03_3
-    21300008: jump_forward_03_4
-    21300010: jump_forward_03_5
-    21300012: jump_forward_03_6
-    21300014: jump_forward_03_7
-    21300016: jump_forward_03_8
-    21300018: jump_forward_03_9
-    21300020: jump_forward_03_10
-    21300022: jump_forward_03_11
+    21300000: 45_back_03_bez_vsego_0
+    21300002: 45_back_03_bez_vsego_1
+    21300004: 45_back_03_bez_vsego_2
+    21300006: 45_back_03_bez_vsego_3
+    21300008: 45_back_03_bez_vsego_4
+    21300010: 45_back_03_bez_vsego_5
+    21300012: 45_back_03_bez_vsego_6
+    21300014: 45_back_03_bez_vsego_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -96,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump_forward_03_0
+      name: 45_back_03_bez_vsego_0
       rect:
         serializedVersion: 2
         x: 5
-        y: 3064
-        width: 475
-        height: 1027
+        y: 1143
+        width: 474
+        height: 900
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,19 +106,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4fb88178e88e7b4aa0e1b744b7848ab
+      spriteID: b857f40960113c84d83dd4d4e23823a1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_forward_03_1
+      name: 45_back_03_bez_vsego_1
       rect:
         serializedVersion: 2
-        x: 490
-        y: 3064
-        width: 475
-        height: 1027
+        x: 489
+        y: 1143
+        width: 474
+        height: 900
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 236feb5e57060aa44afa79e27cd03980
+      spriteID: e77cd2e236899754f9980fcc3b16227f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_forward_03_2
+      name: 45_back_03_bez_vsego_2
       rect:
         serializedVersion: 2
-        x: 975
-        y: 3064
-        width: 475
-        height: 1027
+        x: 973
+        y: 1143
+        width: 474
+        height: 900
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 159906e87233b79459f9970e54753a7f
+      spriteID: eee11fe069023274ab2253b3a9d41dda
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_forward_03_3
+      name: 45_back_03_bez_vsego_3
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 3064
-        width: 475
-        height: 1027
+        x: 1457
+        y: 1143
+        width: 474
+        height: 900
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,99 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 928f76a504ee80f4caab4e32214fbc17
+      spriteID: 661db1c7d3a798946b2272453071ea07
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_forward_03_4
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 2027
-        width: 475
-        height: 1027
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68de1efedb4654d499e7b9a441606803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_forward_03_5
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 2027
-        width: 475
-        height: 1027
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 492f563d54c598940983e868a643d936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_forward_03_6
-      rect:
-        serializedVersion: 2
-        x: 975
-        y: 2027
-        width: 475
-        height: 1027
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fb5167dfe6698045984e5fdca3b5aab
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_forward_03_7
-      rect:
-        serializedVersion: 2
-        x: 1460
-        y: 2027
-        width: 475
-        height: 1027
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c060f91df6e1f6c4aa2cf4fd00f38200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_forward_03_8
+      name: 45_back_03_bez_vsego_4
       rect:
         serializedVersion: 2
         x: 5
-        y: 990
-        width: 475
-        height: 1027
+        y: 233
+        width: 474
+        height: 900
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7422d7933dbd644e969f28da0126e74
+      spriteID: 6835ffe95aca7234881323ed3290be1d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_forward_03_9
+      name: 45_back_03_bez_vsego_5
       rect:
         serializedVersion: 2
-        x: 490
-        y: 990
-        width: 475
-        height: 1027
+        x: 489
+        y: 233
+        width: 474
+        height: 900
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,19 +206,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d580a48b9a63b846a4a47db7ff14b66
+      spriteID: f5fbcdc596c051e4d9d7b1912d90e4a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_forward_03_10
+      name: 45_back_03_bez_vsego_6
       rect:
         serializedVersion: 2
-        x: 975
-        y: 990
-        width: 475
-        height: 1027
+        x: 973
+        y: 233
+        width: 474
+        height: 900
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,19 +226,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b67cf6932c7690408d48abf38cd0cfa
+      spriteID: 0e6bd854acf96644681a9ceff9e38159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_forward_03_11
+      name: 45_back_03_bez_vsego_7
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 990
-        width: 475
-        height: 1027
+        x: 1457
+        y: 233
+        width: 474
+        height: 900
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,7 +246,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd9c372951dc84742baa6a56dad07538
+      spriteID: c09f27f9ae30d7a42a3cce1ef4314015
       vertices: []
       indices: 
       edges: []
@@ -338,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1078a6f3577126c40971695805fac39f
+    spriteID: ee2c4e94350161849ae9314863f739c8
     vertices: []
     indices: 
     edges: []

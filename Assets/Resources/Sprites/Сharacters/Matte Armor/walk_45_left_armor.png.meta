@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 794fc4d03e556e3499c57f654db777c8
+guid: 2dc5f931dfe42db4189186edb21da715
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 45_back_02_0
-    21300002: 45_back_02_1
-    21300004: 45_back_02_2
-    21300006: 45_back_02_3
-    21300008: 45_back_02_4
-    21300010: 45_back_02_5
-    21300012: 45_back_02_6
-    21300014: 45_back_02_7
+    21300000: 45_left_armor_0
+    21300002: 45_left_armor_1
+    21300004: 45_left_armor_2
+    21300006: 45_left_armor_3
+    21300008: 45_left_armor_4
+    21300010: 45_left_armor_5
+    21300012: 45_left_armor_6
+    21300014: 45_left_armor_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -68,7 +68,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -79,7 +79,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -92,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 45_back_02_0
+      name: 45_left_armor_0
       rect:
         serializedVersion: 2
         x: 5
-        y: 3069
-        width: 766
-        height: 1022
+        y: 1134
+        width: 473
+        height: 909
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,19 +106,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 721b6befeb668c643b09492f64a1497e
+      spriteID: dffa95a18d2832d4995d84bd56a7dd00
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 45_back_02_1
+      name: 45_left_armor_1
       rect:
         serializedVersion: 2
-        x: 781
-        y: 3069
-        width: 766
-        height: 1022
+        x: 488
+        y: 1134
+        width: 473
+        height: 909
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7232c1edc220240488ee94d4aebbd777
+      spriteID: 1fc893e8fd3ed8a40898a1209b847b36
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 45_back_02_2
+      name: 45_left_armor_2
       rect:
         serializedVersion: 2
-        x: 1557
-        y: 3069
-        width: 766
-        height: 1022
+        x: 971
+        y: 1134
+        width: 473
+        height: 909
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c2f798f621d8dc4ab6707c1f13ad214
+      spriteID: 3f1b57f6e1e31384e8d0741d1de43ebc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 45_back_02_3
+      name: 45_left_armor_3
       rect:
         serializedVersion: 2
-        x: 2333
-        y: 3069
-        width: 766
-        height: 1022
+        x: 1454
+        y: 1134
+        width: 473
+        height: 909
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,39 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f890e4033f6a9fd4baa7599ed0316a81
+      spriteID: 67f535038c6764c43bc9e1519d804cee
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 45_back_02_4
-      rect:
-        serializedVersion: 2
-        x: 3109
-        y: 3069
-        width: 766
-        height: 1022
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74f4e42bf7105694bbba2b6da42c63a9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 45_back_02_5
+      name: 45_left_armor_4
       rect:
         serializedVersion: 2
         x: 5
-        y: 2037
-        width: 766
-        height: 1022
+        y: 215
+        width: 473
+        height: 909
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 435ac8315ef3702428656045516d849a
+      spriteID: 7cf6cc01b4d5550458b23003aa9ec490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 45_back_02_6
+      name: 45_left_armor_5
       rect:
         serializedVersion: 2
-        x: 781
-        y: 2037
-        width: 766
-        height: 1022
+        x: 488
+        y: 215
+        width: 473
+        height: 909
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,19 +206,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43a67e4c6de9a524ebafa618236d506c
+      spriteID: f18c771424fd26f49be689691480691c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 45_back_02_7
+      name: 45_left_armor_6
       rect:
         serializedVersion: 2
-        x: 1557
-        y: 2037
-        width: 766
-        height: 1022
+        x: 971
+        y: 215
+        width: 473
+        height: 909
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,7 +226,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8efb353f3de6c144b387e39e0d6d9a4
+      spriteID: 67854ee0c8e46e744b326e2d828c2d55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 45_left_armor_7
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 215
+        width: 473
+        height: 909
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9c9a69e083a5848a6b8c973bc1e85d
       vertices: []
       indices: 
       edges: []
@@ -254,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b543126fcac50ec4598f6699fd9e3062
+    spriteID: 2cbdf04f73e607144bb57408ac716789
     vertices: []
     indices: 
     edges: []
