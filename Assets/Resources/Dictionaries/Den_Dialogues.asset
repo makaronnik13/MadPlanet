@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe149a374b18c14f97e85ed607c841d, type: 3}
+  m_Name: Den_Dialogues
+  m_EditorClassIdentifier: 
+  localisedStrings:
+  - key: R1_1
+    translations:
+    - language: 30
+      translation: "\u0412 \u043F\u0438\u0432\u0435 \u0442\u0432\u043E\u044F \u0441\u0438\u043B\u0430
+        \u0438 \u043C\u0443\u0434\u0440\u043E\u0441\u0442\u044C. (\u0412\u043E\u0442
+        \u044D\u0442\u0430 \u0445\u0440\u0435\u043D\u0430\u0442\u0435\u043D\u044C
+        \u043D\u0435 \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F
+        \u0435\u0441\u043B\u0438 \u0447\u0435)"
+    - language: 10
+      translation: In The Beer Is Your Strength And Wisdom. (Here Is Hrenaten Not
+        Start If Th)
+  - key: R1_2
+    translations:
+    - language: 30
+      translation: "\u042F \u0436\u0435 \u0442\u0435\u0431\u0435 \u0441\u043A\u0430\u0437\u0430\u043B.
+        \u0421\u0434\u0430\u0432\u0430\u0439 \u043E\u0442\u0447\u0435\u0442."
+    - language: 10
+      translation: I Told You. Hand Over The Report.
+  Languages: 1e0000000a000000
+  TableId: 1Gc6mQa8Y6xZ_iJfxvObn1i5u6BAr3T2wH6eG8mbwuhA
+  PageId: 0

@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 9de4d2a55540f3d4f94c3e01b7e0fd0d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: lime_front_and_back_04_bez_glaz (1)_0
+    21300002: lime_front_and_back_04_bez_glaz (1)_1
+    21300004: lime_front_and_back_04_bez_glaz (1)_2
+    21300006: lime_front_and_back_04_bez_glaz (1)_3
+    21300008: lime_front_and_back_04_bez_glaz (1)_4
+    21300010: lime_front_and_back_04_bez_glaz (1)_5
+    21300012: lime_front_and_back_04_bez_glaz (1)_6
+    21300014: lime_front_and_back_04_bez_glaz (1)_7
+    21300016: lime_front_and_back_04_bez_glaz (1)_8
+    21300018: lime_front_and_back_04_bez_glaz (1)_9
+    21300020: lime_front_and_back_04_bez_glaz (1)_10
+    21300022: lime_front_and_back_04_bez_glaz (1)_11
+    21300024: lime_front_and_back_04_bez_glaz (1)_12
+    21300026: lime_front_and_back_04_bez_glaz (1)_13
+    21300028: lime_front_and_back_04_bez_glaz (1)_14
+    21300030: lime_front_and_back_04_bez_glaz (1)_15
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3142
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597cb71cdec4c2249afaa051e0d04ee4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3142
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9865e1a987d8c2e429d9b5c32412dd47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 3142
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7861904a748891545a0b7bdc1f4f2cd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 3142
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc8de50dde9ada419d851f50c07a647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_4
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 3142
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d31615f28798b4db3c53ceff719e01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_5
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 3142
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673c2ec2c73e33447b13fb538d914e6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2183
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2871129d27a3c4a90d76c116046d50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_7
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2183
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc6d2fa34623a04bad8ab6293b750fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 2183
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629503f545212844e94b58d5c49106e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 2183
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce4c855de742bb41a457338068c183a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_10
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 2183
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c992dc94f84dbbd4a8e26cf953dacf65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_11
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 2183
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34d229aa12e62b439fdfab8946c34ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1224
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad7ce3388c45c14eb125e9e59fe36c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_13
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1224
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f82cb8355b9ac4788843e5205672b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 1224
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfcee6e4904ad343bae7880ba20658e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lime_front_and_back_04_bez_glaz (1)_15
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1224
+        width: 633
+        height: 949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd497bdeb3a86449b1a44ddfb2f6c8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bb38686b55b3be04d9f163b75254e897
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

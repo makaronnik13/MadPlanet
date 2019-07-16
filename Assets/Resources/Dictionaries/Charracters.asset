@@ -16,7 +16,7 @@ MonoBehaviour:
   - key: Den
     translations:
     - language: 30
-      translation: "\u0414\u0435\u043D"
+      translation: "\u0414\u044D\u043D"
     - language: 10
       translation: Den
   - key: Marry
@@ -28,7 +28,7 @@ MonoBehaviour:
   - key: Mathew
     translations:
     - language: 30
-      translation: "\u041C\u044D\u0442\u044C\u044E"
+      translation: "\u041C\u044D\u0442\u0442\u044C\u044E"
     - language: 10
       translation: Mathew
   Languages: 1e0000000a000000

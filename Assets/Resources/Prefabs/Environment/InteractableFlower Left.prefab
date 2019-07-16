@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd6da33bcf95d542a52811286300f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EButtonOffset: {x: 0.5, y: 0.1, z: 0}
+  EButtonOffset: {x: 1, y: 0.3, z: 0}
   OnActivate:
     m_PersistentCalls:
       m_Calls:
@@ -110,7 +110,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  Delay: 1.5
+  Delay: 1
   DecreaseMultiplyer: 2
 --- !u!136 &233302298699432681
 CapsuleCollider:

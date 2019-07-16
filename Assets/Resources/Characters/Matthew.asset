@@ -15,4 +15,4 @@ MonoBehaviour:
   CharacterName:
     Dictionary: {fileID: 11400000, guid: 869c132f861f8364c8a1466d0abdb51c, type: 2}
     Key: Mathew
-  Portrait: {fileID: 21300036, guid: 8fb98a6035269e64a998f9b56828fc4f, type: 3}
+  Portrait: {fileID: 21300000, guid: aabcf2112abff4f43a70141488084c0f, type: 3}
