@@ -76,7 +76,8 @@ namespace UnityStandardAssets._2D
 
             if (!m_Grounded)
             {
-                moveV = 0;
+                moveH = Mathf.Clamp(moveH, 0, Mathf.Abs(moveH));
+                moveV *= 0.5f;
             }
 
             // If crouching, check to see if the character can stand up
