@@ -5,4 +5,5 @@ using UnityEngine;
 public class Dialog : ScriptableObject
 {
     public List<DialoguePhrase> Phrases;
+    public Quest QuestOnComplete;
 }

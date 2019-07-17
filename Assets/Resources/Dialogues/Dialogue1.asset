@@ -14,22 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Phrases:
   - Text:
-      Dictionary: {fileID: 11400000, guid: 78d5e552f72461c4787e57e02c3541fd, type: 2}
-      Key: U1_1
+      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
+      Key: U2_1
     Char: {fileID: 11400000, guid: 3112fda81e5fa1e49b6c711fd0c4f75d, type: 2}
     Side: 0
   - Text:
-      Dictionary: {fileID: 11400000, guid: 78d5e552f72461c4787e57e02c3541fd, type: 2}
-      Key: U1_2
-    Char: {fileID: 11400000, guid: 3112fda81e5fa1e49b6c711fd0c4f75d, type: 2}
-    Side: 0
-  - Text:
-      Dictionary: {fileID: 11400000, guid: 78d5e552f72461c4787e57e02c3541fd, type: 2}
-      Key: U1_3
+      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
+      Key: U2_2
     Char: {fileID: 11400000, guid: 3dabaef2162abe14cb61ece3efeb6930, type: 2}
     Side: 0
   - Text:
-      Dictionary: {fileID: 11400000, guid: 78d5e552f72461c4787e57e02c3541fd, type: 2}
-      Key: U1_4
+      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
+      Key: U2_3
     Char: {fileID: 11400000, guid: 3112fda81e5fa1e49b6c711fd0c4f75d, type: 2}
     Side: 0
+  QuestOnComplete: {fileID: 11400000, guid: 1b0b7638a1db70a4a87cdfa0faa664bc, type: 2}

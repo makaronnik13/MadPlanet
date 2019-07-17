@@ -9,8 +9,12 @@ using Cinemachine;
 [AddComponentMenu("")] // Hide in menu
 public class LockCameraZ : CinemachineExtension
 {
-    [Tooltip("Lock the camera's Z position to this value")]
+    public bool LockZ = false;
     public float m_ZPosition = 10;
+    public bool LockX = false;
+    public float m_XPosition = 10;
+    public bool LockY = false;
+    public float m_YPosition = 10;
 
     protected override void PostPipelineStageCallback(
         CinemachineVirtualCameraBase vcam,
@@ -19,7 +23,18 @@ public class LockCameraZ : CinemachineExtension
         if (stage == CinemachineCore.Stage.Body)
         {
             var pos = state.RawPosition;
-            pos.z = m_ZPosition;
+            if (LockX)
+            {
+                pos.x = m_XPosition;
+            }
+            if (LockY)
+            {
+                pos.y = m_YPosition;
+            }
+            if (LockZ)
+            {
+                pos.z = m_ZPosition;
+            }
             state.RawPosition = pos;
         }
     }

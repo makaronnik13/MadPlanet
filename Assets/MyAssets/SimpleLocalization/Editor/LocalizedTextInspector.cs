@@ -9,27 +9,60 @@ using System.Linq;
 public class LocalizedTextInspector : Editor
 {
     private LocalizedText _txt;
+    private int index = 0;
 
     private void OnEnable()
     {
         _txt = (LocalizedText)target;
+
+        List<string> strings = new List<string>();
+
+        if (_txt.LocalizedString.Dictionary != null)
+        {
+            // _txt.LocalizedString.Dictionary.localisedStrings.FirstOrDefault(s => s.key == _txt.LocalizedString.Key);
+            foreach (LocalizationStruct st in _txt.LocalizedString.Dictionary.localisedStrings)
+            {
+                strings.Add(st.key);
+            }
+
+            index = strings.IndexOf(_txt.LocalizedString.Key);
+        }
+        else
+        {
+            index = 0;
+        }
+
     }
 
     public override void OnInspectorGUI()
     {
-        LocalizationStruct stru = _txt.LocalizedString.Dictionary.localisedStrings.FirstOrDefault(s=>s.key == _txt.LocalizedString.Key);
+        _txt.LocalizedString.Dictionary = (LocalizationDictionary)EditorGUILayout.ObjectField(_txt.LocalizedString.Dictionary, typeof(LocalizationDictionary), false);
+
+        LocalizationStruct stru = null;
         List<string> strings = new List<string>();
-        foreach (LocalizationStruct st in _txt.LocalizedString.Dictionary.localisedStrings)
+
+        if (_txt.LocalizedString.Dictionary!=null)
         {
-            strings.Add(st.key);
+           // _txt.LocalizedString.Dictionary.localisedStrings.FirstOrDefault(s => s.key == _txt.LocalizedString.Key);
+            foreach (LocalizationStruct st in _txt.LocalizedString.Dictionary.localisedStrings)
+            {
+                strings.Add(st.key);
+            }
+
         }
 
-        int id = 0;
-        if (stru!=null)
+
+        if (_txt.LocalizedString.Dictionary != null)
         {
-            id = _txt.LocalizedString.Dictionary.localisedStrings.IndexOf(stru);
+            int v = EditorGUILayout.Popup(index, strings.ToArray());
+
+            if (index!= v)
+            {
+                index = v;
+                Debug.Log(index);
+            }
+            _txt.LocalizedString.Key = _txt.LocalizedString.Dictionary.localisedStrings[index].key;
         }
-        _txt.LocalizedString.Key = _txt.LocalizedString.Dictionary.localisedStrings[EditorGUILayout.Popup(id, strings.ToArray())].key;
 
         _txt.LineBreak = EditorGUILayout.Toggle("Break lines", _txt.LineBreak);
 

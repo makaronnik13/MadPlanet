@@ -98,7 +98,7 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - _BumpScale: 1
-    - _CollorEffect: 5.3
+    - _CollorEffect: 4.67
     - _ColorEffect: 0.112
     - _ColorOpacity: 35.4
     - _Cutoff: 0.5
@@ -119,7 +119,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UvSpeed: 0.116
+    - _UvSpeed: 0.2
     - _ZWrite: 0
     - _colorOffset: 0.101
     - _node_1170: 0.5641026

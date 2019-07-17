@@ -51,7 +51,7 @@ public class Typewriter : MonoBehaviour {
 	public bool Active { get { return animating; }}
 	
 	List<string> lines;
-	bool animating = false;
+	public bool animating = false;
 	bool finished = false;
 	bool usingGUIText = true;
 	string[] textSections;

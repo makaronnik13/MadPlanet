@@ -14,27 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Phrases:
   - Text:
-      Dictionary: {fileID: 11400000, guid: 1af9bb7ad09023d46ba5fd0d2d966015, type: 2}
+      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
       Key: U1_1
     Char: {fileID: 11400000, guid: 53fb87722cd8059468fb0ad6f1c81d60, type: 2}
     Side: 0
   - Text:
-      Dictionary: {fileID: 11400000, guid: 1af9bb7ad09023d46ba5fd0d2d966015, type: 2}
+      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
       Key: U1_2
-    Char: {fileID: 11400000, guid: 53fb87722cd8059468fb0ad6f1c81d60, type: 2}
+    Char: {fileID: 11400000, guid: 3dabaef2162abe14cb61ece3efeb6930, type: 2}
     Side: 0
   - Text:
-      Dictionary: {fileID: 11400000, guid: 1af9bb7ad09023d46ba5fd0d2d966015, type: 2}
+      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
       Key: U1_3
-    Char: {fileID: 11400000, guid: 3dabaef2162abe14cb61ece3efeb6930, type: 2}
-    Side: 0
-  - Text:
-      Dictionary: {fileID: 11400000, guid: 1af9bb7ad09023d46ba5fd0d2d966015, type: 2}
-      Key: U1_4
     Char: {fileID: 11400000, guid: 53fb87722cd8059468fb0ad6f1c81d60, type: 2}
     Side: 0
   - Text:
-      Dictionary: {fileID: 11400000, guid: 1af9bb7ad09023d46ba5fd0d2d966015, type: 2}
-      Key: U1_5
+      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
+      Key: U1_4
     Char: {fileID: 11400000, guid: 3dabaef2162abe14cb61ece3efeb6930, type: 2}
     Side: 0
+  QuestOnComplete: {fileID: 11400000, guid: f83b6cea2b77c75429bb824d19ba7c68, type: 2}

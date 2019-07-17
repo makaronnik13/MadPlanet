@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
-    public GameObject gameobgectmy;
+   
     public Vector3 EButtonOffset;
     public UnityEvent OnActivate;
     public float Delay = 0f;
@@ -15,10 +15,7 @@ public class InteractableObject : MonoBehaviour
     public void Activate()
     {
         OnActivate.Invoke();
+        Game.Instance.Save();
     }
-    public void ActivateGM()
-    {
-        gameobgectmy.SetActive(true);
 
-    }
 }

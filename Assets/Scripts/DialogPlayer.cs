@@ -56,15 +56,20 @@ public class DialogPlayer : MonoBehaviour
 
     private void PlayNextReplic()
     {
-        _phraseId++;
         if (_phraseId >= _playingDialog.Phrases.Count)
         {
+            if (_playingDialog.QuestOnComplete)
+            {
+                Game.Instance.TakeQuest(_playingDialog.QuestOnComplete);
+            }
             HideDialogue();
         }
         else
         {
             PlayReplic(_playingDialog.Phrases[_phraseId]);
         }
+
+        _phraseId++;
     }
 
     private void HideDialogue()
@@ -79,11 +84,20 @@ public class DialogPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)||Input.GetMouseButtonDown(0))
         {
-            if (_playingDialog != null && Typewriter.Completed)
+            if (_playingDialog != null)
             {
-                PlayNextReplic();
+                if (!Typewriter.animating || Typewriter.Completed)
+                {
+                    PlayNextReplic();
+                }
+                else
+                {
+                    Typewriter.Stop();
+                    Typewriter.guiTextComponent.text = Typewriter.initialText;
+                }
+                
             }
         }
     }
@@ -119,4 +133,5 @@ public class DialogPlayer : MonoBehaviour
         Typewriter.Write(dialoguePhrase.Text.Text, new string[] { });
        // Typewriter.Write();
     }
+
 }

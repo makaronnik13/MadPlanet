@@ -10,6 +10,11 @@ namespace UnityStandardAssets._2D
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
+        [SerializeField] private float drawnRate = 0;
+        [SerializeField] public bool Drawn = false;
+        public Action<float> DrawnRateChanged = (v) => { };
+
+        public Transform Visual;
 
         private float _lastDir;
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
@@ -42,7 +47,26 @@ namespace UnityStandardAssets._2D
 
             m_Anim.SetBool("Ground", m_Grounded);
             // Set the vertical animation
-            m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+           // m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+
+            if (Drawn)
+            {
+                drawnRate += Time.deltaTime / 3f;
+            }
+            else
+            {
+                drawnRate -= Time.deltaTime;
+            }
+            drawnRate = Mathf.Clamp(drawnRate, 0,1f);
+            DrawnRateChanged(drawnRate);
+
+            Visual.transform.localPosition = Vector3.Lerp(Vector3.zero, Vector3.down*2, drawnRate);
+        }
+
+
+        public void SetDrawn(bool v)
+        {
+            Drawn = v;
         }
 
     private bool IsGrounded()
@@ -52,7 +76,12 @@ namespace UnityStandardAssets._2D
 
     public void Move(float moveH, float moveV, bool crouch, bool jump)
         {
-
+            if (Drawn)
+            {
+                moveH *= 1-drawnRate;
+                moveV *= 1 - drawnRate;
+                jump = false;
+            }
             m_Anim.SetFloat("Horizontal", -moveV);
             m_Anim.SetFloat("Vertical", moveH);
 

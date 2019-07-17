@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityStandardAssets._2D;
 using UnityStandardAssets.CrossPlatformInput;
@@ -9,19 +10,46 @@ using UnityStandardAssets.CrossPlatformInput;
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
-    public bool JumpingAvaliable = true;
-        
-   private float w;
+        public bool JumpingAvaliable = true;
+    
+    public void SetJumping(bool v)
+    {
+        JumpingAvaliable = v;
+    }
+
+        private float w;
+    private bool active = true;
+
+    public void LockForSeconds(float v)
+    {
+        StartCoroutine(Lock(v));
+    }
+
+    private IEnumerator Lock(float v)
+    {
+        active = false;
+        yield return new WaitForSeconds(v);
+        active = true;
+    }
 
     private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
         }
 
+    private void OnDisable()
+    {
+        m_Character.Move(0, 0, false, false);
+        m_Jump = false;
+    }
 
-        private void Update()
+
+    private void Update()
         {
-        
+        if (!active)
+        {
+            return;
+        }
             if (!m_Jump)
             {
                 // Read the jump input in Update so button presses aren't missed.

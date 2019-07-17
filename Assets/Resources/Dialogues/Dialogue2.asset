@@ -14,12 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Phrases:
   - Text:
-      Dictionary: {fileID: 11400000, guid: 96028f07f738f814780f110751afafb6, type: 2}
-      Key: R1_1
+      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
+      Key: U3
     Char: {fileID: 11400000, guid: 3112fda81e5fa1e49b6c711fd0c4f75d, type: 2}
     Side: 0
-  - Text:
-      Dictionary: {fileID: 11400000, guid: 96028f07f738f814780f110751afafb6, type: 2}
-      Key: R1_2
-    Char: {fileID: 11400000, guid: 3112fda81e5fa1e49b6c711fd0c4f75d, type: 2}
-    Side: 1
+  QuestOnComplete: {fileID: 11400000, guid: b56841fae243c4c498a928b4ac1790e5, type: 2}
