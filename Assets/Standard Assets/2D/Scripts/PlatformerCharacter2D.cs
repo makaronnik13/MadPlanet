@@ -16,7 +16,7 @@ namespace UnityStandardAssets._2D
 
         public Transform Visual;
 
-        private float _lastDir;
+        private float _lastDir, _lastDir2;
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         public float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
         private bool m_Grounded;            // Whether or not the player is grounded.
@@ -87,6 +87,15 @@ namespace UnityStandardAssets._2D
 
             if (Mathf.Abs(moveH)>Mathf.Abs(moveV))
             {
+                if (moveH > 0)
+                {
+                    _lastDir2 = 1;
+                }
+                else if (moveH < 0)
+                {
+                    _lastDir2 = -1;
+                }
+
                 _lastDir = 0;
             }
             else
@@ -101,6 +110,7 @@ namespace UnityStandardAssets._2D
                 }
             }
 
+            m_Anim.SetFloat("Dir2", _lastDir2);
             m_Anim.SetFloat("Dir", _lastDir);
 
             if (!m_Grounded)

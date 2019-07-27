@@ -15,4 +15,4 @@ MonoBehaviour:
   CharacterName:
     Dictionary: {fileID: 11400000, guid: 869c132f861f8364c8a1466d0abdb51c, type: 2}
     Key: Marry
-  Portrait: {fileID: 21300000, guid: 44794ddcfc3dcc64b93be76048722ccf, type: 3}
+  Portrait: {fileID: 21300000, guid: 1f5f934a6cfc58a4a819a65472096dd1, type: 3}

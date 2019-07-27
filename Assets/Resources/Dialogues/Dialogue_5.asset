@@ -26,16 +26,11 @@ MonoBehaviour:
   - Text:
       Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
       Key: U5_3
-    Char: {fileID: 11400000, guid: 3dabaef2162abe14cb61ece3efeb6930, type: 2}
-    Side: 0
-  - Text:
-      Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
-      Key: U5_4
     Char: {fileID: 11400000, guid: 3112fda81e5fa1e49b6c711fd0c4f75d, type: 2}
     Side: 0
   - Text:
       Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
-      Key: U5_5
+      Key: U5_4
     Char: {fileID: 11400000, guid: 3112fda81e5fa1e49b6c711fd0c4f75d, type: 2}
     Side: 0
   QuestOnComplete: {fileID: 0}
