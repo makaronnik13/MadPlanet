@@ -35,7 +35,7 @@ Material:
     - _CelExtraEnabled: 0
     - _CelNumSteps: 3
     - _CelPrimaryMode: 1
-    - _Cutoff: 0.5
+    - _Cutoff: 0
     - _FlatRimEdgeSmoothness: 0.5
     - _FlatRimLightAlign: 0
     - _FlatRimSize: 0.5
@@ -54,7 +54,7 @@ Material:
     - _RimEnabled: 0
     - _SelfShadingSize: 0.5
     - _SelfShadingSizeExtra: 0.6
-    - _ShadowEdgeSize: 0.05
+    - _ShadowEdgeSize: 0.172
     - _ShadowEdgeSizeExtra: 0.05
     - _SpecularEnabled: 0
     - _TextureImpact: 1

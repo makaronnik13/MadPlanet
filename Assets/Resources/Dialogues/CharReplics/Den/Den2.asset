@@ -15,7 +15,7 @@ MonoBehaviour:
   Phrases:
   - Text:
       Dictionary: {fileID: 11400000, guid: dad33c08beedd22499133bab24e37753, type: 2}
-      Key: R1_1
+      Key: R1_2
     Char: {fileID: 11400000, guid: 3112fda81e5fa1e49b6c711fd0c4f75d, type: 2}
     Side: 0
   QuestOnComplete: {fileID: 0}

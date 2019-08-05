@@ -24,13 +24,20 @@ MonoBehaviour:
   - key: T_1
     translations:
     - language: 30
-      translation: "\u041C\u043E\u044F \u043A\u0443\u0440\u0442\u043A\u0430 \u0442\u0430\u043C
-        \u0432\u0435\u0441\u0438\u0442 \u0443\u0436\u0435 \u0442\u0440\u0435\u0442\u044C\u0435\u0439
-        \u043C\u0435\u0441\u044F\u0446, \u0438 \u0435\u0449\u0435 \u043F\u043E\u0432\u0435\u0441\u0438\u0442."
+      translation: "\u041A\u0443\u0440\u0442\u043A\u0443 \u043C\u043E\u044E \u043D\u0435
+        \u0442\u0440\u043E\u0436\u044C!"
     - language: 10
-      translation: My Jacket Weighs There For The Third Month, And Still Hangs.
+      translation: My Jacket Do Not Touch!
     - language: 42
       translation: "\u0414\u0435\u043D"
+  - key: T_2
+    translations:
+    - language: 30
+      translation: "\u0414\u0430 \u044F \u0438 \u043D\u0435 \u0441\u043E\u0431\u0438\u0440\u0430\u043B\u0441\u044F."
+    - language: 10
+      translation: 
+    - language: 42
+      translation: "\u041C\u044D\u0442\u0442\u044C\u044E"
   - key: C_1
     translations:
     - language: 30
@@ -43,7 +50,7 @@ MonoBehaviour:
   - key: C_1_2
     translations:
     - language: 30
-      translation: "\u041F\u043E\u0447\u0438\u043D\u0438."
+      translation: "\u0422\u0430\u043A \u043F\u043E\u0447\u0438\u043D\u0438."
     - language: 10
       translation: 
     - language: 42
@@ -56,6 +63,16 @@ MonoBehaviour:
         \u043D\u0430\u0441\u0442\u0443\u043F\u0430\u0435\u0442 \u0444\u0430\u0437\u0430."
     - language: 10
       translation: We Sleep Here Rarely, Only When The Phase Begins.
+    - language: 42
+      translation: "\u041C\u044D\u0442\u0442\u044C\u044E"
+  - key: H_2
+    translations:
+    - language: 30
+      translation: "\u042F \u043F\u043E\u043E\u0431\u0435\u0449\u0430\u043B \u041C\u0435\u0440\u0438,
+        \u0447\u0442\u043E \u0435\u0435 \u0432\u0441\u0442\u0440\u0435\u0447\u0443.
+        \u0422\u0430\u043A \u0447\u0442\u043E \u043C\u043D\u0435 \u043D\u0430 \u0432\u044B\u0445\u043E\u0434."
+    - language: 10
+      translation: 
     - language: 42
       translation: "\u041C\u044D\u0442\u0442\u044C\u044E"
   - key: PC_1
