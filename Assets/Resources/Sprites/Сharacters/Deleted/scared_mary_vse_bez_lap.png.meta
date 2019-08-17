@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: f97f48799d780cd46b039148784df852
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: scared_mary_vse_bez_lap_0
+    21300002: scared_mary_vse_bez_lap_1
+    21300004: scared_mary_vse_bez_lap_2
+    21300006: scared_mary_vse_bez_lap_3
+    21300008: scared_mary_vse_bez_lap_4
+    21300010: scared_mary_vse_bez_lap_5
+    21300012: scared_mary_vse_bez_lap_6
+    21300014: scared_mary_vse_bez_lap_7
+    21300016: scared_mary_vse_bez_lap_8
+    21300018: scared_mary_vse_bez_lap_9
+    21300020: scared_mary_vse_bez_lap_10
+    21300022: scared_mary_vse_bez_lap_11
+    21300024: scared_mary_vse_bez_lap_12
+    21300026: scared_mary_vse_bez_lap_13
+    21300028: scared_mary_vse_bez_lap_14
+    21300030: scared_mary_vse_bez_lap_15
+    21300032: scared_mary_vse_bez_lap_16
+    21300034: scared_mary_vse_bez_lap_17
+    21300036: scared_mary_vse_bez_lap_18
+    21300038: scared_mary_vse_bez_lap_19
+    21300040: scared_mary_vse_bez_lap_20
+    21300042: scared_mary_vse_bez_lap_21
+    21300044: scared_mary_vse_bez_lap_22
+    21300046: scared_mary_vse_bez_lap_23
+    21300048: scared_mary_vse_bez_lap_24
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7551
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee76c05c31571942ab6cd5f1530bc82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_1
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 7551
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1f449fe7478f240870e372e8c8ed2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_2
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 7551
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b0757a58da23843b65abd934905849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_3
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 7551
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28127c250fc5174c835bb2763cc2f2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6905
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e26f3cf8f6aecc409afbaa52686ae9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_5
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 6905
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d24fe18b1541849b90e1725ba1cd35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_6
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 6905
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c19357a1d32b141b09b2be4ee4f887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_7
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 6905
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38b3396364b1d441ac7dd2db4765efb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6259
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a262c64b4f37e24f893b8e2d374ded1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_9
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 6259
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feeb26fc8249f634491e1bb248ce580b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_10
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 6259
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47e97c7774be1f48b6355c64fa2b383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_11
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 6259
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03dd4a4f51ca32e43a70472c8f1aa7d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5613
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be73aee4ba47c544942fac40ca9857f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_13
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 5613
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6123abe518ad9dc47897a4f1e97750ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_14
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 5613
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81767675994b90548aa94744e86faded
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_15
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 5613
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a667aebb688002840bec30371a7fde06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4967
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8983c4a22278ea64ca720c34e97b9bbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_17
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 4967
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c397184424b06146ade0636dc12b1a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_18
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 4967
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3629562092104f4dabdd25baa22c48c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_19
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 4967
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0695b5040ed7877478d116a8f43cf621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4321
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11204175c54eee4c9a7b022db017476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_21
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 4321
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80080f30e747a444cbb45e1d56b6bf3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_22
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 4321
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87af3d92312e07d4dbbddc4a99c79786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_23
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 4321
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3590c26b4494b429bfa4aec7283c55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_vse_bez_lap_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3675
+        width: 852
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c6c31aa5c8049499c7f3a5af899454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e336cb6c0592bbd46ae831bdbbb24b34
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

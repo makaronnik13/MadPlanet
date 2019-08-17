@@ -12,6 +12,7 @@ namespace UnityStandardAssets._2D
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
         [SerializeField] private float drawnRate = 0;
         [SerializeField] public bool Drawn = false;
+
         public Action<float> DrawnRateChanged = (v) => { };
 
         public Transform Visual;
@@ -69,7 +70,9 @@ namespace UnityStandardAssets._2D
             Drawn = v;
         }
 
-    private bool IsGrounded()
+
+      
+        private bool IsGrounded()
     {
         return Physics.Raycast(m_GroundCheck.position, -Vector3.up, k_GroundedRadius);
     }  
@@ -84,6 +87,8 @@ namespace UnityStandardAssets._2D
             }
             m_Anim.SetFloat("Horizontal", -moveV);
             m_Anim.SetFloat("Vertical", moveH);
+
+    
 
             if (Mathf.Abs(moveH)>Mathf.Abs(moveV))
             {
