@@ -1,0 +1,414 @@
+fileFormatVersion: 2
+guid: 1df281cde7695774392c4a01b8287345
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dan_cicle1_ruka_karta_0
+    21300002: dan_cicle1_ruka_karta_1
+    21300004: dan_cicle1_ruka_karta_2
+    21300006: dan_cicle1_ruka_karta_3
+    21300008: dan_cicle1_ruka_karta_4
+    21300010: dan_cicle1_ruka_karta_5
+    21300012: dan_cicle1_ruka_karta_6
+    21300014: dan_cicle1_ruka_karta_7
+    21300016: dan_cicle1_ruka_karta_8
+    21300018: dan_cicle1_ruka_karta_9
+    21300020: dan_cicle1_ruka_karta_10
+    21300022: dan_cicle1_ruka_karta_11
+    21300024: dan_cicle1_ruka_karta_12
+    21300026: dan_cicle1_ruka_karta_13
+    21300028: dan_cicle1_ruka_karta_14
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7325
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171af87931b94a14abb96795eab1ae5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_1
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 7325
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b318ad193513b524f9df5d1b166f4098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_2
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 7325
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e80f3cb985be7d4b9fba307f4dd35da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6453
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0853da0f4a3cca64ca2ea0a58ed32d7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_4
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 6453
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f234688d220aff49979df99f0fc3e81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_5
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 6453
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c7a1e8547fbbf4aa3d9938b7f44cb6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5581
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d837a9c100d273419b4badc307bfd79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_7
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 5581
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16af0f36f95f96046a9b770711aaf06e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_8
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 5581
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad34c081102fb2e4e801d6abcd2f2dbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4709
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b873daf290f0224f9742fbf243d71ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_10
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 4709
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92734afd0a786a64e967a4adb3ae2322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_11
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 4709
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14b5aad47d7c524cb7e10726c4a0424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3837
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80220dc585517a4db2d6e30ba59d125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_13
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 3837
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125b4009410c47f40b101a6d23e59e0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dan_cicle1_ruka_karta_14
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 3837
+        width: 1069
+        height: 862
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f61811683665c746a3b47654d23673c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e4cf6d0fc669116468ac7549c4a3533c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

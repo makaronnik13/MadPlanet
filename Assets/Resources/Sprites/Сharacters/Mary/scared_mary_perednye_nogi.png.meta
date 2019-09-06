@@ -1,0 +1,603 @@
+fileFormatVersion: 2
+guid: 18722cdaedb45ed489785f47852a9c1c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: scared_mary_perednye_nogi_0
+    21300002: scared_mary_perednye_nogi_1
+    21300004: scared_mary_perednye_nogi_2
+    21300006: scared_mary_perednye_nogi_3
+    21300008: scared_mary_perednye_nogi_4
+    21300010: scared_mary_perednye_nogi_5
+    21300012: scared_mary_perednye_nogi_6
+    21300014: scared_mary_perednye_nogi_7
+    21300016: scared_mary_perednye_nogi_8
+    21300018: scared_mary_perednye_nogi_9
+    21300020: scared_mary_perednye_nogi_10
+    21300022: scared_mary_perednye_nogi_11
+    21300024: scared_mary_perednye_nogi_12
+    21300026: scared_mary_perednye_nogi_13
+    21300028: scared_mary_perednye_nogi_14
+    21300030: scared_mary_perednye_nogi_15
+    21300032: scared_mary_perednye_nogi_16
+    21300034: scared_mary_perednye_nogi_17
+    21300036: scared_mary_perednye_nogi_18
+    21300038: scared_mary_perednye_nogi_19
+    21300040: scared_mary_perednye_nogi_20
+    21300042: scared_mary_perednye_nogi_21
+    21300044: scared_mary_perednye_nogi_22
+    21300046: scared_mary_perednye_nogi_23
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3455
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c25bf3115f7e944a27112904ff2a8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_1
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 3455
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5cb32c7fa335648a3975140da989c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_2
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 3455
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4ccc3562427a741a9593e37c623cc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_3
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 3455
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6210eededfcc7468baf27025f53262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_4
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 3455
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1df56ab1ce9f5b499d69b5806eb5417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2809
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513df3d774228ca4dbbdd6159f406c13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_6
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2809
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92355c9cb7eb744fbaaac4c42395368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_7
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 2809
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617a234cf659ecf4ab4a698b06eff742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_8
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 2809
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed519e018c47cb5418488fb0a23d2d5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_9
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 2809
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a67ca9a5b35efd449d25b544a05eed9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2163
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345e6b60a439d6a429f724c2b2ba8a84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_11
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2163
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419237a130b63894b9c255bb7e303504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_12
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 2163
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23cf986dcddd6649819bb90b79c1083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_13
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 2163
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ab946012f3c0e448200ebd89cdc79e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_14
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 2163
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac314aa9472a63940b3de7388d89e682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1517
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57aede41732dfa845957056f3d989fea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_16
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1517
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d618c8155343b4a961745ff7377f95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_17
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1517
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42103f267dc8a0742998b11a3ae6edb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_18
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 1517
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a08e528ae512694c8e89d1f9bfc8f8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_19
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 1517
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8fb76ea3152ca49ac823d2f360d0bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 871
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159d6e9fd31937d4b9cde03ceceaf2aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_21
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 871
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a59e723a39091446b88f88102db84db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_22
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 871
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0af1dc36924b944192edcd96a682691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared_mary_perednye_nogi_23
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 871
+        width: 730
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7e9ccfc1042a547af84cb93e6addd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a625d7210a1a0764a8f7269341633fad
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

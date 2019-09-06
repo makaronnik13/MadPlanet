@@ -1,0 +1,981 @@
+fileFormatVersion: 2
+guid: f399d0c2dda1fd3498f1929a53eceeca
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dan_01_0
+    21300002: Dan_01_1
+    21300004: Dan_01_2
+    21300006: Dan_01_3
+    21300008: Dan_01_4
+    21300010: Dan_01_5
+    21300012: Dan_01_6
+    21300014: Dan_01_7
+    21300016: Dan_01_8
+    21300018: Dan_01_9
+    21300020: Dan_01_10
+    21300022: Dan_01_11
+    21300024: Dan_01_12
+    21300026: Dan_01_13
+    21300028: Dan_01_14
+    21300030: Dan_01_15
+    21300032: Dan_01_16
+    21300034: Dan_01_17
+    21300036: Dan_01_18
+    21300038: Dan_01_19
+    21300040: Dan_01_20
+    21300042: Dan_01_21
+    21300044: Dan_01_22
+    21300046: Dan_01_23
+    21300048: Dan_01_24
+    21300050: Dan_01_25
+    21300052: Dan_01_26
+    21300054: Dan_01_27
+    21300056: Dan_01_28
+    21300058: Dan_01_29
+    21300060: Dan_01_30
+    21300062: Dan_01_31
+    21300064: Dan_01_32
+    21300066: Dan_01_33
+    21300068: Dan_01_34
+    21300070: Dan_01_35
+    21300072: Dan_01_36
+    21300074: Dan_01_37
+    21300076: Dan_01_38
+    21300078: Dan_01_39
+    21300080: Dan_01_40
+    21300082: Dan_01_41
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dan_01_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7167
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428c24006efbc2745b651625de59c802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_1
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 7167
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2698548f4afc1ea46887b76d498d25d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_2
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 7167
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c580973ed445146887b79e72db66e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_3
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 7167
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ae663e8e4cd804290d3827a980f743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_4
+      rect:
+        serializedVersion: 2
+        x: 5025
+        y: 7167
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68d48dff75536a469b65a94688b53a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_5
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 7167
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a6f2e7f60b8e44da44d427bf8019a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6137
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a305d4f8c255749b78a996a571d4b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_7
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 6137
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b9e2698345dbf4aa58e8ae46b8942e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_8
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 6137
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6a2da72cb969842a9ff7ef9a3733f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_9
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 6137
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0b54c4c6e13df42b11939216f9945f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_10
+      rect:
+        serializedVersion: 2
+        x: 5025
+        y: 6137
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950049fcf416b2f44b81269105342b40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_11
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 6137
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4899dc8e0c46ce04abf75f8a80f3fb7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5107
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37f9198d53e37b40b675cde4a5c47d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_13
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 5107
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121903bce504e7b40899e775bf9f2ac7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_14
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 5107
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a09daa1998dc948a091c43468c78d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_15
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 5107
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8799cacc1be6d4d8922bb6ce9ce773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_16
+      rect:
+        serializedVersion: 2
+        x: 5025
+        y: 5107
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef18fa60317e134ca0fed98e2f1aebc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_17
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 5107
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8987b045d212e894984c858ef44bfcfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4077
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7673d5588cac53946910f0d06b666810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_19
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 4077
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c48e8166f9231f409dd6adc6ed6711e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_20
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 4077
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9985fd0eb3017f458541434e2bbeffa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_21
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 4077
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a449bb11968104f4196131ee22da1b3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_22
+      rect:
+        serializedVersion: 2
+        x: 5025
+        y: 4077
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f01d89e5d473c54781ab306aed14839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_23
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 4077
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3c19a338f8a7f4da3216f8dd5a9529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3047
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e4332c55dec3340b159d3b5f830fb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_25
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3047
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371b48cd09ff4af458dc24da952efec7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_26
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 3047
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f936f420d4b15344eaf80251545e5a04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_27
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 3047
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f988a8720c713f448a7b0eac2d7f318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_28
+      rect:
+        serializedVersion: 2
+        x: 5025
+        y: 3047
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b9428fc84c85941a1a6eaa703c1153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_29
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 3047
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81054da6f37cd0469f7fd97cd0eb7c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2017
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3d06047d85d5642908d7eed719bcd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_31
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2017
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc3fc67d3c108a4888917dd056c0f80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_32
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 2017
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8713035f05fd74197a7b03c477b74c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_33
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 2017
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b2a69666ca37843a358fbba8553234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_34
+      rect:
+        serializedVersion: 2
+        x: 5025
+        y: 2017
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb40d1ce44f8c94483e3c66d0f4201f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_35
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 2017
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794a6b88ba95e124ba708c985e45c98f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 987
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6f8030e531f884784a0b2813622539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_37
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 987
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f27e45f5abf00942bd432cc1598ced3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_38
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 987
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534ac6b77a85a9c46a609b8255bf14fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_39
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 987
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1805de45015220743bd7383650fa8a4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_40
+      rect:
+        serializedVersion: 2
+        x: 5025
+        y: 987
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80705423d5327045bcb923fd732ba42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dan_01_41
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 987
+        width: 1245
+        height: 1020
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170c754f51e53064ebb376c2a9bef8c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b5240a90d2299bb4d874c895c11cc131
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

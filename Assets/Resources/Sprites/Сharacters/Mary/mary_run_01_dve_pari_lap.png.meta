@@ -1,0 +1,666 @@
+fileFormatVersion: 2
+guid: e7fa591160972ae478b6e81e978e74af
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mary_run_01_dve_pari_lap_0
+    21300002: mary_run_01_dve_pari_lap_1
+    21300004: mary_run_01_dve_pari_lap_2
+    21300006: mary_run_01_dve_pari_lap_3
+    21300008: mary_run_01_dve_pari_lap_4
+    21300010: mary_run_01_dve_pari_lap_5
+    21300012: mary_run_01_dve_pari_lap_6
+    21300014: mary_run_01_dve_pari_lap_7
+    21300016: mary_run_01_dve_pari_lap_8
+    21300018: mary_run_01_dve_pari_lap_9
+    21300020: mary_run_01_dve_pari_lap_10
+    21300022: mary_run_01_dve_pari_lap_11
+    21300024: mary_run_01_dve_pari_lap_12
+    21300026: mary_run_01_dve_pari_lap_13
+    21300028: mary_run_01_dve_pari_lap_14
+    21300030: mary_run_01_dve_pari_lap_15
+    21300032: mary_run_01_dve_pari_lap_16
+    21300034: mary_run_01_dve_pari_lap_17
+    21300036: mary_run_01_dve_pari_lap_18
+    21300038: mary_run_01_dve_pari_lap_19
+    21300040: mary_run_01_dve_pari_lap_20
+    21300042: mary_run_01_dve_pari_lap_21
+    21300044: mary_run_01_dve_pari_lap_22
+    21300046: mary_run_01_dve_pari_lap_23
+    21300048: mary_run_01_dve_pari_lap_24
+    21300050: mary_run_01_dve_pari_lap_25
+    21300052: mary_run_01_dve_pari_lap_26
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7471
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ff8eb5cd64bf645aaa19f2d1fb7241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 7471
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb70a60da1da6d240a746e8872e445b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_2
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 7471
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658793f7f7f948645a5a9d09dfb5b9d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_3
+      rect:
+        serializedVersion: 2
+        x: 4598
+        y: 7471
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e42f4eb159697246abbadc7cf9c5e9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_4
+      rect:
+        serializedVersion: 2
+        x: 6129
+        y: 7471
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bc320a6b1f9ec42a8d970988640d36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6745
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc8d64f146c5fd489486c2150c1a57d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 6745
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9c8d8078e4fc54cae7362d54e6fa3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_7
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 6745
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a354b9bc38faa469f61202b1afc4e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_8
+      rect:
+        serializedVersion: 2
+        x: 4598
+        y: 6745
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e826498f528be43b4876c5e7722085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_9
+      rect:
+        serializedVersion: 2
+        x: 6129
+        y: 6745
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d83465fb2ad7e4e96775eeb4d8925d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6019
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1689aea716dca74a990e5eec8a8f18c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 6019
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99631c812223a184f841438fd4fd889f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_12
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 6019
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954922b06fad3e6448d7717d0a03cfd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_13
+      rect:
+        serializedVersion: 2
+        x: 4598
+        y: 6019
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f79a818a8ef374eae18b89cae96bb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_14
+      rect:
+        serializedVersion: 2
+        x: 6129
+        y: 6019
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d16313bbcce37e49b640560eb4b26fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5293
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37c3f24c592fd945a7a8f025dbcd3fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 5293
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d69ff5e8efaec45b10a9d3b2878997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_17
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 5293
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1a284cff6bdde4b8d8781594e43364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_18
+      rect:
+        serializedVersion: 2
+        x: 4598
+        y: 5293
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb8c0cff86894046af37c0b8fefe957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_19
+      rect:
+        serializedVersion: 2
+        x: 6129
+        y: 5293
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c1dbf9157db0945bfbceb4091c32eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4567
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3ab7098215eeb4a9919f9ce8ee850a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_21
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4567
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a389d440bd8cf8479961f41400321c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_22
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 4567
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c0f78bd3f102e43b5288d6c80aab4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_23
+      rect:
+        serializedVersion: 2
+        x: 4598
+        y: 4567
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19bf5f18dde5d74a841bf2ec8d30b62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_24
+      rect:
+        serializedVersion: 2
+        x: 6129
+        y: 4567
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9ae7e215fecee44a7d741544f97e03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_25
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3841
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d10a8bde86ea54ca70637d869a71e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mary_run_01_dve_pari_lap_26
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3841
+        width: 1521
+        height: 716
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46516ab6e8605374486d8ccea8c5678d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e041a4b3e75437243af18ec84d0e9556
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
