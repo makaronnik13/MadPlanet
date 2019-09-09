@@ -107,11 +107,11 @@ namespace UnityStandardAssets._2D
             {
                 if (moveV>0)
                 {
-                    _lastDir = -1;
+                    _lastDir = 1;
                 }
                 else if (moveV<0)
                 {
-                    _lastDir = 1;
+                    _lastDir = -1;
                 }
             }
 
