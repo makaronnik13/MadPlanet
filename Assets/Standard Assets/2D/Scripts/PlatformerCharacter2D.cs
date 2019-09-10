@@ -12,6 +12,7 @@ namespace UnityStandardAssets._2D
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
         [SerializeField] private float drawnRate = 0;
         [SerializeField] public bool Drawn = false;
+        [SerializeField] private float DrawnTime = 3;
 
         public Action<float> DrawnRateChanged = (v) => { };
 
@@ -52,7 +53,7 @@ namespace UnityStandardAssets._2D
 
             if (Drawn)
             {
-                drawnRate += Time.deltaTime / 3f;
+                drawnRate += Time.deltaTime / DrawnTime;
             }
             else
             {
@@ -65,8 +66,9 @@ namespace UnityStandardAssets._2D
         }
 
 
-        public void SetDrawn(bool v)
+        public void SetDrawn(bool v, float drawnTime = 3)
         {
+            DrawnTime = drawnTime;
             Drawn = v;
         }
 
@@ -169,7 +171,7 @@ namespace UnityStandardAssets._2D
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce), ForceMode.Acceleration);
             }
         }
 
