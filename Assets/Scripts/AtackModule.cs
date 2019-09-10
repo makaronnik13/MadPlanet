@@ -15,6 +15,9 @@ public class AtackModule: MonoBehaviour
     private AttackType AType = AttackType.Push;
 
     [SerializeField]
+    private float AttackForce = 5000f;
+
+    [SerializeField]
     private float AttackDelay;
 
     [SerializeField]
@@ -39,7 +42,7 @@ public class AtackModule: MonoBehaviour
                 FindObjectOfType<PlayerIdentity>().Damage();
                 break;
             case AttackType.Push:
-                FindObjectOfType<PlayerIdentity>().GetComponent<Rigidbody>().AddForce(FindObjectOfType<PlayerIdentity>().transform.position-transform.position * 150, ForceMode.Force);
+                FindObjectOfType<PlayerIdentity>().GetComponent<Rigidbody>().AddForce((FindObjectOfType<PlayerIdentity>().transform.position-transform.position).normalized * AttackForce, ForceMode.Acceleration);
                 break;
         }
         Animator.SetTrigger("Attack");

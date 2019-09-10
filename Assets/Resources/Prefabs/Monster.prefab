@@ -4888,7 +4888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AType: 0
-  AttackDelay: 1
+  AttackForce: 7500
+  AttackDelay: 0
   Particles: {fileID: 4547811022008280703}
   Animator: {fileID: 4547811021635154074}
 --- !u!1 &4547811020635951794
@@ -4953,6 +4954,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   drawnRate: 0
   Drawn: 0
+  DrawnTime: 3
   Visual: {fileID: 4547811021635154078}
   k_GroundedRadius: 0.22
   m_Anim: {fileID: 4547811021635154074}
@@ -4964,14 +4966,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4547811020635951794}
   serializedVersion: 2
-  m_Mass: 1.2
+  m_Mass: 100000
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!136 &4547811020635951796
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4999,7 +5001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaitingTime: 1
-  AtackTime: 2
+  AtackTime: 1
   Atack: {fileID: 4547811020380823493}
   Vision: {fileID: 4547811020128299849}
   Line: {fileID: 4547811021825341215}
