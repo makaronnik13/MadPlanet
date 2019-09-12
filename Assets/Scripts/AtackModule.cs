@@ -42,7 +42,10 @@ public class AtackModule: MonoBehaviour
                 FindObjectOfType<PlayerIdentity>().Damage();
                 break;
             case AttackType.Push:
-                FindObjectOfType<PlayerIdentity>().GetComponent<Rigidbody>().AddForce((FindObjectOfType<PlayerIdentity>().transform.position-transform.position).normalized * AttackForce, ForceMode.Acceleration);
+                Vector3 diff = FindObjectOfType<PlayerIdentity>().transform.position - transform.position;
+                diff = new Vector3(diff.x, 0, diff.z);
+                diff = diff.normalized;
+                FindObjectOfType<PlayerIdentity>().GetComponent<Rigidbody>().AddForce(diff * AttackForce, ForceMode.Acceleration);
                 break;
         }
         Animator.SetTrigger("Attack");

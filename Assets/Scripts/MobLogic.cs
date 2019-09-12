@@ -99,7 +99,7 @@ public class MobLogic : MonoBehaviour
 
     private void MoveInDir(Vector3 currentPoint)
     {
-        Vector2 aim = new Vector2(currentPoint.x-transform.position.x, currentPoint.z-transform.position.z);
+        Vector2 aim = new Vector3(currentPoint.x-transform.position.x, currentPoint.z-transform.position.z);
         aim = aim.normalized;
         Char.Move(aim.x, aim.y, false, false);
     }

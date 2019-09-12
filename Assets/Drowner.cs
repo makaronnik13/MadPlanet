@@ -10,6 +10,6 @@ public class Drowner : MonoBehaviour
 
     public void Drow(bool v = true)
     {
-        FindObjectOfType<PlatformerCharacter2D>().SetDrawn(v, DrownTime);
+        FindObjectOfType<PlayerIdentity>().GetComponent<PlatformerCharacter2D>().SetDrawn(v, DrownTime);
     }
 }

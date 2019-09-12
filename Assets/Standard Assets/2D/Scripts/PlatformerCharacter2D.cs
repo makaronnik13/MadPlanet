@@ -81,6 +81,8 @@ namespace UnityStandardAssets._2D
 
     public void Move(float moveH, float moveV, bool crouch, bool jump)
         {
+          
+
             if (Drawn)
             {
                 moveH *= 1-drawnRate;
@@ -89,7 +91,6 @@ namespace UnityStandardAssets._2D
             }
             m_Anim.SetFloat("Horizontal", -moveV);
             m_Anim.SetFloat("Vertical", moveH);
-
     
 
             if (Mathf.Abs(moveH)>Mathf.Abs(moveV))
@@ -139,6 +140,7 @@ namespace UnityStandardAssets._2D
             // Set whether or not the character is crouching in the animator
             m_Anim.SetBool("Crouch", crouch);
 
+
             //only control the player if grounded or airControl is turned on
             if (m_Grounded || m_AirControl)
             {
@@ -150,7 +152,7 @@ namespace UnityStandardAssets._2D
                 m_Anim.SetFloat("Speed", Mathf.Abs(moveH)+ Mathf.Abs(moveV));
 
                 // Move the character
-                m_Rigidbody2D.velocity = new Vector3(moveH*m_MaxSpeed, m_Rigidbody2D.velocity.y, moveV * m_MaxSpeed);
+                m_Rigidbody2D.velocity = new Vector3(moveH * m_MaxSpeed, m_Rigidbody2D.velocity.y, moveV * m_MaxSpeed);
 
                 // If the input is moving the player right and the player is facing left...
                 if (moveH > 0 && !m_FacingRight)

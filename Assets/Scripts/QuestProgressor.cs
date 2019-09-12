@@ -38,14 +38,12 @@ public class QuestProgressor : MonoBehaviour
     {
         if (q.Quest == Quest)
         {
-            Debug.Log("add listener " + Quest.name);
             q.Completed.AddListener(QuestCompleted);
         }
     }
 
     private void QuestCompleted(int v)
     {
-        Debug.Log(Quest.name+"/"+v);
         if (v == 2)
         {
             OnQuestCompleted.Invoke();
