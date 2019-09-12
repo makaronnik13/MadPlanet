@@ -22,13 +22,11 @@ public class QuestProgressor : MonoBehaviour
           
             if (Game.Instance.gameData.Quests.FirstOrDefault(q=>q.Quest == Quest)!=null)
             {
-                Debug.Log("check "+Quest.name);
                 QuestCompleted(Game.Instance.gameData.Quests.FirstOrDefault(q => q.Quest == Quest).Completed.Value);
                 Game.Instance.gameData.Quests.FirstOrDefault(q => q.Quest == Quest).Completed.AddListener(QuestCompleted);
             }
             else
             {
-                Debug.Log("listen " + Quest.name);
                 Game.Instance.OnQuestTaken += QuestTaken;
             }
         }

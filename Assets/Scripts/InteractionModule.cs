@@ -31,7 +31,7 @@ public class InteractionModule : MonoBehaviour
     }
 
     private InteractableObject _interactableObject;
-    private InteractableObject interactableObject
+    public InteractableObject interactableObject
     {
         get
         {
@@ -56,7 +56,10 @@ public class InteractionModule : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        interactableObject = other.GetComponent<InteractableObject>();
+        if (other.GetComponent<InteractableObject>() && other.GetComponent<InteractableObject>().Active)
+        {
+            interactableObject = other.GetComponent<InteractableObject>();
+        }
     }
 
     private void OnTriggerExit(Collider other)

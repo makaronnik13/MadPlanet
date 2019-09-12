@@ -33,12 +33,12 @@ public class MobLogic : MonoBehaviour
         StartCoroutine(LoopMove());
     }
 
-    private void UnTriggerMob(GameObject obj)
+    private void UnTriggerMob(PlayerIdentity obj)
     {
         followingObject = null;
     }
 
-    private void TriggerMob(GameObject obj)
+    private void TriggerMob(PlayerIdentity obj)
     {
         followingObject = obj.transform;
     }
@@ -88,7 +88,6 @@ public class MobLogic : MonoBehaviour
                 else
                 {
                     MoveInDir(transform.position);
-                    Debug.Log("Attack");
                     yield return new WaitForSeconds(AtackTime);
                     Atack.Atack();              
                 }

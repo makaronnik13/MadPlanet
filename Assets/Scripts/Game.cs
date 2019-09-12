@@ -27,17 +27,15 @@ public class Game : MonoBehaviour
         {
             if (_controller == null)
             {
-                Debug.Log("setup controller");
                 PlayerIdentity identity = FindObjectOfType<PlayerIdentity>();
                 if (identity)
                 {
                     _controller = identity.GetComponent<PlatformerCharacter2D>();
 
-                    Debug.Log("add draw listener");
                     _controller.DrawnRateChanged += DrawnChanged;
+                    _controller.GrabRateChanged += DrawnChanged;
                     if (_controller && gameData.Position != Vector3.zero)
                     {
-                        Debug.Log("set pos: "+gameData.Position);
                         _controller.transform.position = gameData.Position;
                     }
                 }

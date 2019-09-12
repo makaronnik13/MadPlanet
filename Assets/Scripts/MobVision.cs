@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class MobVision : MonoBehaviour
 {
-    public Action<GameObject> OnInside, OnOutside;
+    public Action<PlayerIdentity> OnInside, OnOutside;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerIdentity>()!=null)
         {
-            OnInside(other.GetComponent<PlayerIdentity>().gameObject);
+            OnInside(other.GetComponent<PlayerIdentity>());
         }
     }
 
@@ -19,7 +19,7 @@ public class MobVision : MonoBehaviour
     {
         if (other.GetComponent<PlayerIdentity>() != null)
         {
-            OnOutside(other.GetComponent<PlayerIdentity>().gameObject);
+            OnOutside(other.GetComponent<PlayerIdentity>());
         }
     }
 }

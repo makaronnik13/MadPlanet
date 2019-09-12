@@ -19,6 +19,13 @@ public class Drawn : MonoBehaviour
     private void Start()
     {
         Char.DrawnRateChanged += RateChanged;
+        Char.GrabRateChanged += GrabRateChanged;
+    }
+
+    private void GrabRateChanged(float v)
+    {
+        Vingete.GetSetting<Vignette>().intensity.value = v;
+        Fade.color = Color.Lerp(Color.black * 0, Color.black, v);
     }
 
     private void RateChanged(float v)
@@ -36,4 +43,6 @@ public class Drawn : MonoBehaviour
     {
         Vingete.GetSetting<Vignette>().intensity.value = 0;
     }
+
+    
 }

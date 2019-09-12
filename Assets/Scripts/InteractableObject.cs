@@ -6,11 +6,31 @@ using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
-   
+    [SerializeField]
+    private bool active = true;
     public Vector3 EButtonOffset;
     public UnityEvent OnActivate;
     public float Delay = 0f;
     public float DecreaseMultiplyer = 2;
+
+    public bool Active
+    {
+        get
+        {
+            return active;
+        }
+        set
+        {
+            active = value;
+            if (active == false)
+            {
+                foreach (InteractionModule im in FindObjectsOfType<InteractionModule>())
+                {
+                    im.interactableObject = null;
+                }
+            }
+        }
+    }
 
     public void Activate()
     {

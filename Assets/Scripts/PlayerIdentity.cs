@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets._2D;
 
 public class PlayerIdentity : MonoBehaviour
 {
@@ -34,4 +35,8 @@ public class PlayerIdentity : MonoBehaviour
         Damage();
     }
 
+    public void Die()
+    {
+       GetComponent<PlatformerCharacter2D>().Grab(true, 2f);
+    }
 }

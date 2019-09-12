@@ -11,10 +11,14 @@ namespace UnityStandardAssets._2D
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
         [SerializeField] private float drawnRate = 0;
+        [SerializeField] private float grabRate = 0;
         [SerializeField] public bool Drawn = false;
         [SerializeField] private float DrawnTime = 3;
+        [SerializeField] public bool Grabed = false;
+        [SerializeField] private float GrabTime = 3;
 
         public Action<float> DrawnRateChanged = (v) => { };
+        public Action<float> GrabRateChanged = (v) => { };
 
         public Transform Visual;
 
@@ -27,6 +31,8 @@ namespace UnityStandardAssets._2D
 
         [SerializeField]
         private Animator m_Anim;            // Reference to the player's animator component.
+
+
         private Rigidbody m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
         private void Awake()
@@ -59,8 +65,21 @@ namespace UnityStandardAssets._2D
             {
                 drawnRate -= Time.deltaTime;
             }
+
+            if (Grabed)
+            {
+                grabRate += Time.deltaTime / DrawnTime;
+            }
+            else
+            {
+                grabRate -= Time.deltaTime;
+            }
+
             drawnRate = Mathf.Clamp(drawnRate, 0,1f);
             DrawnRateChanged(drawnRate);
+
+            grabRate = Mathf.Clamp(grabRate, 0, 1f);
+            GrabRateChanged(grabRate);
 
             Visual.transform.localPosition = Vector3.Lerp(Vector3.zero, Vector3.down*2, drawnRate);
         }
@@ -72,8 +91,14 @@ namespace UnityStandardAssets._2D
             Drawn = v;
         }
 
+        public void Grab(bool v, float grabTime)
+        {
+            GrabTime = grabTime;
+            Grabed = v;
+            GetComponent<Platformer2DUserControl>().enabled = !v;
+        }
 
-      
+
         private bool IsGrounded()
     {
         return Physics.Raycast(m_GroundCheck.position, -Vector3.up, k_GroundedRadius);
