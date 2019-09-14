@@ -29,6 +29,14 @@ public class InteractionButton : MonoBehaviour
         Module.OnFillChanged += FillChanged;
     }
 
+    private void Update()
+    {
+        if (Module.interactableObject)
+        {
+            transform.position = Module.interactableObject.transform.position + Module.interactableObject.EButtonOffset;
+        }
+    }
+
     private void InteractableObjectChanged(InteractableObject obj)
     {
         if (obj)

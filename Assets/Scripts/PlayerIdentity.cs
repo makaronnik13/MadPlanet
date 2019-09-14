@@ -37,6 +37,6 @@ public class PlayerIdentity : MonoBehaviour
 
     public void Die()
     {
-       GetComponent<PlatformerCharacter2D>().Grab(true, 2f);
+       GetComponent<PlatformerCharacter2D>().Die(true, 1f);
     }
 }

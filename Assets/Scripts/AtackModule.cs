@@ -3,19 +3,12 @@ using System.Collections;
 using UnityEngine;
 using UnityStandardAssets._2D;
 
-public class AtackModule: MonoBehaviour
+public class AtackModule : MonoBehaviour
 {
-    private enum AttackType
-    {
-        Push,
-        Grab
-    }
-
     [SerializeField]
-    private AttackType AType = AttackType.Push;
+    private InteractableObject InteractionModule;
 
-    [SerializeField]
-    private float AttackForce = 5000f;
+    public bool CanAtack = true;
 
     [SerializeField]
     private float AttackDelay;
@@ -29,56 +22,79 @@ public class AtackModule: MonoBehaviour
     [SerializeField]
     private bool canceled = false;
 
-    [SerializeField]
-    private PlayerIdentity aim;
-
-    private void OnTriggerEnter(Collider other)
+    private PlayerIdentity aim
     {
-        if (other.GetComponent<PlayerIdentity>())
+        get
         {
-            aim = other.GetComponent<PlayerIdentity>();
+            Transform following = GetComponentInParent<MobLogic>().followingObject;
+            if (following)
+            {
+                return following.GetComponent<PlayerIdentity>();
+            }
+            return null;
         }
     }
+
+    private bool grabbing = false;
+    public bool Grabbing
+    {
+        get
+        {
+            return grabbing;
+        }
+        set
+        {
+            grabbing = value;
+            if (aim)
+            {
+                aim.GetComponent<PlatformerCharacter2D>().Grab(value);
+            }
+            InteractionModule.Active = grabbing;
+        }
+    }
+
+    private Vector3 delta;
 
 
     private void OnTriggerExit(Collider other)
     {
-        aim = null;
-        Animator.ResetTrigger("PreAttack");
+        //Grabbing = false;
+        //Animator.ResetTrigger("PreAttack");
     }
 
     public void Atack()
     {
-        Animator.SetTrigger("PreAttack");
-        StartCoroutine(PerformAttack());
-    }
-
-    private IEnumerator PerformAttack()
-    {
-        yield return new WaitForSeconds(AttackDelay);
-
-        if (aim != null)
+        
+        if (aim != null && CanAtack)
         {
-            switch (AType)
-            {
-                case AttackType.Grab:
-                    GetComponentInChildren<GrabModule>().SetGrab(true);
-                    break;
-                case AttackType.Push:
-                    /*
-                    Vector3 diff = FindObjectOfType<PlayerIdentity>().transform.position - transform.position;
-                    diff = new Vector3(diff.x, 0, diff.z);
-                    diff = diff.normalized;
-                    FindObjectOfType<PlayerIdentity>().GetComponent<Rigidbody>().AddForce(diff * AttackForce, ForceMode.Acceleration);
-        */
-                    aim.Die();
-                    break;
-            }
             Animator.SetTrigger("Attack");
             Particles.Play();
+            Grabbing = true;
+            delta = transform.position;
         }
-
-        
+        //Animator.SetTrigger("Attack");
+        //Particles.Play();
     }
 
+
+    private void Update()
+    {
+        if (Grabbing && aim)
+        {
+            aim.transform.position = Vector3.Lerp(aim.transform.position, transform.position, Time.deltaTime*5);
+        }
+    }
+
+    public void Release()
+    {
+        Grabbing = false;
+        CanAtack = false;
+        StartCoroutine(ContinueAttack());
+    }
+
+    private IEnumerator ContinueAttack()
+    {
+        yield return new WaitForSeconds(1);
+        CanAtack = true;
+    }
 }

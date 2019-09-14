@@ -11,6 +11,9 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     private GameObject ExplosionPrefab;
 
+    [SerializeField]
+    private GameObject Shadow;
+
     private Transform aim;
     private Vector3 pos;
     private float startingDistance;
@@ -43,6 +46,10 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Instantiate(ExplosionPrefab, collision.GetContact(0).point, Quaternion.identity);
+        if (Shadow)
+        {
+            Destroy(Shadow);
+        }
         Destroy(gameObject);
     }
 }

@@ -29,6 +29,17 @@ public class InteractableObject : MonoBehaviour
                     im.interactableObject = null;
                 }
             }
+            else
+            {
+                foreach (InteractionModule im in FindObjectsOfType<InteractionModule>())
+                {
+                    Debug.Log(Vector3.Distance(transform.position, im.transform.position)+"/"+ GetComponent<SphereCollider>().radius);
+                    if (Vector3.Distance(transform.position, im.transform.position)<GetComponent<SphereCollider>().radius*2f)
+                    {
+                        im.interactableObject = this;
+                    }
+                }
+            }
         }
     }
 

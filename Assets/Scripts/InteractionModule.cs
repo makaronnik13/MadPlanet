@@ -39,6 +39,8 @@ public class InteractionModule : MonoBehaviour
         }
         set
         {
+            Debug.Log(_interactableObject);
+
             _interactableObject = value;
             if (_interactableObject)
             {

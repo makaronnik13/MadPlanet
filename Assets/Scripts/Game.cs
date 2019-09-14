@@ -33,7 +33,7 @@ public class Game : MonoBehaviour
                     _controller = identity.GetComponent<PlatformerCharacter2D>();
 
                     _controller.DrawnRateChanged += DrawnChanged;
-                    _controller.GrabRateChanged += DrawnChanged;
+                    _controller.DieRateChanged += DrawnChanged;
                     if (_controller && gameData.Position != Vector3.zero)
                     {
                         _controller.transform.position = gameData.Position;

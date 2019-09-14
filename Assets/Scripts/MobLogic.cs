@@ -20,11 +20,10 @@ public class MobLogic : MonoBehaviour
     [SerializeField]
     private PlatformerCharacter2D Char;
 
-    private Transform followingObject;
+    public Transform followingObject;
 
     private int currentPoint = 0;
     private bool forward = true;
-
 
     private void Start()
     {
@@ -47,7 +46,7 @@ public class MobLogic : MonoBehaviour
     {
         while (true)
         {
-            if (followingObject == null)
+            if (followingObject == null || Atack.Grabbing)
             {
                 if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Line.GetPosition(currentPoint).x, Line.GetPosition(currentPoint).z)) > 0.05f)
                 {
@@ -56,7 +55,15 @@ public class MobLogic : MonoBehaviour
                 else
                 {
                     MoveInDir(transform.position);
-                    yield return new WaitForSeconds(WaitingTime);
+                    if (Atack.Grabbing)
+                    {
+                        yield return null;
+                    }
+                    else
+                    {
+                        yield return new WaitForSeconds(WaitingTime);
+                    }
+                   
                     if (forward)
                     {
                         currentPoint++;
@@ -65,6 +72,8 @@ public class MobLogic : MonoBehaviour
                     {
                         currentPoint--;
                     }
+
+                    Atack.Release();
 
                     if (currentPoint == 0)
                     {

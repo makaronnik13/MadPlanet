@@ -11,14 +11,16 @@ namespace UnityStandardAssets._2D
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
         [SerializeField] private float drawnRate = 0;
-        [SerializeField] private float grabRate = 0;
+        [SerializeField] private float dieRate = 0;
         [SerializeField] public bool Drawn = false;
+        [SerializeField] public bool Diyng = false;
         [SerializeField] private float DrawnTime = 3;
+        [SerializeField] private float DieTime = 3;
+
         [SerializeField] public bool Grabed = false;
-        [SerializeField] private float GrabTime = 3;
 
         public Action<float> DrawnRateChanged = (v) => { };
-        public Action<float> GrabRateChanged = (v) => { };
+        public Action<float> DieRateChanged = (v) => { };
 
         public Transform Visual;
 
@@ -66,20 +68,16 @@ namespace UnityStandardAssets._2D
                 drawnRate -= Time.deltaTime;
             }
 
-            if (Grabed)
+            if (Diyng)
             {
-                grabRate += Time.deltaTime / DrawnTime;
-            }
-            else
-            {
-                grabRate -= Time.deltaTime;
+                dieRate += Time.deltaTime / DieTime;
             }
 
             drawnRate = Mathf.Clamp(drawnRate, 0,1f);
-            DrawnRateChanged(drawnRate);
+            dieRate = Mathf.Clamp(dieRate, 0, 1f);
 
-            grabRate = Mathf.Clamp(grabRate, 0, 1f);
-            GrabRateChanged(grabRate);
+            DrawnRateChanged(drawnRate);
+            DieRateChanged(dieRate);
 
             Visual.transform.localPosition = Vector3.Lerp(Vector3.zero, Vector3.down*2, drawnRate);
         }
@@ -91,13 +89,20 @@ namespace UnityStandardAssets._2D
             Drawn = v;
         }
 
-        public void Grab(bool v, float grabTime)
+        public void Grab(bool v)
         {
-            GrabTime = grabTime;
+            GetComponent<Rigidbody>().useGravity = !v;
             Grabed = v;
             GetComponent<Platformer2DUserControl>().enabled = !v;
         }
 
+        public void Die(bool v, float dieTime = 1f)
+        {
+            GetComponent<Rigidbody>().useGravity = !v;
+            Diyng = v;
+            DieTime = dieTime;
+            GetComponent<Platformer2DUserControl>().enabled = !v;
+        }
 
         private bool IsGrounded()
     {
@@ -146,7 +151,7 @@ namespace UnityStandardAssets._2D
             m_Anim.SetFloat("Dir2", _lastDir2);
             m_Anim.SetFloat("Dir", _lastDir);
 
-            if (!m_Grounded)
+            if (!m_Grounded && !m_AirControl)
             {
                 moveH = Mathf.Clamp(moveH, 0, Mathf.Abs(moveH));
                 moveV *= 0.5f;
