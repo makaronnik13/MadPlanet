@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scared matt_03.png">
+	<!-- Created with Adobe Animate version 18.0.2.126 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 1 instance 10000" x="5" y="5" width="684" height="1299" pivotX="-321.45" pivotY="176.9"/>
+	<SubTexture name="Symbol 1 instance 10001" x="5" y="1314" width="684" height="1299"/>
+	<SubTexture name="Symbol 1 instance 10002" x="5" y="2623" width="684" height="1299"/>
+</TextureAtlas>
