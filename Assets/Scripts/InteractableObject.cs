@@ -6,6 +6,14 @@ using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
+    public enum InteractionMode
+    {
+        Normal,
+        Keys
+    }
+
+    public InteractionMode IneractionMode = InteractionMode.Normal;
+
     [SerializeField]
     private bool active = true;
     public Vector3 EButtonOffset;
@@ -33,7 +41,6 @@ public class InteractableObject : MonoBehaviour
             {
                 foreach (InteractionModule im in FindObjectsOfType<InteractionModule>())
                 {
-                    Debug.Log(Vector3.Distance(transform.position, im.transform.position)+"/"+ GetComponent<SphereCollider>().radius);
                     if (Vector3.Distance(transform.position, im.transform.position)<GetComponent<SphereCollider>().radius*2f)
                     {
                         im.interactableObject = this;

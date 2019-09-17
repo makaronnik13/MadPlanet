@@ -24,7 +24,6 @@ public class Drawn : MonoBehaviour
 
     private void GrabRateChanged(float v)
     {
-        Debug.Log(v);
         Vingete.GetSetting<Vignette>().intensity.value = v;
         Fade.color = Color.Lerp(Color.black * 0, Color.black, v);
     }

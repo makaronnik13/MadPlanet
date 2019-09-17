@@ -206,10 +206,7 @@ MonoBehaviour:
   Vision: {fileID: 6518464326681581796}
   Mode: 1
   BulletsSource: {fileID: 3714230385582903915}
-  Aims:
-  - {fileID: 6257127170286194137}
-  - {fileID: 8805581194812513195}
-  - {fileID: 8454739442827246648}
+  Aims: {fileID: 729967205303553516}
   SplitPrefab: {fileID: 735377989332393310, guid: 89b8cb73eb7856a4791a642a821993ee,
     type: 3}
   DangerZonePrefab: {fileID: 7665628151184748364, guid: 6f1e0f1623844d849addad4e5509b0f5,

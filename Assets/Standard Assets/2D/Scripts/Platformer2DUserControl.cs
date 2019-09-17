@@ -9,6 +9,8 @@ using UnityStandardAssets.CrossPlatformInput;
     public class Platformer2DUserControl : MonoBehaviour
     {
 
+    [SerializeField]
+    private bool AxisSwaped = false;
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
         public bool JumpingAvaliable = true;
@@ -65,6 +67,13 @@ using UnityStandardAssets.CrossPlatformInput;
             bool crouch = Input.GetKey(KeyCode.LeftControl);
             float w = CrossPlatformInputManager.GetAxis("Horizontal");
             float h = CrossPlatformInputManager.GetAxis("Vertical");
+
+        if (AxisSwaped)
+        {
+            float v = w;
+            w = -h;
+            h = v;
+        }
             // Pass all parameters to the character control script.
             m_Character.Move(h,-w, crouch, m_Jump);
             m_Jump = false;

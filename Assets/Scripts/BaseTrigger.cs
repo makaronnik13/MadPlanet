@@ -8,7 +8,7 @@ public class BaseTrigger : MonoBehaviour
     {
         if (other.GetComponent<AnimtionsSwapper>())
         {
-            other.GetComponent<AnimtionsSwapper>().SetArmor(false);
+            other.GetComponent<AnimtionsSwapper>().SetSkin(AnimtionsSwapper.CharacterSkin.NoArmor);
         }
 
         if (other.GetComponent<Platformer2DUserControl>())
@@ -21,7 +21,7 @@ public class BaseTrigger : MonoBehaviour
     {
         if (other.GetComponent<AnimtionsSwapper>())
         {
-            other.GetComponent<AnimtionsSwapper>().SetArmor(true);
+            other.GetComponent<AnimtionsSwapper>().SetSkin(AnimtionsSwapper.CharacterSkin.Armored);
         }
 
         if (other.GetComponent<Platformer2DUserControl>())

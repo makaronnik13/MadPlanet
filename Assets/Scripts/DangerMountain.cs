@@ -20,8 +20,8 @@ public class DangerMountain : MonoBehaviour
     private SplitMode Mode = SplitMode.Bullets;
     [SerializeField]
     private Transform BulletsSource;
-
-    public List<Transform> Aims; 
+    [SerializeField]
+    private Transform Aims;
 
     public GameObject SplitPrefab, DangerZonePrefab;
 
@@ -75,7 +75,7 @@ public class DangerMountain : MonoBehaviour
                 newBullet.transform.position = BulletsSource.transform.position;
                 newBullet.GetComponent<Bullet>().Fly(Vector3.up * SplitForce, Vector3.up * SplitForce);
                 GameObject newZone = Instantiate(DangerZonePrefab);
-                newZone.transform.position = Aims[UnityEngine.Random.Range(0, Aims.Count)].position;
+                newZone.transform.position = Aims.GetChild(UnityEngine.Random.Range(0, Aims.childCount)).position;
                 break;
         }
 

@@ -6,6 +6,18 @@ using UnityStandardAssets._2D;
 
 public class MobLogic : MonoBehaviour
 {
+    public enum MobBahaviour
+    {
+        Attack,
+        Run
+    }
+
+    [SerializeField]
+    private AnimationCurve MoveSpeed;
+
+    [SerializeField]
+    private MobBahaviour Behaviour = MobBahaviour.Attack; 
+
     public float WaitingTime = 1;
     public float AtackTime = 2;
 
@@ -34,7 +46,14 @@ public class MobLogic : MonoBehaviour
 
     private void UnTriggerMob(PlayerIdentity obj)
     {
-        followingObject = null;
+        switch (Behaviour)
+        {
+            case MobBahaviour.Attack:
+                followingObject = null;
+                break;
+            case MobBahaviour.Run:
+                break;
+        }      
     }
 
     private void TriggerMob(PlayerIdentity obj)
@@ -46,61 +65,116 @@ public class MobLogic : MonoBehaviour
     {
         while (true)
         {
-            if (followingObject == null || Atack.Grabbing)
+            switch (Behaviour)
             {
-                if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Line.GetPosition(currentPoint).x, Line.GetPosition(currentPoint).z)) > 0.05f)
-                {
-                    MoveInDir(Line.GetPosition(currentPoint));
-                }
-                else
-                {
-                    MoveInDir(transform.position);
+                case MobBahaviour.Attack:
                     if (Atack.Grabbing)
                     {
-                        yield return null;
+                        Vector3 nearestPoint = Vector3.positiveInfinity;
+                        foreach (Transform t in Line.transform)
+                        {
+                            if (Vector3.Distance(transform.position, t.position) < Vector3.Distance(nearestPoint, transform.position))
+                            {
+                                nearestPoint = t.position;
+                            }
+                        }
+
+                        if (Line.transform.childCount == 0)
+                        {
+                            nearestPoint = transform.position;
+                        }
+
+                        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nearestPoint.x, nearestPoint.z)) > 0.05f)
+                        {
+                            MoveInDir(nearestPoint);
+                        }
+                        else
+                        {
+                            Atack.Release();
+                        }
                     }
                     else
                     {
-                        yield return new WaitForSeconds(WaitingTime);
-                    }
-                   
-                    if (forward)
-                    {
-                        currentPoint++;
-                    }
-                    else
-                    {
-                        currentPoint--;
-                    }
+                        if (followingObject == null)
+                        {
+                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Line.GetPosition(currentPoint).x, Line.GetPosition(currentPoint).z)) > 0.05f)
+                            {
+                                MoveInDir(Line.GetPosition(currentPoint));
+                            }
+                            else
+                            {
+                                MoveInDir(transform.position);
+                                if (Atack.Grabbing)
+                                {
+                                    yield return null;
+                                }
+                                else
+                                {
+                                    yield return new WaitForSeconds(WaitingTime);
+                                }
 
-                    Atack.Release();
+                                if (forward)
+                                {
+                                    currentPoint++;
+                                }
+                                else
+                                {
+                                    currentPoint--;
+                                }
 
-                    if (currentPoint == 0)
-                    {
-                        forward = true;
-                        currentPoint = 1;
-                    }
+                                Atack.Release();
 
-                    if (currentPoint == Line.positionCount)
-                    {
-                        forward = false;
-                        currentPoint = Line.positionCount - 1;
+                                if (currentPoint == 0)
+                                {
+                                    forward = true;
+                                    currentPoint = 1;
+                                }
+
+                                if (currentPoint == Line.positionCount)
+                                {
+                                    forward = false;
+                                    currentPoint = Line.positionCount - 1;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (Vector3.Distance(Atack.transform.position, followingObject.transform.position) > 1.5f)
+                            {
+                                MoveInDir(followingObject.transform.position);
+                            }
+                            else
+                            {
+                                MoveInDir(transform.position);
+                                yield return new WaitForSeconds(AtackTime);
+                                Atack.Atack();
+                            }
+                        }
                     }
-                }
-            }
-            else
-            {
-                if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(followingObject.transform.position.x,followingObject.transform.position.z)) > 1.5f)
-                {
-                    MoveInDir(followingObject.transform.position);
-                }
-                else
-                {
-                    MoveInDir(transform.position);
-                    yield return new WaitForSeconds(AtackTime);
-                    Atack.Atack();              
-                }
-            }
+                    break;
+                case MobBahaviour.Run:
+                    if (followingObject)
+                    {
+                        float dist = Vector3.Distance(transform.position, followingObject.transform.position);
+                        Char.m_MaxSpeed = MoveSpeed.Evaluate(dist);
+                        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Line.GetPosition(currentPoint).x, Line.GetPosition(currentPoint).z)) > 0.15f)
+                        {
+                            MoveInDir(Line.GetPosition(currentPoint));
+                        }
+                        else
+                        {
+                            yield return new WaitForSeconds(WaitingTime);
+                            currentPoint++;
+                            if (currentPoint == Line.positionCount)
+                            {
+                                Char.Move(0, 0, false, false);
+                                StopAllCoroutines();
+                               break;
+                            }
+                        }
+                    }
+                    break;
+            }  
             yield return null;
         }
     }

@@ -7,6 +7,28 @@ public class InteractionModule : MonoBehaviour
 {
     public Action<InteractableObject> OnObjectChanged = (o)=> { };
     public Action<float, float> OnFillChanged = (val, max) => { };
+    public Action OnCodeProgressChanged = () => { };
+    public Action OnCodesChanged = () => { };
+
+    public List<int> Codes = new List<int>();
+    private int _codeProgress = 0;
+    public int CodeProgress
+    {
+        get
+        {
+            return _codeProgress;
+        }
+        set
+        {
+            _codeProgress = value;
+            if (_codeProgress == Codes.Count)
+            {
+                interactableObject.Activate();
+                interactableObject = null;
+            }
+            OnCodeProgressChanged();
+        }
+    }
 
     private float _interactionDecreaseMultiplyer = 1f;
 
@@ -30,6 +52,23 @@ public class InteractionModule : MonoBehaviour
         }
     }
 
+    public string GetCodeBtn(int code)
+    {
+        switch (code)
+        {
+            case 0:
+                return "W";
+            case 1:
+                return "A";
+            case 2:
+                return "S";
+            case 3:
+                return "D";
+        }
+
+        return "undefined";
+    }
+
     private InteractableObject _interactableObject;
     public InteractableObject interactableObject
     {
@@ -39,8 +78,10 @@ public class InteractionModule : MonoBehaviour
         }
         set
         {
-            Debug.Log(_interactableObject);
-
+            if (value == _interactableObject)
+            {
+                return;
+            }
             _interactableObject = value;
             if (_interactableObject)
             {
@@ -51,6 +92,10 @@ public class InteractionModule : MonoBehaviour
             {
                 interactionFill = 0;
                 interactionFillMax = 0;
+            }
+            if (interactableObject && interactableObject.IneractionMode == InteractableObject.InteractionMode.Keys)
+            {
+                ClearCodes();
             }
             OnObjectChanged(_interactableObject);
         }
@@ -73,10 +118,82 @@ public class InteractionModule : MonoBehaviour
         }
     }
 
+    private void ClearCodes()
+    {
+        Debug.Log("ClearCodes");
+        Codes = new List<int>();
+        for (int i = 0; i < interactableObject.Delay; i++)
+        {
+            Codes.Add(UnityEngine.Random.Range(0, 4));
+        }
+        CodeProgress = 0;
+        OnCodesChanged();
+    }
+
     private void Update()
     {
         if (interactableObject)
         {
+            if (interactableObject.IneractionMode == InteractableObject.InteractionMode.Keys)
+            {
+                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.S)|| Input.GetKeyDown(KeyCode.A))
+                {
+                    if (Input.GetKeyDown(KeyCode.W))
+                    {
+                        if (Codes[CodeProgress] == 0)
+                        {
+                            CodeProgress++;
+                        }
+                        else
+                        {
+                            ClearCodes();
+                        }
+                        return;
+                    }
+
+                    if (Input.GetKeyDown(KeyCode.A))
+                    {
+                        if (Codes[CodeProgress] == 1)
+                        {
+                            CodeProgress++;
+                        }
+                        else
+                        {
+                            ClearCodes();
+                        }
+                        return;
+                    }
+
+                    if (Input.GetKeyDown(KeyCode.S))
+                    {
+                        if (Codes[CodeProgress] == 2)
+                        {
+                            CodeProgress++;
+                        }
+                        else
+                        {
+                            ClearCodes();
+                        }
+                        return;
+                    }
+
+                    if (Input.GetKeyDown(KeyCode.D))
+                    {
+                        if (Codes[CodeProgress] == 3)
+                        {
+                            CodeProgress++;
+                        }
+                        else
+                        {
+                            ClearCodes();
+                        }
+                        return;
+                    }
+                }
+                   
+            }
+            else
+            {
                 if (Input.GetKey(KeyCode.E))
                 {
                     if (interactableObject.Delay == 0)
@@ -92,12 +209,13 @@ public class InteractionModule : MonoBehaviour
                             interactableObject.Activate();
                             interactableObject = null;
                         }
-                    }           
+                    }
                 }
                 else
                 {
-                    interactionFill = Mathf.Clamp(_interactionFill - Time.deltaTime*_interactionDecreaseMultiplyer, 0, 1000);
+                    interactionFill = Mathf.Clamp(_interactionFill - Time.deltaTime * _interactionDecreaseMultiplyer, 0, 1000);
                 }
+            }
         }
         else
         {
