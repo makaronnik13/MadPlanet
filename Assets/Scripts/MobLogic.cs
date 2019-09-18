@@ -124,7 +124,7 @@ public class MobLogic : MonoBehaviour
 
                                 Atack.Release();
 
-                                if (currentPoint == 0)
+                                if (currentPoint == -1)
                                 {
                                     forward = true;
                                     currentPoint = 1;
