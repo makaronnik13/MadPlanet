@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets._2D;
 
 public class InteractionModule : MonoBehaviour
 {
@@ -82,6 +83,7 @@ public class InteractionModule : MonoBehaviour
             {
                 return;
             }
+            Debug.Log(value);
             _interactableObject = value;
             if (_interactableObject)
             {
@@ -103,7 +105,7 @@ public class InteractionModule : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<InteractableObject>() && other.GetComponent<InteractableObject>().Active)
+        if (other.GetComponent<InteractableObject>() && other.GetComponent<InteractableObject>().Active && !GetComponent<PlatformerCharacter2D>().Grabed)
         {
             interactableObject = other.GetComponent<InteractableObject>();
         }
@@ -120,7 +122,6 @@ public class InteractionModule : MonoBehaviour
 
     private void ClearCodes()
     {
-        Debug.Log("ClearCodes");
         Codes = new List<int>();
         for (int i = 0; i < interactableObject.Delay; i++)
         {

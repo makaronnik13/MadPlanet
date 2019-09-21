@@ -112,7 +112,6 @@ namespace UnityStandardAssets._2D
 
     public void Move(float moveH, float moveV, bool crouch, bool jump)
         {
-          
 
             if (Drawn)
             {
@@ -155,7 +154,7 @@ namespace UnityStandardAssets._2D
             if (!m_Grounded && !m_AirControl)
             {
                 moveH = Mathf.Clamp(moveH, 0, Mathf.Abs(moveH));
-                moveV *= 0.5f;
+                moveV = 0f;
             }
 
             // If crouching, check to see if the character can stand up

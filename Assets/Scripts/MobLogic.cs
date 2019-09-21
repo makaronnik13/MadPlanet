@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityStandardAssets._2D;
 
 public class MobLogic : MonoBehaviour
@@ -11,6 +12,8 @@ public class MobLogic : MonoBehaviour
         Attack,
         Run
     }
+
+    public UnityEvent OnPathCompleted;
 
     [SerializeField]
     private AnimationCurve MoveSpeed;
@@ -36,6 +39,11 @@ public class MobLogic : MonoBehaviour
 
     private int currentPoint = 0;
     private bool forward = true;
+
+    public void Run()
+    {
+        TriggerMob(FindObjectOfType<PlayerIdentity>());
+    }
 
     private void Start()
     {
@@ -95,9 +103,9 @@ public class MobLogic : MonoBehaviour
                     }
                     else
                     {
-                        if (followingObject == null)
+                        if (followingObject == null || (followingObject!=null && followingObject.GetComponent<PlatformerCharacter2D>().Grabed))
                         {
-                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Line.GetPosition(currentPoint).x, Line.GetPosition(currentPoint).z)) > 0.05f)
+                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Line.GetPosition(currentPoint).x, Line.GetPosition(currentPoint).z)) > 0.03f)
                             {
                                 MoveInDir(Line.GetPosition(currentPoint));
                             }
@@ -139,7 +147,7 @@ public class MobLogic : MonoBehaviour
                         }
                         else
                         {
-                            if (Vector3.Distance(Atack.transform.position, followingObject.transform.position) > 1.5f)
+                            if (Vector3.Distance(new Vector3(Atack.transform.position.x, 0, Atack.transform.position.z) , new Vector3(followingObject.transform.position.x, 0, followingObject.transform.position.z)) > 0.2f)
                             {
                                 MoveInDir(followingObject.transform.position);
                             }
@@ -169,6 +177,7 @@ public class MobLogic : MonoBehaviour
                             {
                                 Char.Move(0, 0, false, false);
                                 StopAllCoroutines();
+                                OnPathCompleted.Invoke();
                                break;
                             }
                         }

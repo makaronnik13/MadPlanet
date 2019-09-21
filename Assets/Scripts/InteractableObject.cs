@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityStandardAssets._2D;
 
 public class InteractableObject : MonoBehaviour
 {
@@ -41,9 +42,12 @@ public class InteractableObject : MonoBehaviour
             {
                 foreach (InteractionModule im in FindObjectsOfType<InteractionModule>())
                 {
-                    if (Vector3.Distance(transform.position, im.transform.position)<GetComponent<SphereCollider>().radius*2f)
+                    if (GetComponent<SphereCollider>()!=null)
                     {
-                        im.interactableObject = this;
+                        if (Vector3.Distance(transform.position, im.transform.position) < GetComponent<SphereCollider>().radius * 2f && !im.GetComponent<PlatformerCharacter2D>().Grabed)
+                        {
+                            im.interactableObject = this;
+                        }
                     }
                 }
             }

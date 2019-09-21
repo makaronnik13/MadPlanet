@@ -13,14 +13,17 @@ public class AtackModule : MonoBehaviour
     [SerializeField]
     private float AttackDelay;
 
-    [SerializeField]
-    private ParticleSystem Particles;
+   // [SerializeField]
+   // private ParticleSystem Particles;
 
     [SerializeField]
     private Animator Animator;
 
     [SerializeField]
     private bool canceled = false;
+
+    [SerializeField]
+    private float ReleaseTime = 2;
 
     private PlayerIdentity aim
     {
@@ -63,14 +66,14 @@ public class AtackModule : MonoBehaviour
     }
 
     public void Atack()
-    {
-        
-        if (aim != null && CanAtack)
+    {    
+        if (aim != null && CanAtack && !aim.GetComponent<PlatformerCharacter2D>().Grabed)
         {
-            Animator.SetTrigger("Attack");
-            Particles.Play();
+            Animator.SetBool("Grab", true);
+            //Particles.Play();
             Grabbing = true;
             delta = transform.position;
+            FindObjectOfType<InteractionModule>().interactableObject = GetComponent<InteractableObject>();
         }
         //Animator.SetTrigger("Attack");
         //Particles.Play();
@@ -81,7 +84,9 @@ public class AtackModule : MonoBehaviour
     {
         if (Grabbing && aim)
         {
-            aim.transform.position = Vector3.Lerp(aim.transform.position, transform.position, Time.deltaTime*5);
+            Vector3 dir = transform.position - aim.transform.position;
+            dir = dir.normalized * Mathf.Min(dir.magnitude, 0.2f);
+            aim.transform.Translate(dir);
         }
     }
 
@@ -89,12 +94,14 @@ public class AtackModule : MonoBehaviour
     {
         Grabbing = false;
         CanAtack = false;
+        Animator.SetBool("Grab", false);
+        FindObjectOfType<InteractionModule>().interactableObject = null;
         StartCoroutine(ContinueAttack());
     }
 
     private IEnumerator ContinueAttack()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(ReleaseTime);
         CanAtack = true;
     }
 }
