@@ -290,6 +290,26 @@ MonoBehaviour:
       translation: 
     - language: 42
       translation: "\u041C\u044D\u0442\u0442\u044C\u044E"
+  - key: U6_22
+    translations:
+    - language: 30
+      translation: "\u0430\u0430? \u0440\u043E\u0431\u043E\u0442\u044B"
+    - language: 10
+      translation: 
+    - language: 42
+      translation: 
+  - key: U6_33
+    translations:
+    - language: 30
+      translation: "\u0418 \u0432\u043E\u0442 \u044D\u0442\u0438\u043C\u0438 \u0433\u0430\u043B\u043B\u044E\u0446\u0438\u043D\u0430\u0446\u0438\u044F\u043C\u0438
+        \u043F\u0443\u0433\u0430\u043B \u043C\u0435\u043D\u044F \u0414\u0435\u043D.
+        \u041A\u0430\u043A \u043A\u0442\u043E-\u0442\u043E \u043C\u043E\u0433 \u043E\u0442
+        \u043D\u0438\u0445 \u0441 \u0443\u043C\u0430 \u0432\u043E\u043E\u0431\u0449\u0435
+        \u0441\u043E\u0439\u0442\u0438."
+    - language: 10
+      translation: 
+    - language: 42
+      translation: "\u041C\u0435\u0442\u0442\u044C\u044E \u0431\u0430\u0433"
   Languages: 1e0000000a0000002a000000
   TableId: 1Gc6mQa8Y6xZ_iJfxvObn1i5u6BAr3T2wH6eG8mbwuhA
   PageId: 38700544
