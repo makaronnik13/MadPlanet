@@ -17,7 +17,7 @@ public class CutsceneLogic1 : MonoBehaviour
 
     private IEnumerator FreeEyes()
     {
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1.79f);
         Eyes.GetComponentInChildren<MobLogic>().gameObject.transform.SetParent(null);
         Destroy(Eyes);
     }
