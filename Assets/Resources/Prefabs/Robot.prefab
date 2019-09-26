@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179475487794015416}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 4.28, z: 0}
+  m_LocalPosition: {x: -0.66, y: 4.28, z: 0}
   m_LocalScale: {x: 0.30000037, y: 0.19999999, z: 0.10000015}
   m_Children:
   - {fileID: 6304677787570219715}
@@ -5171,7 +5171,7 @@ ParticleSystem:
 --- !u!199 &6304677787666529325
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
