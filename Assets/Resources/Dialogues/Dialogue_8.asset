@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0faab69c67604cf46b575787a6915e0e, type: 3}
-  m_Name: Dialogue_7
+  m_Name: Dialogue_8
   m_EditorClassIdentifier: 
   Phrases:
   - Text:
       Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
-      Key: U6_2
-    Char: {fileID: 11400000, guid: 3dabaef2162abe14cb61ece3efeb6930, type: 2}
+      Key: U1_1
+    Char: {fileID: 11400000, guid: 36ed8569c1d0c354fb6ccbcd2e563783, type: 2}
     Side: 0
   QuestOnComplete: {fileID: 0}
