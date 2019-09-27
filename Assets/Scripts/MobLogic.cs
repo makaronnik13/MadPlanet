@@ -76,7 +76,7 @@ public class MobLogic : MonoBehaviour
             switch (Behaviour)
             {
                 case MobBahaviour.Attack:
-                    if (Atack.Grabbing)
+                    if (Atack.GrabbingTransform)
                     {
                         Vector3 nearestPoint = Vector3.positiveInfinity;
                         foreach (Transform t in Line.transform)
@@ -112,7 +112,7 @@ public class MobLogic : MonoBehaviour
                             else
                             {
                                 MoveInDir(transform.position);
-                                if (Atack.Grabbing)
+                                if (Atack.GrabbingTransform)
                                 {
                                     yield return null;
                                 }
@@ -130,7 +130,6 @@ public class MobLogic : MonoBehaviour
                                     currentPoint--;
                                 }
 
-                                Atack.Release();
 
                                 if (currentPoint == -1)
                                 {

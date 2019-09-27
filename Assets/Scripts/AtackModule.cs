@@ -38,21 +38,35 @@ public class AtackModule : MonoBehaviour
         }
     }
 
-    private bool grabbing = false;
-    public bool Grabbing
+    private Transform grabbingTransform = null;
+    public Transform GrabbingTransform
     {
         get
         {
-            return grabbing;
+            return grabbingTransform;
         }
         set
         {
-            grabbing = value;
+            if (value)
+            {
+                value.SetParent(transform);
+                value.GetComponentInChildren<SpriteOrder>().ParentOrder = transform.parent.GetComponentInChildren<SpriteOrder>();
+            }
+            else
+            {
+                if (grabbingTransform)
+                {
+                    grabbingTransform.SetParent(null);
+                    grabbingTransform.GetComponentInChildren<SpriteOrder>().ParentOrder = null;
+                }
+            }
+
+            grabbingTransform = value;
             if (aim)
             {
-                aim.GetComponent<PlatformerCharacter2D>().Grab(value);
+                aim.GetComponent<PlatformerCharacter2D>().Grab(grabbingTransform!=null);
             }
-            InteractionModule.Active = grabbing;
+            InteractionModule.Active = grabbingTransform!=null; 
         }
     }
 
@@ -71,7 +85,7 @@ public class AtackModule : MonoBehaviour
         {
             Animator.SetBool("Grab", true);
             //Particles.Play();
-            Grabbing = true;
+            GrabbingTransform = aim.transform;
             delta = transform.position;
             FindObjectOfType<InteractionModule>().interactableObject = GetComponent<InteractableObject>();
         }
@@ -82,17 +96,24 @@ public class AtackModule : MonoBehaviour
 
     private void Update()
     {
-        if (Grabbing && aim)
+        if (GrabbingTransform)
         {
-            Vector3 dir = transform.position - aim.transform.position;
-            dir = dir.normalized * Mathf.Min(dir.magnitude, 0.2f);
-            aim.transform.Translate(dir);
+            if (grabbingTransform.localPosition.magnitude<0.25f)
+            {
+                grabbingTransform.localPosition = Vector3.zero;
+            }
+            else
+            {
+                grabbingTransform.localPosition = Vector3.Lerp(grabbingTransform.localPosition, Vector3.zero, Time.deltaTime * 5f);
+            }
+            
         }
     }
 
     public void Release()
     {
-        Grabbing = false;
+        Debug.Log("Release");
+        GrabbingTransform = null;
         CanAtack = false;
         Animator.SetBool("Grab", false);
         FindObjectOfType<InteractionModule>().interactableObject = null;

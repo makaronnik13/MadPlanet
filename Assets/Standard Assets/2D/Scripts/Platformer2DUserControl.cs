@@ -74,7 +74,8 @@ using UnityStandardAssets.CrossPlatformInput;
             w = -h;
             h = v;
         }
-            // Pass all parameters to the character control script.
+        // Pass all parameters to the character control script.
+
             m_Character.Move(h,-w, crouch, m_Jump);
             m_Jump = false;
         }

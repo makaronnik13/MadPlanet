@@ -101,10 +101,11 @@ public class CodeVisual : MonoBehaviour
             i--;
         }
 
-        if (transform.childCount > 0)
-        {
+        int btnId = Module.Codes.Count - Module.CodeProgress - 1;
 
-                transform.GetChild(Module.Codes.Count-Module.CodeProgress-1).localScale = Vector3.one * 1.25f;
+        if (btnId>=0 && btnId< transform.childCount)
+        {
+                transform.GetChild(btnId).localScale = Vector3.one * 1.25f;
         }
 
     }

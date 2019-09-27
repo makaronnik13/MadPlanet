@@ -83,7 +83,7 @@ public class InteractionModule : MonoBehaviour
             {
                 return;
             }
-            Debug.Log(value);
+
             _interactableObject = value;
             if (_interactableObject)
             {
