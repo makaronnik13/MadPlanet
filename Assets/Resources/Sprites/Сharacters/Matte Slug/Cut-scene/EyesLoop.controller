@@ -52,7 +52,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Drop
-  m_Speed: 1
+  m_Speed: 0.31
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101763475359367010}
@@ -91,7 +91,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: fc218fdfedacaf942bec23eb88148420, type: 2}
+  m_Motion: {fileID: 7400000, guid: 135deb45c6c405140aa7700ef777aaa2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

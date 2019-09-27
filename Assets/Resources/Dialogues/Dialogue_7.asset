@@ -15,7 +15,7 @@ MonoBehaviour:
   Phrases:
   - Text:
       Dictionary: {fileID: 11400000, guid: b589a28bc597501488922a88ad648f3e, type: 2}
-      Key: U6_33
-    Char: {fileID: 11400000, guid: 36ed8569c1d0c354fb6ccbcd2e563783, type: 2}
+      Key: U6_2
+    Char: {fileID: 11400000, guid: 3dabaef2162abe14cb61ece3efeb6930, type: 2}
     Side: 0
   QuestOnComplete: {fileID: 0}
