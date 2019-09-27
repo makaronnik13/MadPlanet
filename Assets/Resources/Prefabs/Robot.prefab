@@ -89,7 +89,7 @@ Transform:
   m_GameObject: {fileID: 6304677786436798703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.28, y: 15.374, z: 73.71}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6304677786653191911}
   - {fileID: 7193716037528189253}
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_JumpForce: 1050
   m_CrouchSpeed: 0.25
   m_AirControl: 1
+  canJumpBack: 1
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -288,7 +289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6304677787213464985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6, z: 0}
+  m_LocalPosition: {x: -0.1, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6304677787666529324}

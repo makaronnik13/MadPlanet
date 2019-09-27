@@ -9,6 +9,7 @@ namespace UnityStandardAssets._2D
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
+        [SerializeField] private bool canJumpBack = true;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
         [SerializeField] private float drawnRate = 0;
         [SerializeField] private float dieRate = 0;
@@ -151,10 +152,10 @@ namespace UnityStandardAssets._2D
             m_Anim.SetFloat("Dir2", _lastDir2);
             m_Anim.SetFloat("Dir", _lastDir);
 
-            if (!m_Grounded && !m_AirControl)
+            if (!m_Grounded && m_AirControl && !canJumpBack)
             {
-                moveH = Mathf.Clamp(moveH, 0, Mathf.Abs(moveH));
-                moveV = 0f;
+               // moveH = Mathf.Clamp(moveH, 0, Mathf.Abs(moveH));
+                moveH = Mathf.Clamp(moveH, 0, 1f);
             }
 
             // If crouching, check to see if the character can stand up
