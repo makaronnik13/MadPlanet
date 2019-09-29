@@ -5,6 +5,8 @@ using UnityStandardAssets._2D;
 
 public class Explosion : MonoBehaviour
 {
+    public bool Destroy = true;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerIdentity>())
@@ -15,7 +17,10 @@ public class Explosion : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, 2f);
-        Destroy(this, 0.5f);
+        if (Destroy)
+        {
+            Destroy(gameObject, 2f);
+            Destroy(this, 0.5f);
+        }
     }
 }
