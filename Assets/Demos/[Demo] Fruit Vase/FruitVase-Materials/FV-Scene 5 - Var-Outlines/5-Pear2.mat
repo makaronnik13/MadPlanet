@@ -124,11 +124,12 @@ Material:
     - _UnityShadowMode: 0
     - _UnityShadowPower: 0
     - _UnityShadowSharpness: 1
+    - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.5660378, g: 0.5483877, b: 0.14684944, a: 1}
+    - _Color: {r: 0.7830189, g: 0.46075335, b: 0.0110804355, a: 1}
     - _ColorCelShadow: {r: 0.49056602, g: 0.34478462, b: 0.4476891, a: 1}
-    - _ColorDim: {r: 0.41509432, g: 0.39829347, b: 0.15468137, a: 0.85}
+    - _ColorDim: {r: 0.4528302, g: 0.2967371, b: 0.083303675, a: 0.85}
     - _ColorDimCurve: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
     - _ColorDimExtra: {r: 0.40777627, g: 0.14048593, b: 0.7264151, a: 0.85}
     - _ColorDimSteps: {r: 0.31132078, g: 0.29890963, b: 0.11894804, a: 0.85}

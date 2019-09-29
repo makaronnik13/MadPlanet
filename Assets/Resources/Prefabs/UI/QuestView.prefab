@@ -129,8 +129,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "\u0421\u043E\u0431\u0440\u0430\u0442\u044C \u0446\u0432\u0435\u0442\u044B "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f8034755c58ea6b4bae07c7ca7eb5d44, type: 2}
-  m_sharedMaterial: {fileID: 21176103444173550, guid: f8034755c58ea6b4bae07c7ca7eb5d44,
+  m_fontAsset: {fileID: 11400000, guid: 0f416f7f24d664744af782d67ad9c5a1, type: 2}
+  m_sharedMaterial: {fileID: 21725160627301948, guid: 0f416f7f24d664744af782d67ad9c5a1,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 14.15
+  m_fontSize: 12.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

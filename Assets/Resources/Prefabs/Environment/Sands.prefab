@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 470036121142910745}
   - component: {fileID: 470036121162308185}
   - component: {fileID: 470036121162277881}
+  - component: {fileID: 4070903849720969839}
   m_Layer: 0
   m_Name: Pillar01_sand (11)
   m_TagString: Untagged
@@ -4699,6 +4700,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &4070903849720969839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470036121143001913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d00f143158851489c3f8f2f0b3e82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParentOrder: {fileID: 0}
 --- !u!1 &470036121143001915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,6 +4724,7 @@ GameObject:
   - component: {fileID: 470036121142910747}
   - component: {fileID: 470036121162308187}
   - component: {fileID: 470036121162277883}
+  - component: {fileID: 6483407781875242476}
   m_Layer: 0
   m_Name: SubPillar01_sand_ground
   m_TagString: Untagged
@@ -4725,7 +4740,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470036121143001915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 14.5, z: 11.1}
+  m_LocalPosition: {x: -0.38, y: 14.5, z: 11.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 470036121142910745}
@@ -9401,6 +9416,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &6483407781875242476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470036121143001915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d00f143158851489c3f8f2f0b3e82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParentOrder: {fileID: 0}
 --- !u!1 &4803105395255861830
 GameObject:
   m_ObjectHideFlags: 0
@@ -9538,7 +9566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4803105395893840585}
   m_LocalRotation: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4803105395255861831}
@@ -9556,6 +9584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d00f143158851489c3f8f2f0b3e82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentOrder: {fileID: 0}
 --- !u!212 &7935004627867371904
 SpriteRenderer:
   m_ObjectHideFlags: 0
