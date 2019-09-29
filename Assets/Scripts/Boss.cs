@@ -7,11 +7,11 @@ using DitzelGames.FastIK;
 
 public class Boss : MonoBehaviour
 {
-    public GameObject SpikePrefab, SplitPrefab;
+    public GameObject SpikePrefab;
     public Animator Animator;
-    public float SplitForce;
-    public float SpikesTime = 15f, TentaclesTime = 15;
+    public float SpikesTime = 15f, TentaclesTime = 15, BulletsTime = 15;
     public float NearSpikesRate = 1f;
+    public float BulletsRate = 1f;
     public float FarSpikesRate = 2f;
     private bool spiking = false;
     public float spikeDamageDelay = 4f;
@@ -40,9 +40,18 @@ public class Boss : MonoBehaviour
         StartCoroutine(FarSpikesTime());
         yield return new WaitForSeconds(spikesTime);
         spiking = false;
-        StartCoroutine(TentackleTime(TentaclesTime));
+        StartCoroutine(BulletTime(BulletsTime));
         Animator.SetBool("Spikes", false);
     }
+
+    private IEnumerator BulletTime(float t)
+    {
+        Animator.SetBool("Firing", true);
+        yield return new WaitForSeconds(t);
+        Animator.SetBool("Firing", false);
+        StartCoroutine(TentackleTime(TentaclesTime));
+    }
+
 
     private IEnumerator FarSpikesTime()
     {
@@ -79,20 +88,6 @@ public class Boss : MonoBehaviour
         newSpike.GetComponent<Spikes>().Shake(spikeDamageDelay);       
     }
     
-    [ContextMenu("Fire")]
-    public void TestBullet()
-    {
-        LaunchBullet(0);
-    }
-
-    public void LaunchBullet(int armId)
-    {
-        Vector3 pos = GetComponentsInChildren<FastIKFabric>()[armId].transform.position;
-        GameObject newBullet = Instantiate(SplitPrefab);
-        newBullet.transform.position = pos;
-        Vector3 playerPos = FindObjectOfType<PlayerIdentity>().transform.position;
-
-        newBullet.GetComponent<Bullet>().Fly((playerPos - pos) * SplitForce, playerPos);           
-    }
+    
 
 }

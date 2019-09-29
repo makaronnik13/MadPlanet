@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0190273b6ecae8c4cba2b9f13f62e69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lifetime: 4
+  Lifetime: 10
   Speed: 15
   ExplosionPrefab: {fileID: 1401331589178270149, guid: 47385225d3dfa0b4f95d72b9b6ff5a5a,
     type: 3}
