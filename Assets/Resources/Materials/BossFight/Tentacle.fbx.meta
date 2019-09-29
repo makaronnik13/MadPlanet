@@ -1,8 +1,64 @@
 fileFormatVersion: 2
 guid: 0c24b1870f38dd041a9484bebd2ef27e
 ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BezierCurve
+    100004: Bone
+    100006: Bone.001
+    100008: Bone.002
+    100010: Bone.003
+    100012: Bone.004
+    100014: Bone.005
+    100016: Bone.006
+    100018: Bone.007
+    100020: Bone.008
+    100022: Bone.009
+    100024: Bone.010
+    100026: Bone.011
+    100028: Bone.012
+    100030: Bone.013
+    100032: Bone.014
+    100034: Bone.015
+    100036: Bone.016
+    100038: Bone.017
+    100040: Bone.018
+    100042: Bone.018_end
+    100044: Camera
+    100046: Lamp
+    100048: //RootNode
+    400000: Armature
+    400002: BezierCurve
+    400004: Bone
+    400006: Bone.001
+    400008: Bone.002
+    400010: Bone.003
+    400012: Bone.004
+    400014: Bone.005
+    400016: Bone.006
+    400018: Bone.007
+    400020: Bone.008
+    400022: Bone.009
+    400024: Bone.010
+    400026: Bone.011
+    400028: Bone.012
+    400030: Bone.013
+    400032: Bone.014
+    400034: Bone.015
+    400036: Bone.016
+    400038: Bone.017
+    400040: Bone.018
+    400042: Bone.018_end
+    400044: Camera
+    400046: Lamp
+    400048: //RootNode
+    2000000: Camera
+    2100000: No Name
+    4300000: BezierCurve
+    9500000: //RootNode
+    10800000: Lamp
+    13700000: BezierCurve
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -38,7 +94,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -46,19 +101,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -67,11 +121,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -81,7 +134,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

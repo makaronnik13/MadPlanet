@@ -55,7 +55,7 @@ public class MenuController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Animator.SetTrigger("Loaded");
-        BackCanvas.SetActive(false);
+      //  BackCanvas.SetActive(false);
     }
 
     public void Quit()
