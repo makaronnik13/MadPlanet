@@ -13,7 +13,7 @@ public class Platform : MonoBehaviour
         {
 
             _platformedObject = other.transform;
-            _delta = transform.position;
+            _platformedObject.SetParent(transform);
         }
     }
 
@@ -21,16 +21,8 @@ public class Platform : MonoBehaviour
     {
         if (other.GetComponent<PlayerIdentity>())
         {
+            _platformedObject.SetParent(null);
             _platformedObject = null;
-        }
-    }
-
-    private void Update()
-    {
-        if (_platformedObject)
-        {
-            _platformedObject.transform.position += transform.position-_delta;
-            _delta = transform.position;
         }
     }
 }
