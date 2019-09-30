@@ -23,7 +23,8 @@ public class MobLogic : MonoBehaviour
 
     public float WaitingTime = 1;
     public float AtackTime = 2;
-
+    [SerializeField]
+    private bool CanJump = false;
     public AtackModule Atack;
 
     [SerializeField]
@@ -39,6 +40,7 @@ public class MobLogic : MonoBehaviour
 
     private int currentPoint = 0;
     private bool forward = true;
+    private bool jump = false;
 
     public void Run()
     {
@@ -73,6 +75,8 @@ public class MobLogic : MonoBehaviour
     {
         while (true)
         {
+            Vector3 nextPos = Line.transform.TransformPoint(Line.GetPosition(currentPoint));
+
             switch (Behaviour)
             {
                 case MobBahaviour.Attack:
@@ -105,9 +109,9 @@ public class MobLogic : MonoBehaviour
                     {
                         if (followingObject == null || (followingObject!=null && followingObject.GetComponent<PlatformerCharacter2D>().Grabed))
                         {
-                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Line.GetPosition(currentPoint).x, Line.GetPosition(currentPoint).z)) > 0.03f)
+                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nextPos.x, nextPos.z)) > 0.03f)
                             {
-                                MoveInDir(Line.GetPosition(currentPoint));
+                                MoveInDir(nextPos);
                             }
                             else
                             {
@@ -164,9 +168,10 @@ public class MobLogic : MonoBehaviour
                     {
                         float dist = Vector3.Distance(transform.position, followingObject.transform.position);
                         Char.m_MaxSpeed = MoveSpeed.Evaluate(dist);
-                        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Line.GetPosition(currentPoint).x, Line.GetPosition(currentPoint).z)) > 0.15f)
+
+                        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nextPos.x, nextPos.z)) > 0.15f)
                         {
-                            MoveInDir(Line.GetPosition(currentPoint));
+                            MoveInDir(nextPos);
                         }
                         else
                         {
@@ -189,8 +194,10 @@ public class MobLogic : MonoBehaviour
 
     private void MoveInDir(Vector3 currentPoint)
     {
+        Vector3 nextPos = Line.transform.TransformPoint(Line.GetPosition(this.currentPoint));
+
         Vector2 aim = new Vector3(currentPoint.x-transform.position.x, currentPoint.z-transform.position.z);
         aim = aim.normalized;
-        Char.Move(aim.x, aim.y, false, false);
+        Char.Move(aim.x, aim.y, false, nextPos.y>transform.position.y && CanJump);
     }
 }
