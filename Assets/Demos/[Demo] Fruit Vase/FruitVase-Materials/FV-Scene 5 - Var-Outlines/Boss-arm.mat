@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 5-Banana
+  m_Name: Boss-arm
   m_Shader: {fileID: 4800000, guid: f7e38193b7f064d7380403618fd8b69e, type: 3}
   m_ShaderKeywords: _CELPRIMARYMODE_SINGLE _FLAT_SHADOWS_ENABLED _FLAT_SPECULAR_ENABLED
     _UNITYSHADOWMODE_NONE
@@ -101,8 +101,8 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineDepthOffset: 0
-    - _OutlineWidth: 2.5
+    - _OutlineDepthOffset: 0.035
+    - _OutlineWidth: 1
     - _OverrideShadows: 1
     - _OverrideShadowsEnabled: 1
     - _Parallax: 0.02
@@ -124,11 +124,12 @@ Material:
     - _UnityShadowMode: 0
     - _UnityShadowPower: 0
     - _UnityShadowSharpness: 1
+    - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8396226, g: 0.800371, b: 0, a: 1}
+    - _Color: {r: 0, g: 0.77647066, b: 0.70980394, a: 1}
     - _ColorCelShadow: {r: 0.49056602, g: 0.34478462, b: 0.4476891, a: 1}
-    - _ColorDim: {r: 0.2264151, g: 0.21331213, b: 0.065147735, a: 0.85}
+    - _ColorDim: {r: 0.16874333, g: 0.4528302, b: 0.4284389, a: 0.85}
     - _ColorDimCurve: {r: 0.85, g: 0.85, b: 0.85, a: 0.85}
     - _ColorDimExtra: {r: 0.40777627, g: 0.14048593, b: 0.7264151, a: 0.85}
     - _ColorDimSteps: {r: 0.6603774, g: 0.08410467, b: 0.1398757, a: 0.85}
@@ -139,5 +140,5 @@ Material:
     - _EmissionColor: {r: 4.9245777, g: 0, b: 0, a: 1}
     - _FlatRimColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlatSpecularColor: {r: 0.75294244, g: 0.111932434, b: 0.19806935, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.007843138, g: 0.015686275, b: 0.39607847, a: 1}
     - _UnityShadowColor: {r: 0.65, g: 0.65, b: 0.65, a: 1}

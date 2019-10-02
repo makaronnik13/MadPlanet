@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 47685dd1ed695ab4abb3d38f73023f54
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3859872448535800809
+    second: boss_legs_fix_0
+  - first:
+      213: -7316892273396933694
+    second: boss_legs_fix_1
+  - first:
+      213: 3943303857885525806
+    second: boss_legs_fix_2
+  - first:
+      213: 1256639564161575216
+    second: boss_legs_fix_3
+  - first:
+      213: -5298007904328917391
+    second: boss_legs_fix_4
+  - first:
+      213: 5086156157500934200
+    second: boss_legs_fix_5
+  - first:
+      213: 6742388809263407226
+    second: boss_legs_fix_6
+  - first:
+      213: 1028343879906012409
+    second: boss_legs_fix_7
+  - first:
+      213: 2274620686519520132
+    second: boss_legs_fix_8
+  - first:
+      213: 8766287404817423686
+    second: boss_legs_fix_9
+  - first:
+      213: 3683905419442357391
+    second: boss_legs_fix_10
+  - first:
+      213: -6326387561116453960
+    second: boss_legs_fix_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss_legs_fix_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7734
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cce2c7dd454a1c47b4b16a6c1ad1d03
+      internalID: -3859872448535800809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_1
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 7734
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18182abe76b993d45888b4873b1204fc
+      internalID: -7316892273396933694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_2
+      rect:
+        serializedVersion: 2
+        x: 2939
+        y: 7734
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8025ecbcea36a8a4ba57eef6621513b6
+      internalID: 3943303857885525806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_3
+      rect:
+        serializedVersion: 2
+        x: 4406
+        y: 7734
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfac9b8e0856064285b30ccb39e0a45
+      internalID: 1256639564161575216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_4
+      rect:
+        serializedVersion: 2
+        x: 5873
+        y: 7734
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5bbb2b5d074d444b522ef3762a4de8
+      internalID: -5298007904328917391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7271
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0191787c6bf06488fd3e8abeb0a584
+      internalID: 5086156157500934200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_6
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 7271
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa7c0bfc87dd1045b24b38545bc1587
+      internalID: 6742388809263407226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_7
+      rect:
+        serializedVersion: 2
+        x: 2939
+        y: 7271
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c377ca649dceb64e9b52e8980e9da0b
+      internalID: 1028343879906012409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_8
+      rect:
+        serializedVersion: 2
+        x: 4406
+        y: 7271
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7142a36284c2884da17b2b4b1ce82c1
+      internalID: 2274620686519520132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_9
+      rect:
+        serializedVersion: 2
+        x: 5873
+        y: 7271
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd82bb3c5c842442824d7afe0c85e87
+      internalID: 8766287404817423686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6808
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211180d6662d68e449440cdadb9d48de
+      internalID: 3683905419442357391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_legs_fix_11
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 6808
+        width: 1457
+        height: 453
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19375f61d49c62a4091fd975d91cc0b7
+      internalID: -6326387561116453960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
