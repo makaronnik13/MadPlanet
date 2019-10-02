@@ -13,7 +13,7 @@ public class MobLogic : MonoBehaviour
         Run
     }
 
-    public UnityEvent OnPathCompleted;
+    public UnityEvent OnPathCompleted, OnPathStarted, OnPlayerSpoted;
 
     [SerializeField]
     private AnimationCurve MoveSpeed;
@@ -69,6 +69,7 @@ public class MobLogic : MonoBehaviour
     private void TriggerMob(PlayerIdentity obj)
     {
         followingObject = obj.transform;
+        OnPlayerSpoted.Invoke();
     }
 
     private IEnumerator LoopMove()
@@ -139,12 +140,14 @@ public class MobLogic : MonoBehaviour
                                 {
                                     forward = true;
                                     currentPoint = 1;
+                                    OnPathStarted.Invoke();
                                 }
 
                                 if (currentPoint == Line.positionCount)
                                 {
                                     forward = false;
                                     currentPoint = Line.positionCount - 1;
+                                    OnPathCompleted.Invoke();
                                 }
                             }
                         }

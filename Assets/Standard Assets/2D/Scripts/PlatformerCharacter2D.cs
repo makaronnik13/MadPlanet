@@ -5,6 +5,7 @@ namespace UnityStandardAssets._2D
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {
+        [SerializeField] public bool SideView = false;
         [SerializeField] public float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
@@ -120,7 +121,10 @@ namespace UnityStandardAssets._2D
                 moveV *= 1 - drawnRate;
                 jump = false;
             }
+
             m_Anim.SetFloat("Horizontal", -moveV);
+           
+
             m_Anim.SetFloat("Vertical", moveH);
     
 
@@ -134,8 +138,6 @@ namespace UnityStandardAssets._2D
                 {
                     _lastDir2 = -1;
                 }
-
-                _lastDir = 0;
             }
             else
             {
@@ -149,12 +151,20 @@ namespace UnityStandardAssets._2D
                 }
             }
 
+            if (SideView)
+            {
+                if (Mathf.Abs(moveH) + Mathf.Abs(moveV) >= 0.5f)
+                {
+                    _lastDir = moveV;
+                    _lastDir2 = moveH;
+                }
+            }
+
             m_Anim.SetFloat("Dir2", _lastDir2);
             m_Anim.SetFloat("Dir", _lastDir);
 
             if (!m_Grounded && m_AirControl && !canJumpBack)
             {
-               // moveH = Mathf.Clamp(moveH, 0, Mathf.Abs(moveH));
                 moveH = Mathf.Clamp(moveH, 0, 1f);
             }
 

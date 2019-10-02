@@ -7,12 +7,12 @@ public class AnimtionsSwapper : MonoBehaviour
 {
     public enum CharacterSkin
     {
-        NoArmor,
-        Armored,
-        Slug,
-        SlugNoEyes,
-        ArmorBag,
-        SlugSide
+        NoArmor = 0,
+        Armored = 1,
+        Slug = 2,
+        SlugNoEyes = 3,
+        ArmorBag = 4,
+        SlugSide = 5
     }
 
     [SerializeField]
