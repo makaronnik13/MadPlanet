@@ -34,6 +34,7 @@ public class Boss : MonoBehaviour
 
     private IEnumerator SpikeTime(float spikesTime)
     {
+        Debug.Log("SPIKE TIME");
         Animator.SetBool("Spikes", true);
         spiking = true;
         StartCoroutine(NearSpikesTime());
@@ -55,6 +56,7 @@ public class Boss : MonoBehaviour
 
     private IEnumerator FarSpikesTime()
     {
+        Debug.Log(spiking);
         while (spiking)
         {
             ActivateRandomSpike(FindObjectOfType<PlayerIdentity>().transform, playerDangerRadius);

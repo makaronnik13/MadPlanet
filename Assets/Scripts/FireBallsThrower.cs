@@ -12,18 +12,21 @@ public class FireBallsThrower : MonoBehaviour
     public void CreateBullet(int armId)
     {
         GameObject newBullet = Instantiate(SplitPrefab);
-        newBullet.transform.SetParent(GetComponentsInChildren<FastIKFabric>()[armId].transform);
+        newBullet.transform.SetParent(GetComponentsInChildren<FastIKFabric>()[armId].transform.GetChild(1));
         newBullet.transform.localPosition = Vector3.zero;
         launchingBullets.Add(armId, newBullet);
     }
 
     public void LaunchBullet(int armId)
     {
-        Vector3 pos = GetComponentsInChildren<FastIKFabric>()[armId].transform.position;
+        Vector3 pos = GetComponentsInChildren<FastIKFabric>()[armId].transform.GetChild(1).position;
         GameObject blt = launchingBullets[armId];
-        blt.transform.SetParent(null);
-        launchingBullets.Remove(armId);
-        Vector3 playerPos = FindObjectOfType<PlayerIdentity>().transform.position;
-        blt.GetComponent<Bullet>().Fly((playerPos - pos) * SplitForce, playerPos);
+        if (blt!=null)
+        {
+            blt.transform.SetParent(null);
+            Vector3 playerPos = FindObjectOfType<PlayerIdentity>().transform.position;
+            blt.GetComponent<Bullet>().Fly((playerPos - pos) * SplitForce, playerPos);
+        }        
+        launchingBullets.Remove(armId);      
     }
 }
