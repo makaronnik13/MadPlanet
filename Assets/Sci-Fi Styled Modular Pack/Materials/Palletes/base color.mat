@@ -10,7 +10,7 @@ Material:
   m_Name: base color
   m_Shader: {fileID: 4800000, guid: 0daa94f23f43f498b822cfbfc22c6689, type: 3}
   m_ShaderKeywords: _CELPRIMARYMODE_SINGLE _EMISSION _METALLICGLOSSMAP _NORMALMAP
-    _UNITYSHADOWMODE_NONE
+    _UNITYSHADOWMODE_MULTIPLY
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -113,7 +113,7 @@ Material:
     - _SrcBlend: 1
     - _TextureImpact: 1
     - _UVSec: 0
-    - _UnityShadowMode: 0
+    - _UnityShadowMode: 1
     - _UnityShadowPower: 0.2
     - _UnityShadowSharpness: 1
     - _VertexColorsEnabled: 0
