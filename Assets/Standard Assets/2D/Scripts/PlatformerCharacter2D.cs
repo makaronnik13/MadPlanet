@@ -84,6 +84,10 @@ namespace UnityStandardAssets._2D
             Visual.transform.localPosition = Vector3.Lerp(Vector3.zero, Vector3.down*2, drawnRate);
         }
 
+        public void SetSideView(bool v)
+        {
+            SideView = v;
+        }
 
         public void SetDrawn(bool v, float drawnTime = 3)
         {
