@@ -93,7 +93,9 @@ public class Boss : MonoBehaviour
     {
         while (!InRage)
         {
+            Debug.Log(ModeSwitchTime);
             yield return new WaitForSeconds(ModeSwitchTime);
+            Debug.Log("spikes");
             InRage = true;
         }
     }
@@ -113,7 +115,6 @@ public class Boss : MonoBehaviour
     private IEnumerator SpikeTime()
     {
         yield return new WaitForSeconds(1f);
-        Debug.Log("SPIKE TIME");
         Animator.SetTrigger("Spikes");
         spiking = true;
         StartCoroutine(NearSpikesTime());
