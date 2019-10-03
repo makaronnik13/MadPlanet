@@ -110,7 +110,7 @@ public class MobLogic : MonoBehaviour
                     {
                         if (followingObject == null || (followingObject!=null && followingObject.GetComponent<PlatformerCharacter2D>().Grabed))
                         {
-                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nextPos.x, nextPos.z)) > 0.03f)
+                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nextPos.x, nextPos.z)) > 0.1f)
                             {
                                 MoveInDir(nextPos);
                             }
@@ -126,6 +126,13 @@ public class MobLogic : MonoBehaviour
                                     yield return new WaitForSeconds(WaitingTime);
                                 }
 
+                                if (currentPoint == 0)
+                                {
+                                    OnPathStarted.Invoke();
+                                }
+
+       
+
                                 if (forward)
                                 {
                                     currentPoint++;
@@ -140,7 +147,6 @@ public class MobLogic : MonoBehaviour
                                 {
                                     forward = true;
                                     currentPoint = 1;
-                                    OnPathStarted.Invoke();
                                 }
 
                                 if (currentPoint == Line.positionCount)

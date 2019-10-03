@@ -21,6 +21,8 @@ public class InteractableObject : MonoBehaviour
     public UnityEvent OnActivate;
     public float Delay = 0f;
     public float DecreaseMultiplyer = 2;
+    public bool SaveAfterUse = false;
+
 
     public bool Active
     {
@@ -57,7 +59,10 @@ public class InteractableObject : MonoBehaviour
     public void Activate()
     {
         OnActivate.Invoke();
-        Game.Instance.Save();
+        if (SaveAfterUse)
+        {
+            Game.Instance.Save();
+        }
     }
 
 }
