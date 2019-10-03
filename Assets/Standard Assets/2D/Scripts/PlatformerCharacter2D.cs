@@ -95,6 +95,11 @@ namespace UnityStandardAssets._2D
             Drawn = v;
         }
 
+        public void SetJumpForce(float f)
+        {
+            m_JumpForce = f;
+        }
+
         public void Grab(bool v)
         {
             m_Anim.SetBool("Grabbed", v);
