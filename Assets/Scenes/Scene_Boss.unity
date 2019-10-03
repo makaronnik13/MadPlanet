@@ -566,7 +566,12 @@ PrefabInstance:
     - target: {fileID: 7302585817925875676, guid: 36d0f1556238c6e4bbe4a9f038aaffc0,
         type: 3}
       propertyPath: BulletsTime
-      value: 12.59
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302585817925875676, guid: 36d0f1556238c6e4bbe4a9f038aaffc0,
+        type: 3}
+      propertyPath: TentaclesTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7302585818036441030, guid: 36d0f1556238c6e4bbe4a9f038aaffc0,
         type: 3}
@@ -5603,7 +5608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SplitPrefab: {fileID: 7189680842006151373, guid: ff0b3be9996d5104796df0e4a1cd5e1c,
     type: 3}
-  SplitForce: 100
+  SplitForce: 250
 --- !u!1001 &630899484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8894,7 +8899,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963198378}
-  m_LocalRotation: {x: -0, y: 0.000000022351742, z: 0.9877013, w: 0.15635279}
+  m_LocalRotation: {x: 0.0000002533197, y: -0, z: 0.98770094, w: 0.15635525}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15670,6 +15675,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1952823533}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1150029678
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/FogPlus
+  m_Shader: {fileID: 4800000, guid: 39ef0b8c9be96494d9f8b2f2c54a28c5, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!4 &1152367515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 0e14de96f1bd2d74595cd7a9da7141f0,
@@ -20797,22 +20827,22 @@ PrefabInstance:
     - target: {fileID: 541774157971737498, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.3089068
+      value: -0.64125776
       objectReference: {fileID: 0}
     - target: {fileID: 541774157971737498, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.63606334
+      value: -0.29797417
       objectReference: {fileID: 0}
     - target: {fileID: 541774157971737498, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.364865
+      value: -0.61185735
       objectReference: {fileID: 0}
     - target: {fileID: 541774157971737498, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.6057009
+      value: -0.35444397
       objectReference: {fileID: 0}
     - target: {fileID: 541774157971737498, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
@@ -20837,37 +20867,37 @@ PrefabInstance:
     - target: {fileID: 4357290157260008907, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.013767958
+      value: 0.014508799
       objectReference: {fileID: 0}
     - target: {fileID: 4357290157260008907, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.04332468
+      value: 0.043082684
       objectReference: {fileID: 0}
     - target: {fileID: 4357290157260008907, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.99834645
+      value: 0.99880284
       objectReference: {fileID: 0}
     - target: {fileID: 4357290157260008907, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.035183534
+      value: -0.018064767
       objectReference: {fileID: 0}
     - target: {fileID: 4357290157260008907, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 67.3902
+      value: -69.202446
       objectReference: {fileID: 0}
     - target: {fileID: 4357290157260008907, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -54.090603
+      value: 51.751835
       objectReference: {fileID: 0}
     - target: {fileID: 4357290157260008907, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -959.2859
+      value: -959.286
       objectReference: {fileID: 0}
     - target: {fileID: 4357290157260008907, guid: de6b118e38ac34e4892877915cd28b09,
         type: 3}
@@ -23896,31 +23926,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 599584076}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1489697226
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/FogPlus
-  m_Shader: {fileID: 4800000, guid: 39ef0b8c9be96494d9f8b2f2c54a28c5, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &1503917559
 GameObject:
   m_ObjectHideFlags: 0
@@ -43512,10 +43517,21 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 126263005}
+        m_MethodName: SetSideView
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   OnExit:
     m_PersistentCalls:
@@ -44045,7 +44061,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088158228}
-  m_LocalRotation: {x: 0.3089068, y: -0.63606334, z: 0.364865, w: -0.6057009}
+  m_LocalRotation: {x: -0.64125776, y: -0.29797417, z: -0.61185735, w: -0.35444397}
   m_LocalPosition: {x: 1235.87, y: 19.48, z: 95.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -44264,7 +44280,7 @@ MonoBehaviour:
   heightFogIntensity: 0.67
   useHeightFogOnSky: 0
   distanceHeightBlend: 1
-  material: {fileID: 1489697226}
+  material: {fileID: 1150029678}
 --- !u!114 &2088158239
 MonoBehaviour:
   m_ObjectHideFlags: 0

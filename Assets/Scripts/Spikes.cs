@@ -25,7 +25,7 @@ public class Spikes : MonoBehaviour
         Crack.Stop();
         yield return new WaitForSeconds(0.5f);
         Spike.Stop();
-        Collider.enabled = false;
+        Collider.isTrigger = false;
         Shaking = false;
     }
 }

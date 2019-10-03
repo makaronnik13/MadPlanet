@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using DitzelGames.FastIK;
+using UnityEngine.Events;
 
 public class Boss : MonoBehaviour
 {
+    public UnityEvent OnDeath;
 
     private enum AtackType
     {
@@ -33,6 +35,7 @@ public class Boss : MonoBehaviour
                 if (aType == AtackType.Near)
                 {
                     Animator.SetTrigger("Attack");
+                    GetComponentInChildren<FireBallsThrower>().Explode();
                 }
                 else
                 {
@@ -56,6 +59,11 @@ public class Boss : MonoBehaviour
             if (InRage)
             {
                 StartCoroutine(SpikeTime());
+                StopCoroutine(SwitchMode());
+            }
+            else
+            {
+                StartCoroutine(SwitchMode());
             }
         }
     }
@@ -63,7 +71,7 @@ public class Boss : MonoBehaviour
     public MobVision Vision;
     public GameObject SpikePrefab;
     public Animator Animator;
-    public float SpikesTime = 15f, BulletsTime = 15;
+    public float SpikesTime = 15f, ModeSwitchTime = 15f;
     public float NearSpikesRate = 1f;
     public float BulletsRate = 1f;
     public float FarSpikesRate = 2f;
@@ -72,7 +80,6 @@ public class Boss : MonoBehaviour
     public float playerDangerRadius = 3;
     public float bossDangeRadius = 5;
     public int Lifes = 10;
-
 
     public void StartAttack()
     {
@@ -84,9 +91,10 @@ public class Boss : MonoBehaviour
 
     private IEnumerator SwitchMode()
     {
-        while (true)
+        while (!InRage)
         {
-            yield return null;
+            yield return new WaitForSeconds(ModeSwitchTime);
+            InRage = true;
         }
     }
 
@@ -104,22 +112,16 @@ public class Boss : MonoBehaviour
 
     private IEnumerator SpikeTime()
     {
+        yield return new WaitForSeconds(1f);
         Debug.Log("SPIKE TIME");
-        Animator.SetBool("Spikes", true);
+        Animator.SetTrigger("Spikes");
         spiking = true;
         StartCoroutine(NearSpikesTime());
         StartCoroutine(FarSpikesTime());
         yield return new WaitForSeconds(SpikesTime);
         spiking = false;
-        StartCoroutine(BulletTime(BulletsTime));
-        Animator.SetBool("Spikes", false);
-    }
-
-    private IEnumerator BulletTime(float t)
-    {
-        Animator.SetBool("Firing", true);
-        yield return new WaitForSeconds(t);
-        Animator.SetBool("Firing", false);
+        InRage = false;
+        AType = AtackType.Far;
     }
 
     private IEnumerator FarSpikesTime()
@@ -144,7 +146,7 @@ public class Boss : MonoBehaviour
     {
         Vector3 pos = aim.transform.position;
         RaycastHit hit = new RaycastHit();
-        if (Physics.Raycast(new Ray(aim.transform.position, Vector3.down), out hit, 5))
+        if (Physics.Raycast(new Ray(aim.transform.position, Vector3.down), out hit, 5, ~LayerMask.GetMask("Player")))
         {
             pos = hit.point;
         }
@@ -153,7 +155,7 @@ public class Boss : MonoBehaviour
 
         GameObject newSpike = Instantiate(SpikePrefab);
         newSpike.transform.position = pos;
-        Destroy(newSpike, spikeDamageDelay*2f);
+        Destroy(newSpike, spikeDamageDelay*10f);
         newSpike.GetComponent<Spikes>().Shake(spikeDamageDelay);       
     }
     
@@ -169,6 +171,8 @@ public class Boss : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);  
+        Animator.SetTrigger("Death");
+        Destroy(gameObject, 2);
+        OnDeath.Invoke();
     }
 }

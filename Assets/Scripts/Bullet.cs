@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
@@ -50,6 +51,12 @@ public class Bullet : MonoBehaviour
         {
             Destroy(Shadow);
         }
+        Destroy(gameObject);
+    }
+
+    public void Explode()
+    {
+        Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
