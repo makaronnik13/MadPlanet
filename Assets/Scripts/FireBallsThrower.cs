@@ -24,7 +24,7 @@ public class FireBallsThrower : MonoBehaviour
         if (blt!=null)
         {
             blt.transform.SetParent(null);
-            Vector3 playerPos = FindObjectOfType<PlayerIdentity>().transform.position;
+            Vector3 playerPos = FindObjectOfType<PlayerIdentity>().transform.position+Vector3.up*2f;
             blt.GetComponent<Bullet>().Fly((playerPos - pos) * SplitForce, playerPos);
         }        
         launchingBullets.Remove(armId);      
