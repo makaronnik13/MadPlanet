@@ -68,17 +68,17 @@ public class Boss : MonoBehaviour
         }
     }
 
+    public Transform NearSpikes, FarSpikes;
+    private List<Vector3> spikesPositions = new List<Vector3>();
+
     public MobVision Vision;
     public GameObject SpikePrefab;
     public Animator Animator;
-    public float SpikesTime = 15f, ModeSwitchTime = 15f;
-    public float NearSpikesRate = 1f;
+    public float ModeSwitchTime = 15f;
     public float BulletsRate = 1f;
     public float FarSpikesRate = 2f;
     private bool spiking = false;
     public float spikeDamageDelay = 4f;
-    public float playerDangerRadius = 3;
-    public float bossDangeRadius = 5;
     public int Lifes = 10;
 
     public void StartAttack()
@@ -117,37 +117,44 @@ public class Boss : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Animator.SetTrigger("Spikes");
         spiking = true;
-        StartCoroutine(NearSpikesTime());
+        foreach (Transform t in NearSpikes)
+        {
+            ActivateRandomSpike(t.position, 0);
+        }
         StartCoroutine(FarSpikesTime());
-        yield return new WaitForSeconds(SpikesTime);
-        spiking = false;
+        if (spiking)
+        {
+            yield return null;
+        }
         InRage = false;
         AType = AtackType.Far;
     }
 
     private IEnumerator FarSpikesTime()
     {
-        while (spiking)
+        spikesPositions = new List<Vector3>();
+        foreach (Transform t in FarSpikes)
         {
-            ActivateRandomSpike(FindObjectOfType<PlayerIdentity>().transform, playerDangerRadius);
+            spikesPositions.Add(t.position);
+        }
+        spikesPositions = spikesPositions.OrderBy(s=>Guid.NewGuid()).ToList();
+
+        while (spikesPositions.Count>0)
+        {
+            Vector3 pos = spikesPositions.FirstOrDefault();
+            ActivateRandomSpike(pos, 0);
+            spikesPositions.Remove(pos);
             yield return new WaitForSeconds(FarSpikesRate);
         }
+        spiking = false;
     }
 
-    private IEnumerator NearSpikesTime()
-    {
-        while (spiking)
-        {
-            ActivateRandomSpike(transform, bossDangeRadius);
-            yield return new WaitForSeconds(NearSpikesRate);
-        }
-    }
 
-    private void ActivateRandomSpike(Transform aim, float offsetRadius)
+    private void ActivateRandomSpike(Vector3 aim, float offsetRadius)
     {
-        Vector3 pos = aim.transform.position;
+        Vector3 pos = aim;
         RaycastHit hit = new RaycastHit();
-        if (Physics.Raycast(new Ray(aim.transform.position, Vector3.down), out hit, 5, ~LayerMask.GetMask("Player")))
+        if (Physics.Raycast(new Ray(aim, Vector3.down), out hit, 5, ~LayerMask.GetMask("Player")))
         {
             pos = hit.point;
         }

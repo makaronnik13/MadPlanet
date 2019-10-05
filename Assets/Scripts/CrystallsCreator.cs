@@ -13,6 +13,7 @@ public class CrystallsCreator : MonoBehaviour
     {
         if (_crystall)
         {
+            _crystall.AddComponent<Rigidbody>();
             _crystall.GetComponent<Rigidbody>().useGravity = true;
             Destroy(_crystall, 5f);
             _crystall = null;
@@ -25,6 +26,6 @@ public class CrystallsCreator : MonoBehaviour
         _crystall.transform.SetParent(transform);
         _crystall.transform.localPosition = Vector3.zero;
         _crystall.transform.localRotation = Quaternion.identity;
-        _crystall.GetComponent<Rigidbody>().useGravity = false;
+        
     }
 }

@@ -6,9 +6,9 @@ using UnityEngine;
 public class Spikes : MonoBehaviour
 {
     public ParticleSystem Crack, Spike;
-    public Collider Collider;
+    public GameObject Colliders;
     public bool Shaking = false;
-
+    public float Lifetime = 5f;
 
     public void Shake(float delay)
     {
@@ -18,14 +18,15 @@ public class Spikes : MonoBehaviour
 
     private IEnumerator Damage(float t)
     {
+        Spike.startLifetime = Lifetime;
         Shaking = true;
         yield return new WaitForSeconds(t);
         Spike.Play();
-        Collider.enabled = true;
+        Colliders.SetActive(true);
         Crack.Stop();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(Lifetime);
         Spike.Stop();
-        Collider.isTrigger = false;
+        Colliders.SetActive(false);
         Shaking = false;
     }
 }
