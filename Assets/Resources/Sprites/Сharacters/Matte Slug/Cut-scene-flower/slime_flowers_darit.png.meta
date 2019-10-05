@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: 8d23018a29b13f34a95c5bbd6a2108f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4455889377770577330
+    second: slime_flowers_darit_0
+  - first:
+      213: 3512784374702023724
+    second: slime_flowers_darit_1
+  - first:
+      213: -7080456022973655144
+    second: slime_flowers_darit_2
+  - first:
+      213: 8032659882653913218
+    second: slime_flowers_darit_3
+  - first:
+      213: 5764516406278532134
+    second: slime_flowers_darit_4
+  - first:
+      213: 211957862620485943
+    second: slime_flowers_darit_5
+  - first:
+      213: -2624133483101889092
+    second: slime_flowers_darit_6
+  - first:
+      213: 6819750257893257751
+    second: slime_flowers_darit_7
+  - first:
+      213: 3985259069523363205
+    second: slime_flowers_darit_8
+  - first:
+      213: -2705430566546091797
+    second: slime_flowers_darit_9
+  - first:
+      213: -8762868533462246146
+    second: slime_flowers_darit_10
+  - first:
+      213: 4612102702111748000
+    second: slime_flowers_darit_11
+  - first:
+      213: 5454687741376636078
+    second: slime_flowers_darit_12
+  - first:
+      213: -7240556287695926285
+    second: slime_flowers_darit_13
+  - first:
+      213: 5339057358695747931
+    second: slime_flowers_darit_14
+  - first:
+      213: 3720419971838384401
+    second: slime_flowers_darit_15
+  - first:
+      213: -1464698163323190147
+    second: slime_flowers_darit_16
+  - first:
+      213: -6836626848126752405
+    second: slime_flowers_darit_17
+  - first:
+      213: -4414918985381182018
+    second: slime_flowers_darit_18
+  - first:
+      213: -449838709353026438
+    second: slime_flowers_darit_19
+  - first:
+      213: 7581222629043301791
+    second: slime_flowers_darit_20
+  - first:
+      213: -745654327188044518
+    second: slime_flowers_darit_21
+  - first:
+      213: -5695039514029887824
+    second: slime_flowers_darit_22
+  - first:
+      213: -8816958056066078260
+    second: slime_flowers_darit_23
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slime_flowers_darit_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47f9d018f0251a469f03e7cd4d9dd9e
+      internalID: 4455889377770577330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_1
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6ecf7ec73b158419f0a888b3910f44
+      internalID: 3512784374702023724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_2
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e934d9a84879bb4eb7c26cb6ff381bd
+      internalID: -7080456022973655144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_3
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f50ead227a504d46b916842ead7b1f3
+      internalID: 8032659882653913218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_4
+      rect:
+        serializedVersion: 2
+        x: 3641
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68d7bd1c611f7c489f76bfbc53a6318
+      internalID: 5764516406278532134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_5
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbe259efc6be6443839f1d251381caa
+      internalID: 211957862620485943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_6
+      rect:
+        serializedVersion: 2
+        x: 5459
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43288a1863e4d7542bbf1bae47c0e302
+      internalID: -2624133483101889092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_7
+      rect:
+        serializedVersion: 2
+        x: 6368
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39322eb9473e744428898d7d4d07d1d6
+      internalID: 6819750257893257751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_8
+      rect:
+        serializedVersion: 2
+        x: 7277
+        y: 7261
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413a37623043be941bb8a47797316874
+      internalID: 3985259069523363205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c65f03bf6570f849a85a38f71a6b64a
+      internalID: -2705430566546091797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_10
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d709d590e246e5442b88b5c88be903d3
+      internalID: -8762868533462246146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_11
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68ca1aff96a0fb4f948a560a9518c81
+      internalID: 4612102702111748000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_12
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c713abdfada1a974fad12542555ecd6d
+      internalID: 5454687741376636078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_13
+      rect:
+        serializedVersion: 2
+        x: 3641
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664c0e58b78e1da4e920d68b0a56ab95
+      internalID: -7240556287695926285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_14
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d25074b66483b46baf650ee66560d9
+      internalID: 5339057358695747931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_15
+      rect:
+        serializedVersion: 2
+        x: 5459
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b665202827f995b44bb4d95c26e1ef97
+      internalID: 3720419971838384401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_16
+      rect:
+        serializedVersion: 2
+        x: 6368
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8368b945acdfc40b6ca5b7803e9c95
+      internalID: -1464698163323190147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_17
+      rect:
+        serializedVersion: 2
+        x: 7277
+        y: 6325
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec97eb46be41fd43bf7e0dcb696febf
+      internalID: -6836626848126752405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5389
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54285282d625a1e4a88486bc456ded8c
+      internalID: -4414918985381182018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_19
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 5389
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b13ce42b80c464698b9df6fde8bd2d
+      internalID: -449838709353026438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_20
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 5389
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e100efbdbcb49434d8877ef823973162
+      internalID: 7581222629043301791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_21
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 5389
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca72f58ad5bf44489cceda333a5f85a
+      internalID: -745654327188044518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_22
+      rect:
+        serializedVersion: 2
+        x: 3641
+        y: 5389
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9ae9b98c3e88045a6ed02ac830c886
+      internalID: -5695039514029887824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_darit_23
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 5389
+        width: 899
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd916bc64693d3c48a99c228f8569629
+      internalID: -8816958056066078260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
