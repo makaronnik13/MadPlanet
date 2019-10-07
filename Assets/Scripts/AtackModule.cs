@@ -81,7 +81,7 @@ public class AtackModule : MonoBehaviour
 
     public void Atack()
     {    
-        if (aim != null && CanAtack && !aim.GetComponent<PlatformerCharacter2D>().Grabed)
+        if (aim != null && CanAtack && !aim.GetComponent<PlatformerCharacter2D>().Grabed && !aim.GetComponent<PlatformerCharacter2D>().Drawn)
         {
             Animator.SetBool("Grab", true);
             //Particles.Play();
@@ -112,7 +112,6 @@ public class AtackModule : MonoBehaviour
 
     public void Release()
     {
-        Debug.Log("Release");
         GrabbingTransform = null;
         CanAtack = false;
         Animator.SetBool("Grab", false);

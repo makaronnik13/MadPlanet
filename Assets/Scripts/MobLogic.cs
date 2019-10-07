@@ -97,7 +97,7 @@ public class MobLogic : MonoBehaviour
                             nearestPoint = transform.position;
                         }
 
-                        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nearestPoint.x, nearestPoint.z)) > 0.05f)
+                        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nearestPoint.x, nearestPoint.z)) > 0.1f)
                         {
                             MoveInDir(nearestPoint);
                         }
