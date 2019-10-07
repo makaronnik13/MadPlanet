@@ -93,6 +93,7 @@ namespace UnityStandardAssets._2D
 
 
             Visual.transform.localPosition = Vector3.Lerp(Vector3.zero, Vector3.down*2, drawnRate);
+
         }
 
         public void SetSideView(bool v)
@@ -180,9 +181,6 @@ namespace UnityStandardAssets._2D
                 }
             }
 
-            m_Anim.SetFloat("Dir2", _lastDir2);
-            m_Anim.SetFloat("Dir", _lastDir);
-
             if (!m_Grounded && m_AirControl && !canJumpBack)
             {
                 moveH = Mathf.Clamp(moveH, 0, 1f);
@@ -219,13 +217,13 @@ namespace UnityStandardAssets._2D
                 if (moveH > 0 && !m_FacingRight)
                 {
                     // ... flip the player.
-                    Flip();
+                    //Flip();
                 }
                     // Otherwise if the input is moving the player left and the player is facing right...
                 else if (moveH < 0 && m_FacingRight)
                 {
                     // ... flip the player.
-                    Flip();
+                    //Flip();
                 }
             }
             // If the player should jump...
@@ -235,6 +233,21 @@ namespace UnityStandardAssets._2D
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce), ForceMode.Acceleration);
+            }
+
+            if (m_Anim.GetBool("Ground"))
+            {
+                m_Anim.SetLayerWeight(1, Mathf.Abs(moveH) + Mathf.Abs(moveV));
+            }
+            else
+            {
+                m_Anim.SetLayerWeight(1, 0);
+            }
+
+            if (Mathf.Abs(moveH)+ Mathf.Abs(moveV)>0)
+            {
+                m_Anim.SetFloat("Dir", moveH);
+                m_Anim.SetFloat("Dir2", moveV);
             }
         }
 
