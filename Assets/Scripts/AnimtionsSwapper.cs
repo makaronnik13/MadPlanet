@@ -22,10 +22,15 @@ public class AnimtionsSwapper : MonoBehaviour
     [SerializeField]
     private Animator Animator;
 
+    private void Start()
+    {
+        SetPerson(Game.Instance.gameData.Skin);    
+    }
 
     public void SetPerson(int i)
     {
         Animator.runtimeAnimatorController = Animations[i];
+        Game.Instance.gameData.Skin = i;
     }
 
     public void SetSkin(CharacterSkin skin)
