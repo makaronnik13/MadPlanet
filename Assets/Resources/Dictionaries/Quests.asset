@@ -44,6 +44,24 @@ MonoBehaviour:
       translation: "\u0412\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C \u041C\u0435\u0440\u0438"
     - language: 10
       translation: fff
+  - key: Q1_6
+    translations:
+    - language: 30
+      translation: "\u041F\u043E\u0439\u043C\u0430\u0442\u044C \u0433\u043B\u0430\u0437\u0430"
+    - language: 10
+      translation: 
+  - key: Q1_7
+    translations:
+    - language: 30
+      translation: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u0433\u043B\u0430\u0437\u0430 "
+    - language: 10
+      translation: 
+  - key: Q1_8
+    translations:
+    - language: 30
+      translation: "\u0414\u043E\u0433\u043D\u0430\u0442\u044C \u041C\u0435\u0440\u0438"
+    - language: 10
+      translation: 
   Languages: 1e0000000a000000
   TableId: 1Lg_DFWNoWQN4whWxGcbDx_OwWxiAOloLQL0zmjM52lg
   PageId: 0
