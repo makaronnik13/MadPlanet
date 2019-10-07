@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: 73129edceab30354c9c304664cb7b578
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2186745183676108349
+    second: slime_flowers_stoit_s_buketom_0
+  - first:
+      213: -3181663549939460764
+    second: slime_flowers_stoit_s_buketom_1
+  - first:
+      213: -6130700356234839104
+    second: slime_flowers_stoit_s_buketom_2
+  - first:
+      213: 1018274057880712132
+    second: slime_flowers_stoit_s_buketom_3
+  - first:
+      213: 4034358037780055429
+    second: slime_flowers_stoit_s_buketom_4
+  - first:
+      213: -2504645804439619759
+    second: slime_flowers_stoit_s_buketom_5
+  - first:
+      213: -157468213153421329
+    second: slime_flowers_stoit_s_buketom_6
+  - first:
+      213: -3952517895551776048
+    second: slime_flowers_stoit_s_buketom_7
+  - first:
+      213: -1312739124868451677
+    second: slime_flowers_stoit_s_buketom_8
+  - first:
+      213: -6516417998544659641
+    second: slime_flowers_stoit_s_buketom_9
+  - first:
+      213: -8759203583845159847
+    second: slime_flowers_stoit_s_buketom_10
+  - first:
+      213: 7301588371045242763
+    second: slime_flowers_stoit_s_buketom_11
+  - first:
+      213: 4845339331084158468
+    second: slime_flowers_stoit_s_buketom_12
+  - first:
+      213: -6841568573295808695
+    second: slime_flowers_stoit_s_buketom_13
+  - first:
+      213: 5891382513512206169
+    second: slime_flowers_stoit_s_buketom_14
+  - first:
+      213: 3827793262375443513
+    second: slime_flowers_stoit_s_buketom_15
+  - first:
+      213: 8501690498968620220
+    second: slime_flowers_stoit_s_buketom_16
+  - first:
+      213: -2702281260402649479
+    second: slime_flowers_stoit_s_buketom_17
+  - first:
+      213: -5822796708831379465
+    second: slime_flowers_stoit_s_buketom_18
+  - first:
+      213: -5300715161038139325
+    second: slime_flowers_stoit_s_buketom_19
+  - first:
+      213: 2021783685608916924
+    second: slime_flowers_stoit_s_buketom_20
+  - first:
+      213: 8512723198700200597
+    second: slime_flowers_stoit_s_buketom_21
+  - first:
+      213: 418611210378210784
+    second: slime_flowers_stoit_s_buketom_22
+  - first:
+      213: -1781369185863154447
+    second: slime_flowers_stoit_s_buketom_23
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92447c98896de4c40915d88e24ef5b90
+      internalID: -2186745183676108349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_1
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcc038d0b42e864cbd03b0c4ac82f59
+      internalID: -3181663549939460764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_2
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73208a0eec9fad4c8022ef4b4c860dd
+      internalID: -6130700356234839104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_3
+      rect:
+        serializedVersion: 2
+        x: 2684
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3235b131d4ca54d829ec3aeb82f5f3
+      internalID: 1018274057880712132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_4
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cd4b176d5f9e645a83d3bf88e9c544
+      internalID: 4034358037780055429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_5
+      rect:
+        serializedVersion: 2
+        x: 4470
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf3a31e00e55be409fdb380e82e320c
+      internalID: -2504645804439619759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_6
+      rect:
+        serializedVersion: 2
+        x: 5363
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ae6a6f06f0ca742aceeee1e82a32ca
+      internalID: -157468213153421329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_7
+      rect:
+        serializedVersion: 2
+        x: 6256
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f075390b4c4231a47977dc0d70c0eeed
+      internalID: -3952517895551776048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_8
+      rect:
+        serializedVersion: 2
+        x: 7149
+        y: 7261
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fb16e0f1b905745b05cd178bfe6265
+      internalID: -1312739124868451677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb01687bdc10a29468a7994cfe4d2a58
+      internalID: -6516417998544659641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_10
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bf7c5a4f0dc9c4aa47921259176d00
+      internalID: -8759203583845159847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_11
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e088f6584bf9ce14b892b6d75558f07b
+      internalID: 7301588371045242763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_12
+      rect:
+        serializedVersion: 2
+        x: 2684
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794b3e32d85984347ba7016478e4a68e
+      internalID: 4845339331084158468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_13
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3c800e127f00e49b9c6fd9eef358b2
+      internalID: -6841568573295808695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_14
+      rect:
+        serializedVersion: 2
+        x: 4470
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403aacfcb86ce7c459e90bfcd7435a11
+      internalID: 5891382513512206169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_15
+      rect:
+        serializedVersion: 2
+        x: 5363
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582f10556caa7d247ba0ca4631df6149
+      internalID: 3827793262375443513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_16
+      rect:
+        serializedVersion: 2
+        x: 6256
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2af4c803dbc484c92e5df24e4168d5
+      internalID: 8501690498968620220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_17
+      rect:
+        serializedVersion: 2
+        x: 7149
+        y: 6325
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec81545302fd96d4085fef35005861be
+      internalID: -2702281260402649479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5389
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80047fe50d37493418d3bb66b4724844
+      internalID: -5822796708831379465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_19
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 5389
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86ca76ccecfe734bb3c04a315d9d67e
+      internalID: -5300715161038139325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_20
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 5389
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e5a8448245aa24594ab92772515a47
+      internalID: 2021783685608916924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_21
+      rect:
+        serializedVersion: 2
+        x: 2684
+        y: 5389
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df60b5fb7f5b384439cae6e1dae38bea
+      internalID: 8512723198700200597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_22
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 5389
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aabef98ba171d4c8b3d3f0b45bb978
+      internalID: 418611210378210784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_flowers_stoit_s_buketom_23
+      rect:
+        serializedVersion: 2
+        x: 4470
+        y: 5389
+        width: 883
+        height: 926
+      alignment: 9
+      pivot: {x: 0.7841383, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a7d2834f7abde4eba68284bd23a313
+      internalID: -1781369185863154447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
