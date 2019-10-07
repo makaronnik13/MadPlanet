@@ -1,10 +1,12 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets._2D
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {
+        public SpriteRenderer View;
         [SerializeField] public bool SideView = false;
         [SerializeField] public float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
@@ -214,13 +216,13 @@ namespace UnityStandardAssets._2D
                 m_Rigidbody2D.velocity = new Vector3(moveH * m_MaxSpeed, m_Rigidbody2D.velocity.y, moveV * m_MaxSpeed);
 
                 // If the input is moving the player right and the player is facing left...
-                if (moveH > 0 && !m_FacingRight)
+                if (moveV > 0 && !m_FacingRight)
                 {
                     // ... flip the player.
                     Flip();
                 }
                     // Otherwise if the input is moving the player left and the player is facing right...
-                else if (moveH < 0 && m_FacingRight)
+                else if (moveV < 0 && m_FacingRight)
                 {
                     // ... flip the player.
                     Flip();
@@ -254,13 +256,16 @@ namespace UnityStandardAssets._2D
 
         private void Flip()
         {
+            if (!View)
+            {
+                return;
+            }
+            Debug.Log("Flip");
             // Switch the way the player is labelled as facing.
             m_FacingRight = !m_FacingRight;
 
             // Multiply the player's x local scale by -1.
-            Vector3 theScale = transform.localScale;
-            theScale.x *= -1;
-            transform.localScale = theScale;
+            View.flipX = m_FacingRight;
         }
     }
 }
