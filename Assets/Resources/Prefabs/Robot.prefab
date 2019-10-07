@@ -434,7 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IneractionMode: 1
   active: 0
-  EButtonOffset: {x: 0, y: 0, z: 0}
+  EButtonOffset: {x: 0, y: 1.2, z: 0}
   OnActivate:
     m_PersistentCalls:
       m_Calls:

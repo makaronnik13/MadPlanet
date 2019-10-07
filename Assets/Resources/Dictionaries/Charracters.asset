@@ -40,7 +40,7 @@ MonoBehaviour:
   - key: MathewB
     translations:
     - language: 30
-      translation: "\u041C\u0435\u0442\u0442\u044C\u044E?"
+      translation: "@\u044D\u0442\u0442\u044C\u044E?"
     - language: 10
       translation: 
   Languages: 1e0000000a000000
