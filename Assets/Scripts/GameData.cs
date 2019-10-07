@@ -22,6 +22,10 @@ public class GameData
     [SerializeData("SavePointZ", FieldRequired.False)]
     public float SavepointZ = 0;
 
+    [Savable]
+    [SerializeData("Skin", FieldRequired.False)]
+    public int Skin = 0;
+
     public GameData()
     {
 

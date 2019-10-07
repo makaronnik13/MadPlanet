@@ -36,6 +36,7 @@ public class Drawn : MonoBehaviour
         }
 
         Vingete.GetSetting<Vignette>().intensity.value = v;
+
         Fade.color = Color.Lerp(Color.black*0, Color.black, v);
     }
 

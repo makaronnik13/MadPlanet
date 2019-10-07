@@ -50,6 +50,9 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
+            float lastDieRate = dieRate;
+            float lastDrawnRate = drawnRate;
+
             m_Grounded = false;
 
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -78,8 +81,16 @@ namespace UnityStandardAssets._2D
             drawnRate = Mathf.Clamp(drawnRate, 0,1f);
             dieRate = Mathf.Clamp(dieRate, 0, 1f);
 
-            DrawnRateChanged(drawnRate);
-            DieRateChanged(dieRate);
+            if (lastDieRate!=dieRate)
+            {
+                DieRateChanged(dieRate);
+            }
+
+            if (lastDrawnRate!=drawnRate)
+            {
+                DrawnRateChanged(drawnRate);
+            }
+
 
             Visual.transform.localPosition = Vector3.Lerp(Vector3.zero, Vector3.down*2, drawnRate);
         }
