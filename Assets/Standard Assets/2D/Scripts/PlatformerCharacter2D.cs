@@ -217,13 +217,13 @@ namespace UnityStandardAssets._2D
                 if (moveH > 0 && !m_FacingRight)
                 {
                     // ... flip the player.
-                    //Flip();
+                    Flip();
                 }
                     // Otherwise if the input is moving the player left and the player is facing right...
                 else if (moveH < 0 && m_FacingRight)
                 {
                     // ... flip the player.
-                    //Flip();
+                    Flip();
                 }
             }
             // If the player should jump...
