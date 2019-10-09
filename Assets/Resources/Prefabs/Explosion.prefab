@@ -45,8 +45,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.55
+  m_Center: {x: 0, y: 0.37, z: 0}
 --- !u!114 &4487395806988156196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f9b37a5a22c204b877c9b1e7655166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Destroy: 1
 --- !u!1 &2124597498860499082
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d00f143158851489c3f8f2f0b3e82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentOrder: {fileID: 0}
 --- !u!212 &1469473525688417406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -190,6 +192,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7665628149624476720
 Transform:
   m_ObjectHideFlags: 0
@@ -57,6 +57,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -92,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d00f143158851489c3f8f2f0b3e82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentOrder: {fileID: 0}
 --- !u!1 &7665628151184748364
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,17 +211,17 @@ PrefabInstance:
     - target: {fileID: 4172440845229046751, guid: 89b8cb73eb7856a4791a642a821993ee,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4172440845229046751, guid: 89b8cb73eb7856a4791a642a821993ee,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2.19
       objectReference: {fileID: 0}
     - target: {fileID: 4172440845229046751, guid: 89b8cb73eb7856a4791a642a821993ee,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2042599320730841639, guid: 89b8cb73eb7856a4791a642a821993ee,
         type: 3}
