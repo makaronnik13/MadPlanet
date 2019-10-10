@@ -5124,7 +5124,6 @@ GameObject:
   - component: {fileID: 229843398}
   - component: {fileID: 229843397}
   - component: {fileID: 229843396}
-  - component: {fileID: 229843402}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -5211,7 +5210,6 @@ RectTransform:
   - {fileID: 1803679258}
   - {fileID: 1139664175}
   - {fileID: 732540789}
-  - {fileID: 539637009}
   m_Father: {fileID: 1357049922}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5220,24 +5218,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &229843402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229843394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93543b35e6df2f44298bbfcc56793948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameData:
-    Quests: []
-    SavepointX: -1
-    SavepointY: -1
-    SavepointZ: -1
-    Skin: 0
 --- !u!1 &312294574
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,9 +5361,6 @@ MonoBehaviour:
   swithTime: 2
   MainMenuTheme:
     Clip: {fileID: 8300000, guid: b6b486332e706c540a4c53c42d08c4ff, type: 3}
-    Group: {fileID: 0}
-  GameOverTheme:
-    Clip: {fileID: 0}
     Group: {fileID: 0}
   OSTS: []
 --- !u!82 &501541632
@@ -5594,16 +5571,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539637008}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100.84814}
+  m_LocalScale: {x: 0.016653895, y: 0.016653895, z: 0.016653895}
   m_Children: []
-  m_Father: {fileID: 229843399}
-  m_RootOrder: 8
+  m_Father: {fileID: 1357049922}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1512.6754, y: 13.550281}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539637010
@@ -11006,7 +10983,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 4
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -11035,7 +11012,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -11810,7 +11787,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 61.85
+  m_fontSize: 163.45
   m_fontSizeBase: 182.72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11856,7 +11833,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -11909,6 +11886,7 @@ GameObject:
   - component: {fileID: 1357049921}
   - component: {fileID: 1357049920}
   - component: {fileID: 1357049923}
+  - component: {fileID: 1357049924}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -11963,6 +11941,7 @@ Transform:
   - {fileID: 1656998110}
   - {fileID: 2017499219}
   - {fileID: 501541630}
+  - {fileID: 539637009}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11983,6 +11962,24 @@ MonoBehaviour:
   Animator: {fileID: 1357049921}
   Particles: {fileID: 174874602}
   ContinueBtn: {fileID: 948293765}
+--- !u!114 &1357049924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357049919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93543b35e6df2f44298bbfcc56793948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameData:
+    Quests: []
+    SavepointX: 0
+    SavepointY: 0
+    SavepointZ: 0
+    Skin: 0
 --- !u!1 &1475060530
 GameObject:
   m_ObjectHideFlags: 0
@@ -12146,7 +12143,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 4
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -12175,7 +12172,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -12639,7 +12636,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 25.8
+  m_fontSize: 77.25
   m_fontSizeBase: 77.6
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12685,7 +12682,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
@@ -17795,7 +17792,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 4
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -17824,7 +17821,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -18096,7 +18093,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 4
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -18125,7 +18122,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
