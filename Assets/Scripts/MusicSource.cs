@@ -11,11 +11,13 @@ public class MusicSource : MonoBehaviour
     private Coroutine _loop;
     public float swithTime;
     private float length = 0;
+    private float currentVolume = 1;
 
     private static float CHANGE_TIME = 1f;
 
     public AudioClipPair MainMenuTheme;
-    public AudioClipPair GameOverTheme;
+
+
     public List<AudioClipPair> OSTS;
 
     private Queue<AudioClipPair> _tracksQueqe;
@@ -88,7 +90,14 @@ public class MusicSource : MonoBehaviour
         source.volume = v;
     }
 
-    public void GameOver()
+
+    public void SetVolume(float v)
+    {
+        currentVolume = v;
+        GetComponent<AudioSource>().volume = DefaultRessources.MusicVolume * v;
+    }
+
+    public void Play(AudioClipPair clip)
     {
         if (_loop != null)
         {
@@ -96,7 +105,7 @@ public class MusicSource : MonoBehaviour
             StopCoroutine(_loop);
             _loop = null;
         }
-        _loop = StartCoroutine(LoopTracks(new List<AudioClipPair>() { GameOverTheme }));
+        _loop = StartCoroutine(LoopTracks(new List<AudioClipPair>() {clip}));
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
