@@ -8,6 +8,24 @@ public static class DefaultRessources
 {
     public static float SoundVolume = 1;
 
+    public static Action<float> OnMusicVolumeChanged = (f) => { };
+    public static float MusicVolume
+    {
+        get
+        {
+            if (!PlayerPrefs.HasKey("MusicVolume"))
+            {
+                MusicVolume = 0.5f;
+            }
+            return PlayerPrefs.GetFloat("MusicVolume");
+        }
+        set
+        {
+            PlayerPrefs.SetFloat("MusicVolume", value);
+            OnMusicVolumeChanged(MusicVolume);
+        }
+    }
+
     private static Quest[] _quests;
     public static Quest[] Quests
     {

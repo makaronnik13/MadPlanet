@@ -138,7 +138,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a5ae9dd13c561d2448d4069361292117, type: 2}
     m_Threshold: 0.6666667
-    m_Position: {x: -0.75, y: 0.75}
+    m_Position: {x: -0.75, y: 0.6}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
@@ -146,7 +146,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a5ae9dd13c561d2448d4069361292117, type: 2}
     m_Threshold: 0.8333333
-    m_Position: {x: 0.75, y: 0.75}
+    m_Position: {x: 0.75, y: 0.6}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
@@ -380,7 +380,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Ground
+    m_ConditionEvent: Grabbed
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -209424160381921669}

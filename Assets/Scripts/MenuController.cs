@@ -23,9 +23,26 @@ public class MenuController : MonoBehaviour
 
     private AsyncOperation _loadingOp;
 
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Game.Instance.Paused.SetState(!Game.Instance.Paused.State);  
+            }
+        }
+    }
+
     private void Start()
     {
         ContinueBtn.interactable = Game.Instance.gameData != null;
+        Game.Instance.Paused.AddListener(OnPause, true);
+    }
+
+    private void OnPause(bool v)
+    {
+        Animator.SetBool("Paused", v);
     }
 
     public void StartNewGame(bool errase)
@@ -37,7 +54,17 @@ public class MenuController : MonoBehaviour
         }
         else
         {
-            Game.Instance.Load();
+            if (Game.Instance.Paused.State)
+            {
+                Debug.Log("P");
+                Game.Instance.Paused.SetState(false);
+                return;
+                
+            }
+            else
+            {
+                Game.Instance.Load();
+            }
         }
 
         Animator.SetTrigger("Loading");

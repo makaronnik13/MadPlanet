@@ -33,7 +33,7 @@ public class Bullet : MonoBehaviour
     {
         this.pos = aim;
         //pos = aim.position;
-        GetComponent<Rigidbody>().AddForce(dir, ForceMode.Force);
+        GetComponent<Rigidbody>().AddForce(dir, ForceMode.Acceleration);
         startingDistance = Vector3.Distance(pos, transform.position);
         Destroy(gameObject, Lifetime);
     }

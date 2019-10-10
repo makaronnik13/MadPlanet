@@ -48,14 +48,17 @@ public class DangerMountain : MonoBehaviour
     {
         while (true)
         {
-            TrySplit();
+            if (!Game.Instance.Paused.State)
+            {
+                TrySplit();
+            }          
             yield return new WaitForSeconds(AttaksDellay);
         }
     }
 
     private void TrySplit()
     {
-        if (aim || Mode == SplitMode.Zones)
+        if (aim)
         {
             GetComponent<Animator>().SetTrigger("Fire");
         }

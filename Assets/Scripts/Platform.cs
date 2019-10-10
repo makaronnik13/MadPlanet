@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets._2D;
 
 public class Platform : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Platform : MonoBehaviour
         {
 
             _platformedObject = other.transform;
+            _platformedObject.GetComponent<PlatformerCharacter2D>().Platformed = true;
             _platformedObject.SetParent(transform);
         }
     }
@@ -22,6 +24,7 @@ public class Platform : MonoBehaviour
         if (other.GetComponent<PlayerIdentity>())
         {
             _platformedObject.SetParent(null);
+            _platformedObject.GetComponent<PlatformerCharacter2D>().Platformed = false;
             _platformedObject = null;
         }
     }

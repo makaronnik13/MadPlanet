@@ -49,6 +49,7 @@ public class AtackModule : MonoBehaviour
         {
             if (value)
             {
+
                 value.SetParent(transform);
                 value.GetComponentInChildren<SpriteOrder>().ParentOrder = transform.parent.GetComponentInChildren<SpriteOrder>();
             }
@@ -81,37 +82,35 @@ public class AtackModule : MonoBehaviour
 
     public void Atack()
     {    
-        if (aim != null && CanAtack && !aim.GetComponent<PlatformerCharacter2D>().Grabed && !aim.GetComponent<PlatformerCharacter2D>().Drawn)
+        if (aim != null && CanAtack && !aim.GetComponent<PlatformerCharacter2D>().Grabed && !aim.GetComponent<PlatformerCharacter2D>().Drawn && !aim.GetComponent<PlatformerCharacter2D>().Platformed)
         {
             Animator.SetBool("Grab", true);
             //Particles.Play();
             GrabbingTransform = aim.transform;
             delta = transform.position;
             FindObjectOfType<InteractionModule>().interactableObject = GetComponent<InteractableObject>();
+            GrabbingTransform.SetParent(transform);
+            StartCoroutine(MoveToZero(0.5f));
         }
         //Animator.SetTrigger("Attack");
         //Particles.Play();
     }
 
-
-    private void Update()
+    private IEnumerator MoveToZero(float v)
     {
-        if (GrabbingTransform)
+        float t = 0;
+        Vector3 startPos = GrabbingTransform.localPosition;
+        while (t<=v)
         {
-            if (grabbingTransform.localPosition.magnitude<0.25f)
-            {
-                grabbingTransform.localPosition = Vector3.zero;
-            }
-            else
-            {
-                grabbingTransform.localPosition = Vector3.Lerp(grabbingTransform.localPosition, Vector3.zero, Time.deltaTime * 5f);
-            }
-            
+            GrabbingTransform.localPosition = Vector3.Lerp(startPos, Vector3.zero, t/v);
+            t += Time.deltaTime;
+            yield return null;
         }
     }
 
     public void Release()
     {
+        GrabbingTransform.SetParent(null);
         GrabbingTransform = null;
         CanAtack = false;
         Animator.SetBool("Grab", false);

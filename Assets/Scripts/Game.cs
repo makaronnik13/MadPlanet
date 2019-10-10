@@ -19,6 +19,7 @@ public class Game : MonoBehaviour
     public static Game Instance;
     public Action<QuestInstance> OnQuestTaken = (q) => { };
     public GenericFlag<float> Noise = new GenericFlag<float>("Noise", 0);
+    public GenericFlag<bool> Paused = new GenericFlag<bool>("Paused", false);
 
     private PlatformerCharacter2D _controller;
     public PlatformerCharacter2D Controller
@@ -82,6 +83,13 @@ public class Game : MonoBehaviour
         {
             return "gamesession.xml";
         }
+    }
+
+
+    private IEnumerator SettimeScale(float v1, float v2)
+    {
+        yield return new WaitForSeconds(v2);
+        Time.timeScale = v1;
     }
 
     public void Load()

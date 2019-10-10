@@ -38,7 +38,24 @@ public class MobLogic : MonoBehaviour
 
     public Transform followingObject;
 
-    private int currentPoint = 0;
+    private Vector3 nextPos = Vector3.zero;
+    private int _currentPoint = 0;
+    private int currentPoint
+    {
+        get
+        {
+            return _currentPoint;
+        }
+        set
+        {
+            _currentPoint = value;
+            if (_currentPoint<Line.positionCount && _currentPoint>=0)
+            {
+                nextPos = Line.transform.TransformPoint(Line.GetPosition(_currentPoint));
+            }
+            
+        }
+    }
     private bool forward = true;
     private bool jump = false;
 
@@ -51,6 +68,7 @@ public class MobLogic : MonoBehaviour
     {
         Vision.OnInside += TriggerMob;
         Vision.OnOutside += UnTriggerMob;
+        currentPoint = 0;
         StartCoroutine(LoopMove());
     }
 
@@ -76,8 +94,10 @@ public class MobLogic : MonoBehaviour
     {
         while (true)
         {
-            Vector3 nextPos = Line.transform.TransformPoint(Line.GetPosition(currentPoint));
-
+            if (Game.Instance.Paused.State)
+            {
+                yield return null;
+            }
             switch (Behaviour)
             {
                 case MobBahaviour.Attack:
@@ -97,7 +117,7 @@ public class MobLogic : MonoBehaviour
                             nearestPoint = transform.position;
                         }
 
-                        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nearestPoint.x, nearestPoint.z)) > 0.1f)
+                        if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nearestPoint.x, nearestPoint.z)) > 0.2f)
                         {
                             MoveInDir(nearestPoint);
                         }
@@ -110,7 +130,7 @@ public class MobLogic : MonoBehaviour
                     {
                         if (followingObject == null || (followingObject!=null && followingObject.GetComponent<PlatformerCharacter2D>().Grabed))
                         {
-                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nextPos.x, nextPos.z)) > 0.1f)
+                            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nextPos.x, nextPos.z)) > 0.2f)
                             {
                                 MoveInDir(nextPos);
                             }

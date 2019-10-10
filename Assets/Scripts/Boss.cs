@@ -152,6 +152,10 @@ public class Boss : MonoBehaviour
 
     private void ActivateRandomSpike(Vector3 aim, float offsetRadius)
     {
+        if (Game.Instance.Paused.State)
+        {
+            return;
+        }
         Vector3 pos = aim;
         RaycastHit hit = new RaycastHit();
         if (Physics.Raycast(new Ray(aim, Vector3.down), out hit, 5, ~LayerMask.GetMask("Player")))

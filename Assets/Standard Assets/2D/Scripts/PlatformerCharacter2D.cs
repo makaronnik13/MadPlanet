@@ -23,12 +23,24 @@ namespace UnityStandardAssets._2D
 
         [SerializeField] public bool Grabed = false;
 
+        private bool platformed = false;
+        public bool Platformed
+        {
+            get
+            {
+                return platformed;
+            }
+            set
+            {
+                platformed = false;
+            }
+        }
+
         public Action<float> DrawnRateChanged = (v) => { };
         public Action<float> DieRateChanged = (v) => { };
 
         public Transform Visual;
 
-        private float _lastDir, _lastDir2;
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         public float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
         private bool m_Grounded;            // Whether or not the player is grounded.
@@ -118,6 +130,7 @@ namespace UnityStandardAssets._2D
         {
             m_Anim.SetBool("Grabbed", v);
             GetComponent<Rigidbody>().useGravity = !v;
+            GetComponent<Rigidbody>().isKinematic = v;
             Grabed = v;
             GetComponent<Platformer2DUserControl>().enabled = !v;
         }
@@ -149,39 +162,6 @@ namespace UnityStandardAssets._2D
            
 
             m_Anim.SetFloat("Vertical", moveH);
-    
-
-            if (Mathf.Abs(moveH)>Mathf.Abs(moveV))
-            {
-                if (moveH > 0)
-                {
-                    _lastDir2 = 1;
-                }
-                else if (moveH < 0)
-                {
-                    _lastDir2 = -1;
-                }
-            }
-            else
-            {
-                if (moveV>0)
-                {
-                    _lastDir = 1;
-                }
-                else if (moveV<0)
-                {
-                    _lastDir = -1;
-                }
-            }
-
-            if (SideView)
-            {
-                if (Mathf.Abs(moveH) + Mathf.Abs(moveV) >= 0.5f)
-                {
-                    _lastDir = moveV;
-                    _lastDir2 = moveH;
-                }
-            }
 
             if (!m_Grounded && m_AirControl && !canJumpBack)
             {
@@ -233,10 +213,16 @@ namespace UnityStandardAssets._2D
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
+                if (!SideView)
+                {
+                    m_FacingRight = false;
+                    View.flipX = m_FacingRight;
+                }
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce), ForceMode.Acceleration);
             }
 
+            /*
             if (m_Anim.GetBool("Ground"))
             {
                 m_Anim.SetLayerWeight(1, Mathf.Abs(moveH) + Mathf.Abs(moveV));
@@ -244,7 +230,7 @@ namespace UnityStandardAssets._2D
             else
             {
                 m_Anim.SetLayerWeight(1, 0);
-            }
+            }*/
 
             if (Mathf.Abs(moveH)+ Mathf.Abs(moveV)>0)
             {
@@ -256,11 +242,12 @@ namespace UnityStandardAssets._2D
 
         private void Flip()
         {
-            if (!View)
+            if (!View || !m_Grounded)
             {
                 return;
             }
-            Debug.Log("Flip");
+
+
             // Switch the way the player is labelled as facing.
             m_FacingRight = !m_FacingRight;
 
