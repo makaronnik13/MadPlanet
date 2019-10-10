@@ -216,7 +216,10 @@ namespace UnityStandardAssets._2D
                 if (!SideView)
                 {
                     m_FacingRight = false;
-                    View.flipX = m_FacingRight;
+                    if (View)
+                    {
+                        View.flipX = m_FacingRight;
+                    }
                 }
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce), ForceMode.Acceleration);
@@ -252,7 +255,10 @@ namespace UnityStandardAssets._2D
             m_FacingRight = !m_FacingRight;
 
             // Multiply the player's x local scale by -1.
-            View.flipX = m_FacingRight;
+            if (View)
+            {
+                View.flipX = m_FacingRight;
+            }
         }
     }
 }
