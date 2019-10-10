@@ -17,10 +17,19 @@ public class QuestProgressor : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(Init());
+    }
+
+    private IEnumerator Init()
+    {
+        while (Game.Instance == null || Game.Instance.gameData == null)
+        {
+            yield return null;
+        }
+
         if (Quest)
         {
-          
-            if (Game.Instance.gameData.Quests.FirstOrDefault(q=>q.Quest == Quest)!=null)
+            if (Game.Instance.gameData.Quests.FirstOrDefault(q => q.Quest == Quest) != null)
             {
                 QuestCompleted(Game.Instance.gameData.Quests.FirstOrDefault(q => q.Quest == Quest).Completed.Value);
                 Game.Instance.gameData.Quests.FirstOrDefault(q => q.Quest == Quest).Completed.AddListener(QuestCompleted);
