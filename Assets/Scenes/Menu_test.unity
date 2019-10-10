@@ -5362,7 +5362,9 @@ MonoBehaviour:
   MainMenuTheme:
     Clip: {fileID: 8300000, guid: b6b486332e706c540a4c53c42d08c4ff, type: 3}
     Group: {fileID: 0}
-  OSTS: []
+  OSTS:
+  - Clip: {fileID: 8300000, guid: 11d41b57e5cf2a0409899d1dae51c594, type: 3}
+    Group: {fileID: 0}
 --- !u!82 &501541632
 AudioSource:
   m_ObjectHideFlags: 0
