@@ -53,7 +53,6 @@ public class Game : MonoBehaviour
 
         if (Controller && gameData.Position != Vector3.zero)
         {
-            Debug.Log("set pos: " + gameData.Position);
             Controller.transform.position = gameData.Position;
         }
     }
@@ -94,7 +93,7 @@ public class Game : MonoBehaviour
 
     public void Load()
     {
-        Debug.Log("Load");
+        gameData = new GameData();
         MiscUtil.TryLoadSavedState(gameData, GameSessionSaveFolder, GameSessionSaveFilename, true);
     }
 
@@ -123,8 +122,10 @@ public class Game : MonoBehaviour
 
     public void TakeQuest(Quest quest)
     {
+        Debug.Log(gameData.Quests.Count(q => q.Quest == quest));
         if (gameData.Quests.FirstOrDefault(q=>q.Quest == quest)==null)
         {
+            Debug.Log("add quest "+quest.Title.Text);
             QuestInstance newQuest = new QuestInstance(quest);
             gameData.Quests.Add(newQuest);
             OnQuestTaken(newQuest);

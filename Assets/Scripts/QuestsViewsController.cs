@@ -20,8 +20,14 @@ public class QuestsViewsController : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        Game.Instance.OnQuestTaken -= QuestTaken;
+    }
+
     private void QuestTaken(QuestInstance q)
     {
+        Debug.Log("quest taken");
         GameObject newQuestView = Instantiate(QuestViewPrefab);
         newQuestView.transform.SetParent(transform);
         newQuestView.transform.localPosition = Vector3.zero;
