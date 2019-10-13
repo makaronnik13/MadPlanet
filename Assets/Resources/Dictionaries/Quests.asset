@@ -18,50 +18,50 @@ MonoBehaviour:
     - language: 30
       translation: "\u0421\u043E\u0431\u0440\u0430\u0442\u044C \u0446\u0432\u0435\u0442\u044B"
     - language: 10
-      translation: "\u0443\u0443\u0443\u0443\u0443"
+      translation: Pick up flowers
   - key: Q1_2
     translations:
     - language: 30
       translation: "\u0414\u043E\u0439\u0442\u0438 \u0434\u043E \u0431\u0430\u0437\u044B"
     - language: 10
-      translation: "\u0443\u0443\u0443\u0443\u0443"
+      translation: Reach the station
   - key: Q1_3
     translations:
     - language: 30
       translation: "\u0421\u0434\u0430\u0442\u044C \u043E\u0442\u0447\u0435\u0442"
     - language: 10
-      translation: fff
+      translation: Render the report
   - key: Q1_4
     translations:
     - language: 30
       translation: "\u0421\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F \u0441
         \u041C\u0435\u0440\u0438"
     - language: 10
-      translation: fff
+      translation: Contact Meri
   - key: Q1_5
     translations:
     - language: 30
       translation: "\u0412\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C \u041C\u0435\u0440\u0438"
     - language: 10
-      translation: fff
+      translation: Pick up Meri
   - key: Q1_6
     translations:
     - language: 30
       translation: "\u041F\u043E\u0439\u043C\u0430\u0442\u044C \u0433\u043B\u0430\u0437\u0430"
     - language: 10
-      translation: 
+      translation: Catch the eyes
   - key: Q1_7
     translations:
     - language: 30
       translation: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u0433\u043B\u0430\u0437\u0430 "
     - language: 10
-      translation: 
+      translation: Close the eyes
   - key: Q1_8
     translations:
     - language: 30
       translation: "\u0414\u043E\u0433\u043D\u0430\u0442\u044C \u041C\u0435\u0440\u0438"
     - language: 10
-      translation: 
+      translation: Catch up with Meri
   Languages: 1e0000000a000000
   TableId: 1Lg_DFWNoWQN4whWxGcbDx_OwWxiAOloLQL0zmjM52lg
   PageId: 0
