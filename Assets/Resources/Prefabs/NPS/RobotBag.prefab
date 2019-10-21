@@ -5160,6 +5160,7 @@ GameObject:
   - component: {fileID: 2533030453606151169}
   - component: {fileID: 2533030453606151170}
   - component: {fileID: 2533030453606151168}
+  - component: {fileID: 2312284987546661396}
   m_Layer: 0
   m_Name: AtackModule
   m_TagString: Untagged
@@ -5229,9 +5230,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2312284987546661396}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Delay: 3
   DecreaseMultiplyer: 3
   SaveAfterUse: 0
+--- !u!114 &2312284987546661396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2533030453606151171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f509de7b1045cb744b6056cb549c47da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip:
+    Clip: {fileID: 8300000, guid: b14b0ad06348146459a99df801b71e3d, type: 3}
+    Group: {fileID: 0}
 --- !u!1 &2533030453855486096
 GameObject:
   m_ObjectHideFlags: 0

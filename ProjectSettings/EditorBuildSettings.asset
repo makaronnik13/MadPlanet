@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Old to del/EffectsTest.unity
     guid: e6561d99b13168a4b9ae2bd3699ce21c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old to del/Scene_Boss.unity
     guid: a84f0e8cf247c6946b8c7d7d83ac339d
   - enabled: 1

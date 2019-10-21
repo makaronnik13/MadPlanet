@@ -34979,8 +34979,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 73c6461a6d4af0b448231e843836d56b, type: 3}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 4827f22e0f4e73f42a695b634093259a, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -34991,11 +34991,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0422\u0438\u0442\u0440\u044B\n\u0422\u0435\u0441\u0442\u0442\u0435\u0441\u0442
-    \u0442\u0435\u0441\u0442 \u0442\u0435\u0441\u0442\u0442\u0435\u0441\u0442\n\u0422\u0435\u0441\u0442\u0442\u0435\u0441\u0442
-    \u0442\u0435\u0441\u0442\n\u0422\u0435\u0441\u0442\u0442\u0435\u0441\u0442 \u0442\u0435\u0441\u0442\n\u0422\u0435\u0441\u0442\u0442\u0435\u0441\u0442
-    \u0442\u0435\u0441\u0442 \u0442\u0435\u0441\u0442\n\u0422\u0435\u0441\u0442\u0442\u0435\u0441\u0442
-    \u0442\u0435\u0441\u0442\n\u0422\u0435\u0441\u0442\u0442\u0435\u0441\u0442 \u0442\u0435\u0441\u0442\n\u0421\u043F\u0430\u0441\u0438\u0431\u043E!"
+  m_Text: "\r\u041D\u0430\u0434 \u0438\u0433\u0440\u043E\u0439 \u0440\u0430\u0431\u043E\u0442\u0430\u043B\u0438\r\n\r\n\u0412\u043E\u0439\u043D\u043E\u0432\u0430
+    \u0410\u043D\u044F\r\n\u0422\u0438\u0448\u043A\u0438\u043D \u041D\u0438\u043A\u0438\u0442\u0430\r\n\u0412\u0438\u043A\u0442\u043E\u0440
+    \u0412\u0435\u0440\u0445\u043E\u0432\u0441\u043A\u0438\u0439\r\nSnegovski\r\n\n"
 --- !u!222 &733272212
 CanvasRenderer:
   m_ObjectHideFlags: 0

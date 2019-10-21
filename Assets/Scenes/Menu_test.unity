@@ -5358,12 +5358,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a7f30de91a0414b81524b324592eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swithTime: 2
+  swithTime: 1
   MainMenuTheme:
-    Clip: {fileID: 8300000, guid: b6b486332e706c540a4c53c42d08c4ff, type: 3}
+    Clip: {fileID: 0}
     Group: {fileID: 0}
   OSTS:
   - Clip: {fileID: 8300000, guid: 11d41b57e5cf2a0409899d1dae51c594, type: 3}
+    Group: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 8cfeb727b74ebfa4db5a4b72e3461028, type: 3}
+    Group: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: af65609f5d3b2574b9b6aba547ca5272, type: 3}
     Group: {fileID: 0}
 --- !u!82 &501541632
 AudioSource:
@@ -5379,7 +5383,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5611,7 +5615,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -10765,7 +10769,7 @@ RectTransform:
   m_GameObject: {fileID: 732540788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
   m_Children: []
   m_Father: {fileID: 229843399}
   m_RootOrder: 7
