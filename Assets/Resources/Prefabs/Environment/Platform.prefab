@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4237482239645125449}
   - component: {fileID: 4237482239645125463}
   - component: {fileID: 4237482239645125448}
+  - component: {fileID: 2185156483014837612}
   m_Layer: 12
   m_Name: PlatformTrigger
   m_TagString: Untagged
@@ -90,6 +91,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.29, y: 0.22, z: 3.42}
   m_Center: {x: 0, y: 0.21, z: -0.15}
+--- !u!114 &2185156483014837612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4237482239645125450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849c909e66396574f8853f006d865f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnStay:
+    m_PersistentCalls:
+      m_Calls: []
+  DestroyAfterActivation: 0
 --- !u!1 &4237482239694812124
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +405,7 @@ GameObject:
   - component: {fileID: 4482562096619460585}
   - component: {fileID: 1616971800448388588}
   - component: {fileID: 1982506345091412301}
+  - component: {fileID: 8475430520708250130}
   m_Layer: 0
   m_Name: column_end
   m_TagString: Untagged
@@ -483,9 +529,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 8475430520708250130}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   Delay: 0
   DecreaseMultiplyer: 2
   SaveAfterUse: 0
+--- !u!114 &8475430520708250130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482562096621678037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f509de7b1045cb744b6056cb549c47da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip:
+    Clip: {fileID: 8300000, guid: 6a10fe30f4577d74e9de03e27bbb0eac, type: 3}
+    Group: {fileID: 0}
 --- !u!1 &8188401510925956365
 GameObject:
   m_ObjectHideFlags: 0

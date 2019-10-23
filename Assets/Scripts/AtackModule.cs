@@ -23,7 +23,7 @@ public class AtackModule : MonoBehaviour
     private bool canceled = false;
 
     [SerializeField]
-    private float ReleaseTime = 2;
+    private float ReleaseTime = 20;
 
     private PlayerIdentity aim
     {

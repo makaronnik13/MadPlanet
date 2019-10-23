@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 5649263788309805468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 8348951154068306989}
   m_Father: {fileID: 5770529591777830476}
@@ -124,7 +124,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.37
+  m_Radius: 0.28
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8478786619865083828
 MonoBehaviour:
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lifetime: 10
-  Speed: 15
+  Speed: 11.97
   ExplosionPrefab: {fileID: 2067151931006826045, guid: a60e83339c184ce49aa2b816204e9731,
     type: 3}
   Shadow: {fileID: 0}
@@ -152,7 +152,7 @@ Rigidbody:
   m_GameObject: {fileID: 7189680842006151373}
   serializedVersion: 2
   m_Mass: 5
-  m_Drag: 3.89
+  m_Drag: 11
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -382,7 +382,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.5568628, g: 0.15686275, b: 0.43137258, a: 1}
+      maxColor: {r: 0.6037736, g: 0.18796727, b: 0.47332457, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -444,8 +444,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2.2
-      minScalar: 1
+      scalar: 1.33
+      minScalar: 0.7
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4121,8 +4121,8 @@ ParticleSystem:
       maxColor: {r: 0.13105197, g: 0.8797156, b: 0.8962264, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.70980394, g: 0.19215688, b: 0.5176471, a: 0.5254902}
-        key1: {r: 0.83921576, g: 0.40784317, b: 0.121568635, a: 0}
+        key0: {r: 0.8470589, g: 0.03529412, b: 0.27058825, a: 0.5254902}
+        key1: {r: 0.10980393, g: 0.7725491, b: 0.7372549, a: 0}
         key2: {r: 0.24528301, g: 0.035866853, b: 0.124560796, a: 0}
         key3: {r: 0.24528301, g: 0.035866853, b: 0.124560796, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}

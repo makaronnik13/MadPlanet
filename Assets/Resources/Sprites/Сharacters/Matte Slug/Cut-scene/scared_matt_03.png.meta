@@ -1,12 +1,18 @@
 fileFormatVersion: 2
 guid: c233dbaca1159fb48b6c4e1b8e3955ba
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: scared_matt_03_0
-    21300002: scared_matt_03_1
-    21300004: scared_matt_03_2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: scared_matt_03_0
+  - first:
+      213: 21300002
+    second: scared_matt_03_1
+  - first:
+      213: 21300004
+    second: scared_matt_03_2
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -61,28 +67,30 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -102,6 +110,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 84ae88d2d5b897b45a3c1a4b201c3a87
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -122,6 +131,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8995488641e23a24993d9d2eb0b9ac1f
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -142,6 +152,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1dd9eba9b7909e44d8ceaecf28b9e81d
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -150,10 +161,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 6d1ddfa9b17b4c545b35c95593730726
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
