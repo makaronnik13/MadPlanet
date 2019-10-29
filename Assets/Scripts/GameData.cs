@@ -26,6 +26,24 @@ public class GameData
     [SerializeData("Skin", FieldRequired.False)]
     public int Skin = 0;
 
+    [Savable]
+    [SerializeData("MusicTrackId", FieldRequired.False)]
+    private int currentTrackId = 0;
+
+    public int CurrentTrackId
+    {
+        get
+        {
+            return currentTrackId;
+        }
+        set
+        {
+            currentTrackId = value;
+            Game.Instance.Save();
+        }
+    }
+
+
     public GameData()
     {
 

@@ -10,7 +10,7 @@ public class DialogHolder : MonoBehaviour
 
     public bool Random = false;
 
-    public void Start()
+    public void Awake()
     {
         _currntDialogue = Dialogues[0];
     }
@@ -23,6 +23,7 @@ public class DialogHolder : MonoBehaviour
             Debug.Log(r);
             _currntDialogue = Dialogues[r];
         }
+
         DialogPlayer.Instance.PlayDialogue(_currntDialogue);
     }
 

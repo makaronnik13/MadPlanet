@@ -15,28 +15,14 @@ public class MusicSource : MonoBehaviour
 
     private static float CHANGE_TIME = 1f;
 
-    public AudioClipPair MainMenuTheme;
+    private Queue<AudioClip> _tracksQueqe;
 
+    public List<AudioClip> Clips = new List<AudioClip>();
 
-    public List<AudioClipPair> OSTS;
+    public AudioSource Music, Menu;
 
-    private Queue<AudioClipPair> _tracksQueqe;
-
-    private AudioSource _source;
-    private AudioSource source
-    {
-        get
-        {
-            if (_source == null)
-            {
-                _source = GetComponent<AudioSource>();
-            }
-            return _source;
-        }
-    }
-
-    private AudioClipPair _currentTrack;
-    private AudioClipPair currentTrack
+    private AudioClip _currentTrack;
+    private AudioClip currentTrack
     {
         get
         {
@@ -50,28 +36,28 @@ public class MusicSource : MonoBehaviour
         }
     }
 
+
     private IEnumerator ChangeTrack(float t)
     {
         float ChangeTime = t/2f;
 
-        if (source.clip)
+        if (Music.clip)
         {
             while (ChangeTime > 0)
             {
-                source.volume = (ChangeTime / (t / 2f)) * DefaultRessources.MusicVolume;
+                Music.volume = (ChangeTime / (t / 2f)) * DefaultRessources.MusicVolume;
                 ChangeTime -= Time.deltaTime;
                 yield return new WaitForSeconds(Time.deltaTime);
             }
         }
 
-        source.clip = _currentTrack.Clip;
-        source.outputAudioMixerGroup = _currentTrack.Group;
-        source.Play();
+        Music.clip = _currentTrack;
+        Music.Play();
 
         ChangeTime = t/2f;
         while (ChangeTime>0)
         {
-            source.volume = (1-(ChangeTime / (t/2f))) * DefaultRessources.MusicVolume;
+            Music.volume = (1-(ChangeTime / (t/2f))) * DefaultRessources.MusicVolume;
             ChangeTime -= Time.deltaTime;
             yield return new WaitForSeconds(Time.deltaTime);
         }
@@ -80,34 +66,82 @@ public class MusicSource : MonoBehaviour
     private void Start()
     {
         Instance = this;
-        SceneManager.sceneLoaded += OnSceneLoaded;
-        StartCoroutine(LoopTracks(new List<AudioClipPair>() { MainMenuTheme}));
+        //SceneManager.sceneLoaded += OnSceneLoaded;
         DefaultRessources.OnMusicVolumeChanged += VolumeChanged;
+        Game.Instance.Paused.AddListener(OnPause);
+        OnPause(true);
+    }
+
+    public void OnPause(bool v)
+    {
+        Debug.Log("ON PAUSE "+v);
+        StartCoroutine(SetMusicMode(v));
+    }
+
+    private IEnumerator SetMusicMode(bool v)
+    {
+        Debug.Log(v+"!!!");
+        float t = 1f;
+        float music = 0, menu = 0;
+        if (v)
+        {
+            menu = 1f;
+        }
+        else
+        {
+            music = 1f;
+        }
+
+        float startMusicVolume = 0, startMenuVolume = 0;
+
+        Music.outputAudioMixerGroup.audioMixer.GetFloat("MusicVol", out startMusicVolume);
+        Menu.outputAudioMixerGroup.audioMixer.GetFloat("MenuVol", out startMenuVolume);
+
+        startMusicVolume = (startMusicVolume+80f)/100f;
+        startMenuVolume = (startMenuVolume+80f) / 100f;
+
+        float musicMasterLevel, menuMasterLevel;
+
+        while (t>0)
+        {
+            musicMasterLevel = Mathf.Lerp(startMusicVolume, music, 1 / t);
+            menuMasterLevel = Mathf.Lerp(startMenuVolume, menu, 1 / t);
+
+            Music.outputAudioMixerGroup.audioMixer.SetFloat("MusicVol", musicMasterLevel*100f-80f);
+            Menu.outputAudioMixerGroup.audioMixer.SetFloat("MenuVol", menuMasterLevel * 100f - 80f);
+            t -= Time.deltaTime;
+            yield return null;
+        }
     }
 
     private void VolumeChanged(float v)
     {
-        source.volume = v;
+        Music.volume = v;
+        Menu.volume = v;
     }
 
 
     public void SetVolume(float v)
     {
         currentVolume = v;
-        GetComponent<AudioSource>().volume = DefaultRessources.MusicVolume * v;
+        Music.outputAudioMixerGroup.audioMixer.SetFloat("MusicVol", v*100f-80f);
     }
 
-    public void Play(AudioClipPair clip)
+    public void Play(int id)
     {
+        Debug.Log("Play");
+        SetMusicMode(false);
+        Game.Instance.gameData.CurrentTrackId = id;
         if (_loop != null)
         {
             swithTime = 0;
             StopCoroutine(_loop);
             _loop = null;
         }
-        _loop = StartCoroutine(LoopTracks(new List<AudioClipPair>() {clip}));
+        _loop = StartCoroutine(LoopTracks(new List<AudioClip>() {Clips[id]}));
     }
 
+    /*
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (_loop!=null)
@@ -116,27 +150,18 @@ public class MusicSource : MonoBehaviour
             StopCoroutine(_loop);
             _loop = null;
         }
+    }*/
 
-        if (scene.name == "Menu_Test")
-        {
-            _loop = StartCoroutine(LoopTracks(new List<AudioClipPair>() { MainMenuTheme }));
-        }
-
-        if (scene.name == "Scene_1_21_09")
-        {
-            _loop = StartCoroutine(LoopTracks(OSTS));
-        }
-    }
-
-    private IEnumerator LoopTracks(List<AudioClipPair> clips)
+    private IEnumerator LoopTracks(List<AudioClip> clips)
     {
-        _tracksQueqe = new Queue<AudioClipPair>(clips.OrderBy(o => Guid.NewGuid()));
+        _tracksQueqe = new Queue<AudioClip>(clips.OrderBy(o => Guid.NewGuid()));
         while (true)
         {
             currentTrack = _tracksQueqe.Dequeue();
             _tracksQueqe.Enqueue(currentTrack);
-            length = currentTrack.Clip.length;
-            swithTime = currentTrack.Clip.length - CHANGE_TIME / 2f;
+            length = currentTrack.length;
+            swithTime = currentTrack.length - CHANGE_TIME / 2f;
+            
             while (swithTime>0)
             {  
                 yield return new WaitForEndOfFrame();

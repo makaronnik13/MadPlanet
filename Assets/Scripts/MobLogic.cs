@@ -27,6 +27,8 @@ public class MobLogic : MonoBehaviour
     private bool CanJump = false;
     public AtackModule Atack;
 
+    private bool canAtack = true;
+
     [SerializeField]
     private MobVision Vision;
 
@@ -58,6 +60,11 @@ public class MobLogic : MonoBehaviour
     }
     private bool forward = true;
     private bool jump = false;
+
+    public void SetAgressice(bool v)
+    {
+        canAtack = v;
+    }
 
     public void Run()
     {
@@ -128,7 +135,7 @@ public class MobLogic : MonoBehaviour
                     }
                     else
                     {
-                        if (followingObject == null || (followingObject!=null && followingObject.GetComponent<PlatformerCharacter2D>().Grabed))
+                        if (canAtack && followingObject == null || (followingObject!=null && followingObject.GetComponent<PlatformerCharacter2D>().Grabed))
                         {
                             if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nextPos.x, nextPos.z)) > 0.2f)
                             {

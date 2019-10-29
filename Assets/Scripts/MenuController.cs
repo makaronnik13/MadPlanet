@@ -10,9 +10,6 @@ public class MenuController : MonoBehaviour
     private string SceneName;
 
     [SerializeField]
-    private GameObject BackCanvas;
-
-    [SerializeField]
     private Animator Animator;
 
     [SerializeField]
@@ -51,19 +48,20 @@ public class MenuController : MonoBehaviour
         {
             Game.Instance.gameData = new GameData();
             Game.Instance.Save();
+            MusicSource.Instance.Play(Game.Instance.gameData.CurrentTrackId);
         }
         else
         {
+            Debug.Log(Game.Instance.Paused.State);
             if (Game.Instance.Paused.State)
-            {
-                Debug.Log("P");
+            {              
                 Game.Instance.Paused.SetState(false);
-                return;
-                
+                return;                
             }
             else
             {
                 Game.Instance.Load();
+                MusicSource.Instance.Play(Game.Instance.gameData.CurrentTrackId);
             }
         }
 
@@ -71,6 +69,7 @@ public class MenuController : MonoBehaviour
         Particles.Stop();
         _loadingOp = SceneManager.LoadSceneAsync(SceneName);
         _loadingOp.completed += OnComplete;
+
     }
 
     private void OnComplete(AsyncOperation v)
@@ -80,9 +79,10 @@ public class MenuController : MonoBehaviour
 
     private IEnumerator FinishLoading()
     {
-        yield return new WaitForSeconds(2);
+        Game.Instance.Paused.SetState(false);
+        MusicSource.Instance.OnPause(false);
+        yield return new WaitForSeconds(1);
         Animator.SetTrigger("Loaded");
-      //  BackCanvas.SetActive(false);
     }
 
     public void Quit()

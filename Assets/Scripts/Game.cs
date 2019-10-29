@@ -109,7 +109,6 @@ public class Game : MonoBehaviour
     {
         if (v>=1)
         {
-            Debug.Log("restart");
             Restart();
         }
     }
@@ -122,10 +121,8 @@ public class Game : MonoBehaviour
 
     public void TakeQuest(Quest quest)
     {
-        Debug.Log(gameData.Quests.Count(q => q.Quest == quest));
         if (gameData.Quests.FirstOrDefault(q=>q.Quest == quest)==null)
         {
-            Debug.Log("add quest "+quest.Title.Text);
             QuestInstance newQuest = new QuestInstance(quest);
             gameData.Quests.Add(newQuest);
             OnQuestTaken(newQuest);

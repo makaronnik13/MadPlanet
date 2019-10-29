@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ namespace UnityStandardAssets._2D
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {
+
         public SpriteRenderer View;
         [SerializeField] public bool SideView = false;
         [SerializeField] public float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
@@ -108,6 +110,19 @@ namespace UnityStandardAssets._2D
 
             Visual.transform.localPosition = Vector3.Lerp(Vector3.zero, Vector3.down*2, drawnRate);
 
+
+
+            if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+            {
+                m_FacingRight = false;
+                View.flipX = m_FacingRight;
+            }
+
+            if (Mathf.Abs(m_Anim.GetFloat("Horizontal")) < 0.75f)
+            {
+                m_FacingRight = false;
+                View.flipX = m_FacingRight;
+            }
         }
 
         public void SetSideView(bool v)
@@ -213,14 +228,6 @@ namespace UnityStandardAssets._2D
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
-                if (!SideView)
-                {
-                    m_FacingRight = false;
-                    if (View)
-                    {
-                        View.flipX = m_FacingRight;
-                    }
-                }
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce), ForceMode.Acceleration);
             }
@@ -245,6 +252,20 @@ namespace UnityStandardAssets._2D
 
         private void Flip()
         {
+            if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+            {
+                m_FacingRight = false;
+                View.flipX = m_FacingRight;
+                return;
+            }
+
+            if (Mathf.Abs(m_Anim.GetFloat("Horizontal"))<0.5f)
+            {
+                m_FacingRight = false;
+                View.flipX = m_FacingRight;
+                return;
+            }
+
             if (!View || !m_Grounded)
             {
                 return;

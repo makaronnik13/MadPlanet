@@ -45,6 +45,5 @@ public class QuestInstance
         {
             Completed.SetState(2);
         }
-        Game.Instance.Save();
     }
 }

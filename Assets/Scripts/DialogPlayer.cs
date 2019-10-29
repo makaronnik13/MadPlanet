@@ -42,11 +42,13 @@ public class DialogPlayer : MonoBehaviour
 
     private void Start()
     {
+        HideDialogue();
         Instance = GetComponent<DialogPlayer>();
     }
 
     public void PlayDialogue(Dialog dialog)
     {
+        Debug.Log("Play");
         HideDialogue();
         Playing = true;
         TextPanel.SetActive(true);
