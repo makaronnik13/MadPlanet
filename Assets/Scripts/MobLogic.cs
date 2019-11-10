@@ -71,13 +71,21 @@ public class MobLogic : MonoBehaviour
         TriggerMob(FindObjectOfType<PlayerIdentity>());
     }
 
-    private void Start()
+    private void OnEnable()
     {
         Vision.OnInside += TriggerMob;
         Vision.OnOutside += UnTriggerMob;
         currentPoint = 0;
         StartCoroutine(LoopMove());
     }
+
+    private void OnDisable()
+    {
+        Vision.OnInside -= TriggerMob;
+        Vision.OnOutside -= UnTriggerMob;
+        StopCoroutine(LoopMove());
+    }
+
 
     private void UnTriggerMob(PlayerIdentity obj)
     {

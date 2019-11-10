@@ -1,4 +1,5 @@
-﻿using com.armatur.common.serialization;
+﻿using com.armatur.common.flags;
+using com.armatur.common.serialization;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,10 @@ using UnityEngine;
 [Serializable]
 public class GameData
 {
+    [Savable]
+    [SerializeData("MiniSceneId", FieldRequired.False)]
+    public GenericFlag<int> ActiveMiniscene = new GenericFlag<int>("ActiveMiniScene", 0);
+
     [Savable]
     [SerializeCollection("Quests", FieldRequired.False)]
     public List<QuestInstance> Quests = new List<QuestInstance>();

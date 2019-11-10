@@ -132,6 +132,7 @@ public class Game : MonoBehaviour
 
     public void Save()
     {
+        Debug.Log("Save");
         if (Controller)
         {
             gameData.Position = Controller.transform.position;
