@@ -12,6 +12,7 @@ public class CutsceneSkipper : MonoBehaviour
     {
         if (Mathf.Abs(Input.GetAxis("Horizontal"))>0 || Mathf.Abs(Input.GetAxis("Vertical")) > 0)
         {
+            Debug.Log("skip");
             OnSkip.Invoke();
         }
     }
