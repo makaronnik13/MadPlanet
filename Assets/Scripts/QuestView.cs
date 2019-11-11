@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class QuestView : MonoBehaviour
 {
+    public AudioClipPair QuestCompleteSound;
     public TMPro.TextMeshProUGUI Counter, Title;
     public Image Img;
     public GameObject CounterHab;
@@ -28,6 +29,7 @@ public class QuestView : MonoBehaviour
     {
         if (completed == 2)
         {
+            SoundsPlayer.Instance.PlaySound(QuestCompleteSound);
             Destroy(gameObject, 2);
         }
     }

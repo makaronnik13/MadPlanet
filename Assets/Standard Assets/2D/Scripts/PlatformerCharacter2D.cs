@@ -7,6 +7,9 @@ namespace UnityStandardAssets._2D
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {
+        public AudioSource SoundSource;
+        public AudioClip GroundSound, JumpSound, Footstep;
+
 
         public SpriteRenderer View;
         [SerializeField] public bool SideView = false;
@@ -74,7 +77,19 @@ namespace UnityStandardAssets._2D
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             // This can be done using layers instead but Sample Assets will not overwrite your project settings.
 
-            m_Grounded = IsGrounded();
+            if (m_Grounded!=IsGrounded())
+            {
+                if (IsGrounded())
+                {
+                    SoundSource.PlayOneShot(JumpSound);
+                }
+                else
+                {
+                    SoundSource.PlayOneShot(GroundSound);
+                }
+                m_Grounded = IsGrounded();
+            }
+            
 
             m_Anim.SetBool("Ground", m_Grounded);
             // Set the vertical animation

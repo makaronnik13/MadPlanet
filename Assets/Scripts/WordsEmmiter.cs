@@ -54,6 +54,7 @@ public class WordsEmmiter : MonoBehaviour
             Vector3 pushDir = Vector3.Lerp(Vector3.up, (FindObjectOfType<PlayerIdentity>().transform.position).normalized- transform.position, 0.75f)*forceMultiplyer;
             newWord.GetComponent<Rigidbody>().AddForce(pushDir);
             Destroy(newWord, 15f);
+            
             yield return new WaitForSeconds(rate);
         }
     }

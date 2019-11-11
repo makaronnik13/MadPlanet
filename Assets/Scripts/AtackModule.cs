@@ -5,6 +5,10 @@ using UnityStandardAssets._2D;
 
 public class AtackModule : MonoBehaviour
 {
+    public AudioSource SoundSource;
+
+    public AudioClip AtackSound, ReleaseSound;
+
     [SerializeField]
     private InteractableObject InteractionModule;
 
@@ -84,6 +88,7 @@ public class AtackModule : MonoBehaviour
     {    
         if (aim != null && CanAtack && !aim.GetComponent<PlatformerCharacter2D>().Grabed && !aim.GetComponent<PlatformerCharacter2D>().Drawn && !aim.GetComponent<PlatformerCharacter2D>().Platformed)
         {
+            SoundSource.PlayOneShot(AtackSound);
             Animator.SetBool("Grab", true);
             //Particles.Play();
             GrabbingTransform = aim.transform;
@@ -102,6 +107,10 @@ public class AtackModule : MonoBehaviour
         Vector3 startPos = GrabbingTransform.localPosition;
         while (t<=v)
         {
+            if (GrabbingTransform == null)
+            {
+                break;
+            }
             GrabbingTransform.localPosition = Vector3.Lerp(startPos, Vector3.zero, t/v);
             t += Time.deltaTime;
             yield return null;
@@ -110,12 +119,13 @@ public class AtackModule : MonoBehaviour
 
     public void Release()
     {
+        SoundSource.PlayOneShot(ReleaseSound);
         GrabbingTransform.SetParent(null);
-        GrabbingTransform = null;
         CanAtack = false;
         Animator.SetBool("Grab", false);
         FindObjectOfType<InteractionModule>().interactableObject = null;
         StartCoroutine(ContinueAttack());
+        GrabbingTransform = null;
     }
 
     private IEnumerator ContinueAttack()

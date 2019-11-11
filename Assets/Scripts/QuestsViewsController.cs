@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class QuestsViewsController : MonoBehaviour
 {
+    public AudioClipPair QuestTakeSound;
     public GameObject QuestViewPrefab;
 
     public void Start()
@@ -27,7 +28,7 @@ public class QuestsViewsController : MonoBehaviour
 
     private void QuestTaken(QuestInstance q)
     {
-        Debug.Log("quest taken");
+        SoundsPlayer.Instance.PlaySound(QuestTakeSound);
         GameObject newQuestView = Instantiate(QuestViewPrefab);
         newQuestView.transform.SetParent(transform);
         newQuestView.transform.localPosition = Vector3.zero;

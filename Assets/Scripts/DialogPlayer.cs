@@ -8,6 +8,8 @@ public class DialogPlayer : MonoBehaviour
 {
     public static DialogPlayer Instance;
 
+    public AudioClipPair ReplicSound;
+
     public Platformer2DUserControl MovementController;
 
     [SerializeField]
@@ -34,7 +36,10 @@ public class DialogPlayer : MonoBehaviour
         {
             _playing = value;
             OnPlayingStateChanged(_playing);
-            MovementController.enabled = !_playing;
+            if (MovementController)
+            {
+                MovementController.enabled = !_playing;
+            }
         }
     }
     private Dialog _playingDialog;
@@ -58,6 +63,8 @@ public class DialogPlayer : MonoBehaviour
 
     private void PlayNextReplic()
     {
+        SoundsPlayer.Instance.PlaySound(ReplicSound);
+
         if (_phraseId >= _playingDialog.Phrases.Count)
         {
             if (_playingDialog.QuestOnComplete)

@@ -10,6 +10,8 @@ public class Drawn : MonoBehaviour
    [SerializeField]
    PlatformerCharacter2D Char;
 
+    public AudioSource DrawnSoundSource;
+
     [SerializeField]
     public PostProcessProfile Vingete;
 
@@ -38,6 +40,8 @@ public class Drawn : MonoBehaviour
         Vingete.GetSetting<Vignette>().intensity.value = v;
 
         Fade.color = Color.Lerp(Color.black*0, Color.black, v);
+
+        DrawnSoundSource.volume = v;
     }
 
     private void OnDestroy()

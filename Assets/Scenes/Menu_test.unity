@@ -10857,6 +10857,7 @@ GameObject:
   - component: {fileID: 948293767}
   - component: {fileID: 948293766}
   - component: {fileID: 948293765}
+  - component: {fileID: 948293769}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -11072,6 +11073,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948293763}
   m_CullTransparentMesh: 0
+--- !u!114 &948293769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948293763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &951574111
 GameObject:
   m_ObjectHideFlags: 0
@@ -11807,7 +11821,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 163.45
+  m_fontSize: 134
   m_fontSizeBase: 182.72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11977,6 +11991,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ab77a0757da9d4ba76233aad03995f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FocusSound:
+    Clip: {fileID: 8300000, guid: 6ba7e44a55125ad4b949af680c3521fd, type: 3}
+    Group: {fileID: 0}
+  ClickSound:
+    Clip: {fileID: 8300000, guid: 8c7f39e80961bd24bba432db4b408d75, type: 3}
+    Group: {fileID: 0}
   SceneName: Scene_1_21_09
   Animator: {fileID: 1357049921}
   Particles: {fileID: 174874602}
@@ -12012,6 +12032,7 @@ GameObject:
   - component: {fileID: 1475060534}
   - component: {fileID: 1475060533}
   - component: {fileID: 1475060532}
+  - component: {fileID: 1475060536}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -12216,6 +12237,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475060530}
   m_CullTransparentMesh: 0
+--- !u!114 &1475060536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475060530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1544580801
 GameObject:
   m_ObjectHideFlags: 0
@@ -12640,7 +12674,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 77.25
+  m_fontSize: 76.5
   m_fontSizeBase: 77.6
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -17749,6 +17783,7 @@ GameObject:
   - component: {fileID: 1835405167}
   - component: {fileID: 1835405166}
   - component: {fileID: 1835405165}
+  - component: {fileID: 1835405164}
   m_Layer: 5
   m_Name: New game
   m_TagString: Untagged
@@ -17775,6 +17810,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1835405164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835405162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!114 &1835405165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18049,6 +18097,7 @@ GameObject:
   - component: {fileID: 1943441433}
   - component: {fileID: 1943441432}
   - component: {fileID: 1943441431}
+  - component: {fileID: 1943441435}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -18264,6 +18313,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943441429}
   m_CullTransparentMesh: 0
+--- !u!114 &1943441435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943441429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &2008107670
 GameObject:
   m_ObjectHideFlags: 0

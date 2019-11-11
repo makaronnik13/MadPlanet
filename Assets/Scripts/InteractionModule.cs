@@ -58,13 +58,13 @@ public class InteractionModule : MonoBehaviour
         switch (code)
         {
             case 0:
-                return "W";
+                return "<sprite name=\"Up\">";
             case 1:
-                return "A";
+                return "<sprite name=\"Left\">";
             case 2:
-                return "S";
+                return "<sprite name=\"Down\">";
             case 3:
-                return "D";
+                return "<sprite name=\"Right\">";
         }
 
         return "undefined";
@@ -195,7 +195,7 @@ public class InteractionModule : MonoBehaviour
             }
             else
             {
-                if (Input.GetKey(KeyCode.E))
+                if (Input.GetAxisRaw("Fire3") != 0)
                 {
                     if (interactableObject.Delay == 0)
                     {

@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
+    [SerializeField]
+    private AudioClipPair FocusSound, ClickSound;
+
     [SerializeField]
     private string SceneName;
 
@@ -35,6 +39,27 @@ public class MenuController : MonoBehaviour
     {
         ContinueBtn.interactable = Game.Instance.gameData != null;
         Game.Instance.Paused.AddListener(OnPause, true);
+        foreach (Button b in GetComponentsInChildren<Button>())
+        {
+            b.onClick.AddListener(Click);
+        }
+        foreach (EventTrigger t in GetComponentsInChildren<EventTrigger>())
+        {
+            EventTrigger.Entry entry = new EventTrigger.Entry();
+            entry.eventID = EventTriggerType.PointerEnter;
+            entry.callback.AddListener((eventData) => { Focus(); });
+            t.triggers.Add(entry);
+        }
+    }
+
+    private void Focus()
+    {
+        SoundsPlayer.Instance.PlaySound(FocusSound);
+    }
+
+    private void Click()
+    {
+        SoundsPlayer.Instance.PlaySound(ClickSound);
     }
 
     private void OnPause(bool v)

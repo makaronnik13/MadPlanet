@@ -71,9 +71,12 @@ public class Boss : MonoBehaviour
     public Transform NearSpikes, FarSpikes;
     private List<Vector3> spikesPositions = new List<Vector3>();
 
+    public AudioSource Source;
+    public AudioClip Appear, Death;
+
     public MobVision Vision;
     public GameObject SpikePrefab;
-    public Animator Animator;
+    public Animator Animator, BossAnimator;
     public float ModeSwitchTime = 15f;
     public float BulletsRate = 1f;
     public float FarSpikesRate = 2f;
@@ -83,6 +86,7 @@ public class Boss : MonoBehaviour
 
     public void StartAttack()
     {
+        Source.PlayOneShot(Appear);
         Vision.OnInside += OnPlayerInside;
         Vision.OnOutside += OnplayerOutside;
         StartCoroutine(SwitchMode());
@@ -183,7 +187,9 @@ public class Boss : MonoBehaviour
 
     private void Die()
     {
+        Source.PlayOneShot(Death);
         Animator.SetTrigger("Death");
+        BossAnimator.SetTrigger("Dead");
         Destroy(gameObject, 2);
         OnDeath.Invoke();
     }

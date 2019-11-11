@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
+    public AudioSource SoundSource;
+
+    public AudioClip Presound, ExplosionSound;
+
     public ParticleSystem Crack, Spike;
     public GameObject Colliders;
     public bool Shaking = false;
@@ -12,12 +16,14 @@ public class Spikes : MonoBehaviour
 
     public void Shake(float delay)
     {
+        SoundSource.PlayOneShot(Presound);
         Crack.Play();
         StartCoroutine(Damage(delay));
     }
 
     private IEnumerator Damage(float t)
     {
+        SoundSource.PlayOneShot(ExplosionSound);
         Spike.startLifetime = Lifetime;
         Shaking = true;
         yield return new WaitForSeconds(t);

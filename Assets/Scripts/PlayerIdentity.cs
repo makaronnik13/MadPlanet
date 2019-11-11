@@ -6,6 +6,8 @@ using UnityStandardAssets._2D;
 
 public class PlayerIdentity : MonoBehaviour
 {
+    public AudioClipPair DieSound;
+
     public float ForceModificator = 1f;
 
     // Start is called before the first frame update
@@ -37,6 +39,7 @@ public class PlayerIdentity : MonoBehaviour
 
     public void Die()
     {
+        SoundsPlayer.Instance.PlaySound(DieSound);
        GetComponent<PlatformerCharacter2D>().Die(true, 1f);
     }
 }

@@ -80,7 +80,6 @@ public class MusicSource : MonoBehaviour
 
     private IEnumerator SetMusicMode(bool v)
     {
-        Debug.Log(v+"!!!");
         float t = 1f;
         float music = 0, menu = 0;
         if (v)
