@@ -34,6 +34,10 @@ public class SoundsPlayer : MonoBehaviour
 
     public void PlaySound(AudioClipPair pair)
     {
+        if (pair.Clip == null)
+        {
+            return;
+        }
         AudioSource _source = gameObject.AddComponent<AudioSource>();
         _source.volume = DefaultRessources.SoundVolume;
         _source.outputAudioMixerGroup = pair.Group;

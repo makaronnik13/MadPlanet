@@ -7,10 +7,17 @@ public class FootEmitter : MonoBehaviour
     [SerializeField]
     private ParticleSystem LeftFoot, RightFoot;
 
+    [SerializeField]
+    private AudioSource source;
+
     public bool EmmitionEnabled = true;
 
     public void Left()
     {
+        if (source)
+        {
+            source.PlayOneShot(source.clip);
+        }
         if (!EmmitionEnabled)
         {
             return;
@@ -20,6 +27,10 @@ public class FootEmitter : MonoBehaviour
 
     public void Right()
     {
+        if (source)
+        {
+            source.PlayOneShot(source.clip);
+        }
         if (!EmmitionEnabled)
         {
             return;

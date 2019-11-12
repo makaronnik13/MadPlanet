@@ -8,7 +8,7 @@ namespace UnityStandardAssets._2D
     public class PlatformerCharacter2D : MonoBehaviour
     {
         public AudioSource SoundSource;
-        public AudioClip GroundSound, JumpSound, Footstep;
+        public AudioClip GroundSound, JumpSound;
 
 
         public SpriteRenderer View;
