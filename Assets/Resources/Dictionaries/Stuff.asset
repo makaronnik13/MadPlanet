@@ -78,7 +78,7 @@ MonoBehaviour:
     - language: 30
       translation: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u043C\u0443\u0437\u044B\u043A\u0438"
     - language: 10
-      translation: MusicVolume
+      translation: Music volume
   Languages: 1e0000000a000000
   TableId: 1M9dvtiXKIEiem9kW5bjnwmOBCnDC1mlGWAk6M8XUigw
   PageId: 0
