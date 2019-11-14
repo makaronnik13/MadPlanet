@@ -15,7 +15,7 @@ public class MenuController : MonoBehaviour
     private GameObject SettingsPanel;
 
     [SerializeField]
-    private TMPro.TextMeshProUGUI LangTitle;
+    private TMPro.TMP_Dropdown Lang;
 
     private bool SettingsShowing
     {
@@ -75,6 +75,21 @@ public class MenuController : MonoBehaviour
             entry.eventID = EventTriggerType.PointerEnter;
             entry.callback.AddListener((eventData) => { Focus(); });
             t.triggers.Add(entry);
+        }
+
+        Lang.onValueChanged.AddListener(ChangeLang);
+    }
+
+    private void ChangeLang(int v)
+    {
+        switch (v)
+        {
+            case 0:
+                LocalizationManager.Language = SystemLanguage.Russian;
+                break;
+            case 1:
+                LocalizationManager.Language = SystemLanguage.English;
+                break;
         }
     }
 
@@ -155,21 +170,15 @@ public class MenuController : MonoBehaviour
     {
         MusicVolume.value = DefaultRessources.MusicVolume;
         SoundsVolume.value = DefaultRessources.SoundVolume;
-        LangTitle.text = LocalizationManager.Language.ToString();
-        SettingsPanel.SetActive(!SettingsPanel.activeInHierarchy);
-    }
-
-    public void ChangeLanguage()
-    {
-        if (LocalizationManager.Language!=SystemLanguage.Russian)
+        if (LocalizationManager.Language == SystemLanguage.English)
         {
-            LocalizationManager.Language = SystemLanguage.Russian;
+            Lang.value = 1;
         }
         else
         {
-            LocalizationManager.Language = SystemLanguage.English;
+            Lang.value = 0;
         }
 
-        LangTitle.text = LocalizationManager.Language.ToString();
+        SettingsPanel.SetActive(!SettingsPanel.activeInHierarchy);
     }
 }
