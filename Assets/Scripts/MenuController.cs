@@ -9,6 +9,9 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     [SerializeField]
+    private GameObject Reset;
+
+    [SerializeField]
     private Slider MusicVolume, SoundsVolume;
 
     [SerializeField]
@@ -168,6 +171,7 @@ public class MenuController : MonoBehaviour
 
     public void ToggleSettings()
     {
+        Reset.SetActive(Game.Instance.Paused.State);
         MusicVolume.value = DefaultRessources.MusicVolume;
         SoundsVolume.value = DefaultRessources.SoundVolume;
         if (LocalizationManager.Language == SystemLanguage.English)
@@ -178,7 +182,17 @@ public class MenuController : MonoBehaviour
         {
             Lang.value = 0;
         }
-
         SettingsPanel.SetActive(!SettingsPanel.activeInHierarchy);
     }
+
+    public void ResetScene()
+    {
+        Animator.SetTrigger("Loading");
+        Particles.Stop();
+        SceneManager.UnloadSceneAsync(SceneName);
+        _loadingOp = SceneManager.LoadSceneAsync(SceneName);
+        ToggleSettings();
+        Game.Instance.Paused.SetState(false);
+    }
+
 }

@@ -41,7 +41,14 @@ public class Drawn : MonoBehaviour
 
         Fade.color = Color.Lerp(Color.black*0, Color.black, v);
 
-        DrawnSoundSource.volume = v;
+        if (v == 0)
+        {
+            DrawnSoundSource.volume = 0;
+        }
+        else
+        {
+            DrawnSoundSource.volume += 0.03f;
+        }
     }
 
     private void OnDestroy()

@@ -45,7 +45,7 @@ public class DialogPlayer : MonoBehaviour
     private Dialog _playingDialog;
     private int _phraseId;
 
-    private void Start()
+    private void Awake()
     {
         HideDialogue();
         Instance = GetComponent<DialogPlayer>();
@@ -56,9 +56,12 @@ public class DialogPlayer : MonoBehaviour
         Debug.Log("Play");
         HideDialogue();
         Playing = true;
-        TextPanel.SetActive(true);
-        _playingDialog = dialog;
-        PlayNextReplic();
+        if (TextPanel)
+        {
+            TextPanel.SetActive(true);
+            _playingDialog = dialog;
+            PlayNextReplic();
+        }
     }
 
     private void PlayNextReplic()
@@ -86,9 +89,13 @@ public class DialogPlayer : MonoBehaviour
         Playing = false;
         _phraseId = 0;
         _playingDialog = null;
-        TextPanel.gameObject.SetActive(false);
-        LeftPerson.SetActive(false);
-        RightPerson.SetActive(false);
+        if (TextPanel)
+        {
+            TextPanel.gameObject.SetActive(false);
+            LeftPerson.SetActive(false);
+            RightPerson.SetActive(false);
+
+        }
     }
 
     private void Update()
@@ -138,8 +145,11 @@ public class DialogPlayer : MonoBehaviour
                 break;
         }
 
-       // Typewriter.initialText = dialoguePhrase.Text.Text;
-        Typewriter.Write(dialoguePhrase.Text.Text, new string[] { });
+        // Typewriter.initialText = dialoguePhrase.Text.Text;
+        if (Typewriter)
+        {
+            Typewriter.Write(dialoguePhrase.Text.Text, new string[] { });
+        }
        // Typewriter.Write();
     }
 
