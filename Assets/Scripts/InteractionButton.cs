@@ -57,6 +57,22 @@ public class InteractionButton : MonoBehaviour
         {
             Animator.SetBool("Showing", true);
             transform.position = obj.transform.position + obj.EButtonOffset;
+
+            string[] names = Input.GetJoystickNames();
+            for (int x = 0; x < names.Length; x++)
+            {
+                if (names[x].Length == 19)
+                {
+                    Debug.Log("PS4 CONTROLLER IS CONNECTED");
+                    GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "□";
+                }
+                if (names[x].Length == 33)
+                {
+                    Debug.Log("XBOX ONE CONTROLLER IS CONNECTED");
+                    //set a controller bool to true
+                    GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "X";
+                }
+            }
         }
         else
         {

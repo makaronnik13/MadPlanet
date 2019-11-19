@@ -137,9 +137,9 @@ public class InteractionModule : MonoBehaviour
         {
             if (interactableObject.IneractionMode == InteractableObject.InteractionMode.Keys)
             {
-                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.S)|| Input.GetKeyDown(KeyCode.A))
+                if (Mathf.Abs(Input.GetAxisRaw("Horizontal"))>=1 || Mathf.Abs(Input.GetAxisRaw("Vertical")) >= 1)
                 {
-                    if (Input.GetKeyDown(KeyCode.W))
+                    if (Input.GetAxisRaw("Vertical")>=1)
                     {
                         if (Codes[CodeProgress] == 0)
                         {
@@ -152,7 +152,7 @@ public class InteractionModule : MonoBehaviour
                         return;
                     }
 
-                    if (Input.GetKeyDown(KeyCode.A))
+                    if (Input.GetAxisRaw("Horizontal")<=-1)
                     {
                         if (Codes[CodeProgress] == 1)
                         {
@@ -165,7 +165,7 @@ public class InteractionModule : MonoBehaviour
                         return;
                     }
 
-                    if (Input.GetKeyDown(KeyCode.S))
+                    if (Input.GetAxisRaw("Vertical") <= -1)
                     {
                         if (Codes[CodeProgress] == 2)
                         {
@@ -178,7 +178,7 @@ public class InteractionModule : MonoBehaviour
                         return;
                     }
 
-                    if (Input.GetKeyDown(KeyCode.D))
+                    if (Input.GetAxisRaw("Horizontal")>=1)
                     {
                         if (Codes[CodeProgress] == 3)
                         {

@@ -100,7 +100,7 @@ public class DialogPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)||Input.GetMouseButtonDown(0)||Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)||Input.GetMouseButtonDown(0)||Input.GetKeyDown(KeyCode.E)|| Input.GetKeyDown("joystick button 2"))
         {
             if (_playingDialog != null)
             {
