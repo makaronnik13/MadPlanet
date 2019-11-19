@@ -10,6 +10,7 @@ public class InteractionModule : MonoBehaviour
     public Action<float, float> OnFillChanged = (val, max) => { };
     public Action OnCodeProgressChanged = () => { };
     public Action OnCodesChanged = () => { };
+    private bool _input = false;
 
     public List<int> Codes = new List<int>();
     private int _codeProgress = 0;
@@ -137,10 +138,11 @@ public class InteractionModule : MonoBehaviour
         {
             if (interactableObject.IneractionMode == InteractableObject.InteractionMode.Keys)
             {
-                if (Mathf.Abs(Input.GetAxisRaw("Horizontal"))>=1 || Mathf.Abs(Input.GetAxisRaw("Vertical")) >= 1)
+                if (!_input && (Mathf.Abs(Input.GetAxisRaw("Horizontal"))>=1 || Mathf.Abs(Input.GetAxisRaw("Vertical")) >= 1))
                 {
                     if (Input.GetAxisRaw("Vertical")>=1)
                     {
+                        _input = true;
                         if (Codes[CodeProgress] == 0)
                         {
                             CodeProgress++;
@@ -154,6 +156,7 @@ public class InteractionModule : MonoBehaviour
 
                     if (Input.GetAxisRaw("Horizontal")<=-1)
                     {
+                        _input = true;
                         if (Codes[CodeProgress] == 1)
                         {
                             CodeProgress++;
@@ -167,6 +170,7 @@ public class InteractionModule : MonoBehaviour
 
                     if (Input.GetAxisRaw("Vertical") <= -1)
                     {
+                        _input = true;
                         if (Codes[CodeProgress] == 2)
                         {
                             CodeProgress++;
@@ -180,6 +184,7 @@ public class InteractionModule : MonoBehaviour
 
                     if (Input.GetAxisRaw("Horizontal")>=1)
                     {
+                        _input = true;
                         if (Codes[CodeProgress] == 3)
                         {
                             CodeProgress++;
@@ -191,11 +196,16 @@ public class InteractionModule : MonoBehaviour
                         return;
                     }
                 }
+
+                if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) + Mathf.Abs(Input.GetAxisRaw("Vertical")) == 0)
+                {
+                    _input = false;
+                }
                    
             }
             else
             {
-                if (Input.GetAxisRaw("Fire3") != 0)
+                if (Input.GetAxisRaw("Fire3") != 0 && !DialogPlayer.Instance.Playing)
                 {
                     if (interactableObject.Delay == 0)
                     {

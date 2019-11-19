@@ -26,13 +26,13 @@ public class DialogPlayer : MonoBehaviour
     public Action<bool> OnPlayingStateChanged = (v) => { };
 
     private bool _playing = false;
-    private bool Playing
+    public bool Playing
     {
         get
         {
             return _playing;
         }
-        set
+        private set
         {
             _playing = value;
             OnPlayingStateChanged(_playing);

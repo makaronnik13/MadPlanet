@@ -133,7 +133,7 @@ namespace UnityStandardAssets._2D
                 View.flipX = m_FacingRight;
             }
 
-            if (Mathf.Abs(m_Anim.GetFloat("Horizontal")) < 0.75f)
+            if (Mathf.Abs(m_Anim.GetFloat("Horizontal")) < 0.3f)
             {
                 m_FacingRight = false;
                 View.flipX = m_FacingRight;
@@ -274,7 +274,7 @@ namespace UnityStandardAssets._2D
                 return;
             }
 
-            if (Mathf.Abs(m_Anim.GetFloat("Horizontal"))<0.5f)
+            if (Mathf.Abs(m_Anim.GetFloat("Horizontal"))<0.3f)
             {
                 m_FacingRight = false;
                 View.flipX = m_FacingRight;
