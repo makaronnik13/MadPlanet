@@ -38,9 +38,9 @@ MonoBehaviour:
       translation: "\u0415\u0449\u0435 \u043F\u0430\u0440\u0430 \u043C\u0438\u043D\u0443\u0442
         \u0438 \u044F \u043B\u044F\u0433\u0443 \u0432 \u043A\u0430\u043C\u0435\u0440\u0443
         \u0433\u0438\u043F\u0435\u0440-\u0441\u043D\u0430 \u0438 \u0442\u0435\u0431\u0435
-        \u0441\u043E\u0432\u0435\u0442\u0443\u044E."
+        \n\u0441\u043E\u0432\u0435\u0442\u0443\u044E."
     - language: 10
-      translation: "I\u2019m going to the hibernation chamber in a moment, and you
+      translation: "I\u2019m going to the hibernation chamber in a moment, \nand you
         better do the same."
     - language: 42
       translation: "\u0414\u0435\u043D"

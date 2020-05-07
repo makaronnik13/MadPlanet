@@ -124,6 +124,7 @@ Material:
     - _UnityShadowMode: 0
     - _UnityShadowPower: 0
     - _UnityShadowSharpness: 1
+    - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.7830189, g: 0.20761864, b: 0.15881987, a: 1}
