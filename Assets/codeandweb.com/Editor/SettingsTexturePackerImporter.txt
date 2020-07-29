@@ -2,8 +2,26 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Resources/Sprites/Сharacters/Matte Slug no eyes/slug_stading_left_no.tpsheet
+- Assets/Resources/Sprites/Сharacters/Matte Slug no eyes/slug_walk_left.tpsheet
+- Assets/Resources/Sprites/Сharacters/Matte Slug no eyes/slug_walk_left_45_no.tpsheet
+- Assets/Resources/Sprites/Сharacters/Matte Slug/slug_stading_left_no.tpsheet
+- Assets/Resources/Sprites/Сharacters/Matte Slug/slug_walk_45_left.tpsheet
+- Assets/Resources/Sprites/Сharacters/Matte Slug/slug_walk_left.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Resources/Sprites/Сharacters/Matte Slug no eyes/slug_stading_left_no.png
+- Assets/Resources/Sprites/Сharacters/Matte Slug no eyes/slug_walk_left.png
+- Assets/Resources/Sprites/Сharacters/Matte Slug no eyes/slug_walk_left_45_no.png
+- Assets/Resources/Sprites/Сharacters/Matte Slug/slug_stading_left.png
+- Assets/Resources/Sprites/Сharacters/Matte Slug/slug_walk_45_left.png
+- Assets/Resources/Sprites/Сharacters/Matte Slug/slug_walk_left.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
+- 
+- 
 enableDebugOutput: 0

@@ -1,0 +1,31 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:8a359821e7651e22c8af477d44073b67:376c26932433239f2905f36ab01aa6d3:ccea5c325ecac811b9bfa11809952b74$
+#
+:format=40300
+:texture=slug_walk_left.png
+:size=4096x4096
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+slug_walk_left_no-0;0;3147;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-1;633;3147;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-2;1266;3147;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-3;1899;3147;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-4;2532;3147;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-5;3165;3147;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-6;0;2198;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-7;633;2198;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-8;1266;2198;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-9;1899;2198;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-10;2532;2198;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-11;3165;2198;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-12;0;1249;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-13;633;1249;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-14;1266;1249;633;949; 0.5;0.5; 0;0;0;0
+slug_walk_left_no-15;1899;1249;633;949; 0.5;0.5; 0;0;0;0

@@ -9566,8 +9566,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4803105395255861831}
   - component: {fileID: 4803105395255861833}
-  - component: {fileID: 4803105395255861832}
   - component: {fileID: 9004720216462931083}
+  - component: {fileID: 4047581275116155263}
   m_Layer: 0
   m_Name: Sands
   m_TagString: Untagged
@@ -9635,19 +9635,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   DestroyAfterActivation: 0
---- !u!135 &4803105395255861832
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4803105395255861830}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.93
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9004720216462931083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9661,6 +9648,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DrownTime: 5
+--- !u!65 &4047581275116155263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803105395255861830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.53, y: 1.2, z: 4.16}
+  m_Center: {x: -0.33, y: 0, z: -0.31}
 --- !u!1 &4803105395893840585
 GameObject:
   m_ObjectHideFlags: 0
@@ -9765,6 +9765,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6593434389239126930}
   - component: {fileID: 2449740208257663372}
+  - component: {fileID: 2869206282643778038}
+  - component: {fileID: 4301036419248703966}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -9806,3 +9808,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &2869206282643778038
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8981896812759507351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6.41
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4301036419248703966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8981896812759507351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849c909e66396574f8853f006d865f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2449740208257663372}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Active
+          m_BoolArgument: 0
+        m_CallState: 2
+  DestroyAfterActivation: 0

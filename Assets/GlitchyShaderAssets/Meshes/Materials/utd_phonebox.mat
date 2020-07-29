@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6aa2e300be3f546d1b639232ddb2a21a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9d8792491bc8962488193b6c9a45691a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -60,13 +60,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlockGlitchEnabled: 1
+    - _BlockGlitchEnabled: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlitchInterval: 5
-    - _GlitchRate: 0.9
+    - _GlitchInterval: 11.47
+    - _GlitchRate: 0.653
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -74,23 +74,23 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RGBShiftIntensity: 1
-    - _ResHorizontal: 640
-    - _ResVertical: 480
-    - _ScanlineGlitchEnabled: 1
-    - _ShakeGlitchEnabled: 1
+    - _RGBShiftIntensity: 0.27
+    - _ResHorizontal: 712.1
+    - _ResVertical: 531.4
+    - _ScanlineGlitchEnabled: -0.11
+    - _ShakeGlitchEnabled: -12.7
     - _Shininess: 0.11403626
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _WaveNoiseIntensity: 1
+    - _WaveNoiseIntensity: 0
     - _WhiteNoiseIntensity: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.90083647, g: 0.64409304, b: 0.5690521, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GlitchColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlitchColor: {r: 1, g: 1, b: 1, a: 0.6156863}
     - _SpecColor: {r: 0.5391474, g: 0.5142658, b: 0.49449664, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:

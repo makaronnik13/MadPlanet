@@ -15,5 +15,5 @@ MonoBehaviour:
   Title:
     Dictionary: {fileID: 11400000, guid: 069612bbfa085e5418da76762c6b8200, type: 2}
     Key: Q1_7
-  MaxValue: 9
+  MaxValue: 8
   Icon: {fileID: 21300000, guid: d2b1247e413e3b945b4bc04555390f2f, type: 3}

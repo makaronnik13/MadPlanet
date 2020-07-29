@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: 4b8ba712e75b1ba418096890c9ebad78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2352877808456342464
+    second: slug_walk_left-0
+  - first:
+      213: 9182190143593319978
+    second: slug_walk_left-1
+  - first:
+      213: 1864285683969014572
+    second: slug_walk_left-2
+  - first:
+      213: 5841798956661554948
+    second: slug_walk_left-3
+  - first:
+      213: 2117678789549162396
+    second: slug_walk_left-4
+  - first:
+      213: -6384042015198833129
+    second: slug_walk_left-5
+  - first:
+      213: 1932138789959234467
+    second: slug_walk_left-6
+  - first:
+      213: 618191843403582021
+    second: slug_walk_left-7
+  - first:
+      213: 212556105479495892
+    second: slug_walk_left-8
+  - first:
+      213: 4292281249120163115
+    second: slug_walk_left-9
+  - first:
+      213: -3290037420305834586
+    second: slug_walk_left-10
+  - first:
+      213: -3253932916623423915
+    second: slug_walk_left-11
+  - first:
+      213: -7729945060584511754
+    second: slug_walk_left-12
+  - first:
+      213: -5327871609141778192
+    second: slug_walk_left-13
+  - first:
+      213: 1760646048435261464
+    second: slug_walk_left-14
+  - first:
+      213: -1910921407995880586
+    second: slug_walk_left-15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slug_walk_left-0
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1143
+        width: 633
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2352877808456342464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-1
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 2128
+        width: 621
+        height: 985
+      alignment: 9
+      pivot: {x: 0.49033818, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 9182190143593319978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-2
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 3114
+        width: 613
+        height: 982
+      alignment: 9
+      pivot: {x: 0.49673736, y: 0.49949083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1864285683969014572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-3
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 2128
+        width: 617
+        height: 985
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5841798956661554948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-4
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 3114
+        width: 609
+        height: 982
+      alignment: 9
+      pivot: {x: 0.49014777, y: 0.50050914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2117678789549162396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1146
+        width: 627
+        height: 982
+      alignment: 9
+      pivot: {x: 0.5047847, y: 0.50050914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6384042015198833129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-6
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1149
+        width: 630
+        height: 979
+      alignment: 9
+      pivot: {x: 0.50238097, y: 0.5020429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1932138789959234467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-7
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 2134
+        width: 621
+        height: 979
+      alignment: 9
+      pivot: {x: 0.49516907, y: 0.5020429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 618191843403582021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-8
+      rect:
+        serializedVersion: 2
+        x: 3054
+        y: 3113
+        width: 613
+        height: 983
+      alignment: 9
+      pivot: {x: 0.4918434, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 212556105479495892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-9
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 3116
+        width: 610
+        height: 980
+      alignment: 9
+      pivot: {x: 0.48934427, y: 0.502551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4292281249120163115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2130
+        width: 615
+        height: 983
+      alignment: 9
+      pivot: {x: 0.48536587, y: 0.5010173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3290037420305834586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-11
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1145
+        width: 633
+        height: 983
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5010173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3253932916623423915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-12
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 3113
+        width: 613
+        height: 983
+      alignment: 9
+      pivot: {x: 0.49673736, y: 0.5010173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7729945060584511754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3113
+        width: 609
+        height: 983
+      alignment: 9
+      pivot: {x: 0.49343187, y: 0.5010173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5327871609141778192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-14
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 2128
+        width: 617
+        height: 985
+      alignment: 9
+      pivot: {x: 0.48703402, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1760646048435261464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_walk_left-15
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 2128
+        width: 615
+        height: 985
+      alignment: 9
+      pivot: {x: 0.48536587, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1910921407995880586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

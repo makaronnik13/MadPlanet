@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: 192a8fc89e8fe6142835e1d4182ff3f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1963868316966131510
+    second: slug_stading_left_no-0
+  - first:
+      213: 6411755310234811114
+    second: slug_stading_left_no-1
+  - first:
+      213: 8850823457512446623
+    second: slug_stading_left_no-2
+  - first:
+      213: 2720808157766200274
+    second: slug_stading_left_no-3
+  - first:
+      213: 7961168426011744111
+    second: slug_stading_left_no-4
+  - first:
+      213: -4435472079649893423
+    second: slug_stading_left_no-5
+  - first:
+      213: 4249607142440692566
+    second: slug_stading_left_no-6
+  - first:
+      213: -4130734758018881820
+    second: slug_stading_left_no-7
+  - first:
+      213: -9120567313260140557
+    second: slug_stading_left_no-8
+  - first:
+      213: -2367220396326349325
+    second: slug_stading_left_no-9
+  - first:
+      213: 7696687739961304057
+    second: slug_stading_left_no-10
+  - first:
+      213: -5281168303454208823
+    second: slug_stading_left_no-11
+  - first:
+      213: -7935268781704443214
+    second: slug_stading_left_no-12
+  - first:
+      213: 4614446893908553412
+    second: slug_stading_left_no-13
+  - first:
+      213: -8900953672084336177
+    second: slug_stading_left_no-14
+  - first:
+      213: -9101713646128328371
+    second: slug_stading_left_no-15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slug_stading_left_no-0
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 3184
+        width: 556
+        height: 912
+      alignment: 9
+      pivot: {x: 0.49910071, y: 0.502193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1963868316966131510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-1
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 3184
+        width: 555
+        height: 912
+      alignment: 9
+      pivot: {x: 0.4981982, y: 0.502193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6411755310234811114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-2
+      rect:
+        serializedVersion: 2
+        x: 3336
+        y: 3184
+        width: 555
+        height: 912
+      alignment: 9
+      pivot: {x: 0.4981982, y: 0.502193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8850823457512446623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2272
+        width: 557
+        height: 912
+      alignment: 9
+      pivot: {x: 0.5, y: 0.502193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2720808157766200274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-4
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 3186
+        width: 557
+        height: 910
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50329673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7961168426011744111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-5
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 3186
+        width: 556
+        height: 910
+      alignment: 9
+      pivot: {x: 0.49910071, y: 0.50329673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4435472079649893423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-6
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 2270
+        width: 556
+        height: 914
+      alignment: 9
+      pivot: {x: 0.49910071, y: 0.5010941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4249607142440692566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-7
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 2269
+        width: 555
+        height: 915
+      alignment: 9
+      pivot: {x: 0.4981982, y: 0.50054646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4130734758018881820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-8
+      rect:
+        serializedVersion: 2
+        x: 2782
+        y: 2269
+        width: 557
+        height: 915
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50054646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -9120567313260140557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-9
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 2269
+        width: 557
+        height: 915
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50054646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2367220396326349325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1353
+        width: 557
+        height: 916
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7696687739961304057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-11
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1353
+        width: 557
+        height: 916
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5281168303454208823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3189
+        width: 555
+        height: 907
+      alignment: 9
+      pivot: {x: 0.4981982, y: 0.50496143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7935268781704443214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-13
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 3189
+        width: 557
+        height: 907
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50496143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4614446893908553412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-14
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 2269
+        width: 557
+        height: 915
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50054646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8900953672084336177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slug_stading_left_no-15
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 2269
+        width: 557
+        height: 915
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50054646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -9101713646128328371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
