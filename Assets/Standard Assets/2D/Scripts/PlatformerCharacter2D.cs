@@ -57,7 +57,9 @@ namespace UnityStandardAssets._2D
 
 
         private Rigidbody m_Rigidbody2D;
-        private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+        private bool groundCheck = true;
+        public float AfterJumpGroundcheckDelay = 0.5f;
+
         private void Awake()
         {
             // Setting up references.
@@ -72,26 +74,30 @@ namespace UnityStandardAssets._2D
             float lastDieRate = dieRate;
             float lastDrawnRate = drawnRate;
 
-            m_Grounded = false;
-
-            // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
-            // This can be done using layers instead but Sample Assets will not overwrite your project settings.
-
-            if (m_Grounded!=IsGrounded())
+            if (groundCheck)
             {
-                if (IsGrounded())
-                {
-                    SoundSource.PlayOneShot(JumpSound);
-                }
-                else
-                {
-                    SoundSource.PlayOneShot(GroundSound);
-                }
-                m_Grounded = IsGrounded();
-            }
-            
+                m_Grounded = false;
 
-            m_Anim.SetBool("Ground", m_Grounded);
+                // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
+                // This can be done using layers instead but Sample Assets will not overwrite your project settings.
+
+                if (m_Grounded != IsGrounded())
+                {
+                    if (IsGrounded())
+                    {
+                        SoundSource.PlayOneShot(JumpSound);
+                    }
+                    else
+                    {
+                        SoundSource.PlayOneShot(GroundSound);
+                    }
+                    m_Grounded = IsGrounded();
+                }
+
+
+                m_Anim.SetBool("Ground", m_Grounded);
+            }
+
             // Set the vertical animation
            // m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
 
@@ -127,17 +133,7 @@ namespace UnityStandardAssets._2D
 
 
 
-            if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
-            {
-                m_FacingRight = false;
-                View.flipX = m_FacingRight;
-            }
-
-            if (Mathf.Abs(m_Anim.GetFloat("Horizontal")) < 0.3f)
-            {
-                m_FacingRight = false;
-                View.flipX = m_FacingRight;
-            }
+        
         }
 
         public void SetSideView(bool v)
@@ -225,26 +221,16 @@ namespace UnityStandardAssets._2D
                 // Move the character
                 m_Rigidbody2D.velocity = new Vector3(moveH * m_MaxSpeed, m_Rigidbody2D.velocity.y, moveV * m_MaxSpeed);
 
-                // If the input is moving the player right and the player is facing left...
-                if (moveV > 0 && !m_FacingRight)
-                {
-                    // ... flip the player.
-                    Flip();
-                }
-                    // Otherwise if the input is moving the player left and the player is facing right...
-                else if (moveV < 0 && m_FacingRight)
-                {
-                    // ... flip the player.
-                    Flip();
-                }
             }
             // If the player should jump...
-            if (m_Grounded && jump && m_Anim.GetBool("Ground"))
+            if (m_Grounded && jump) //m_Anim.GetBool("Ground")
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce), ForceMode.Acceleration);
+                groundCheck = false;
+                StartCoroutine(ContinueGroundCheck());
             }
 
             /*
@@ -264,37 +250,10 @@ namespace UnityStandardAssets._2D
             }
         }
 
-
-        private void Flip()
+        private System.Collections.IEnumerator ContinueGroundCheck()
         {
-            if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
-            {
-                m_FacingRight = false;
-                View.flipX = m_FacingRight;
-                return;
-            }
-
-            if (Mathf.Abs(m_Anim.GetFloat("Horizontal"))<0.3f)
-            {
-                m_FacingRight = false;
-                View.flipX = m_FacingRight;
-                return;
-            }
-
-            if (!View || !m_Grounded)
-            {
-                return;
-            }
-
-
-            // Switch the way the player is labelled as facing.
-            m_FacingRight = !m_FacingRight;
-
-            // Multiply the player's x local scale by -1.
-            if (View)
-            {
-                View.flipX = m_FacingRight;
-            }
+            yield return AfterJumpGroundcheckDelay;
+            groundCheck = true;
         }
     }
 }

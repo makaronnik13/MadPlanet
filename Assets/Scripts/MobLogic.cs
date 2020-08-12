@@ -40,6 +40,8 @@ public class MobLogic : MonoBehaviour
 
     public Transform followingObject;
 
+    private Coroutine movement;
+
     private Vector3 nextPos = Vector3.zero;
     private int _currentPoint = 0;
     private int currentPoint
@@ -76,11 +78,12 @@ public class MobLogic : MonoBehaviour
         Vision.OnInside += TriggerMob;
         Vision.OnOutside += UnTriggerMob;
         currentPoint = 0;
-        StartCoroutine(LoopMove());
+        movement = StartCoroutine(LoopMove());
     }
 
     private void OnDisable()
     {
+        StopCoroutine(movement);
         Vision.OnInside -= TriggerMob;
         Vision.OnOutside -= UnTriggerMob;
         StopCoroutine(LoopMove());
@@ -107,6 +110,8 @@ public class MobLogic : MonoBehaviour
 
     private IEnumerator LoopMove()
     {
+        yield return new WaitForSeconds(1f);
+
         while (true)
         {
             if (Game.Instance.Paused.State)
