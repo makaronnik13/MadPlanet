@@ -76,8 +76,6 @@ namespace UnityStandardAssets._2D
 
             if (groundCheck)
             {
-                m_Grounded = false;
-
                 // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
                 // This can be done using layers instead but Sample Assets will not overwrite your project settings.
 
@@ -90,12 +88,18 @@ namespace UnityStandardAssets._2D
                     else
                     {
                         SoundSource.PlayOneShot(GroundSound);
+                        m_Anim.SetFloat("Dir", 0);
+                        m_Anim.SetFloat("Dir2", 0);
+                       
                     }
                     m_Grounded = IsGrounded();
+                    Debug.Log(m_Grounded);
+                    m_Anim.SetBool("Ground", m_Grounded);
                 }
 
-
-                m_Anim.SetBool("Ground", m_Grounded);
+                groundCheck = false;
+                StartCoroutine(ContinueGroundCheck());
+               
             }
 
             // Set the vertical animation
@@ -243,16 +247,25 @@ namespace UnityStandardAssets._2D
                 m_Anim.SetLayerWeight(1, 0);
             }*/
 
-            if (Mathf.Abs(moveH)+ Mathf.Abs(moveV)>0)
+
+            if (groundCheck && IsGrounded())
             {
-                m_Anim.SetFloat("Dir", moveH);
-                m_Anim.SetFloat("Dir2", moveV);
+                if (Mathf.Abs(moveH) + Mathf.Abs(moveV) > 0)
+                {
+                    m_Anim.SetFloat("Dir", moveH);
+                    m_Anim.SetFloat("Dir2", moveV);
+                }
+            }
+            else
+            {
+                m_Anim.SetFloat("Dir", 0);
+                m_Anim.SetFloat("Dir2", 0);
             }
         }
 
         private System.Collections.IEnumerator ContinueGroundCheck()
         {
-            yield return AfterJumpGroundcheckDelay;
+            yield return new WaitForSeconds(AfterJumpGroundcheckDelay);
             groundCheck = true;
         }
     }

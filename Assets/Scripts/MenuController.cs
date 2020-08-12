@@ -20,6 +20,9 @@ public class MenuController : MonoBehaviour
     [SerializeField]
     private TMPro.TMP_Dropdown Lang;
 
+    [SerializeField]
+    private GameObject LoadingPanel;
+
     private bool SettingsShowing
     {
         get
@@ -146,6 +149,7 @@ public class MenuController : MonoBehaviour
 
         Animator.SetTrigger("Loading");
         Particles.Stop();
+        LoadingPanel.SetActive(true);
         _loadingOp = SceneManager.LoadSceneAsync(SceneName);
         _loadingOp.completed += OnComplete;
 
@@ -153,6 +157,7 @@ public class MenuController : MonoBehaviour
 
     private void OnComplete(AsyncOperation v)
     {
+        LoadingPanel.SetActive(true);
         StartCoroutine(FinishLoading());
     }
 
