@@ -130,7 +130,9 @@ public class AtackModule : MonoBehaviour
 
     private IEnumerator ContinueAttack()
     {
+        GetComponentInParent<MobLogic>().Pause();
         yield return new WaitForSeconds(ReleaseTime);
         CanAtack = true;
+        GetComponentInParent<MobLogic>().ContinueMovement();
     }
 }

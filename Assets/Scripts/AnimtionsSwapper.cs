@@ -36,5 +36,6 @@ public class AnimtionsSwapper : MonoBehaviour
     public void SetSkin(CharacterSkin skin)
     {
         SetPerson((int)skin);
+        Animator.SetBool("Ground", true);
     }
 }

@@ -18,6 +18,10 @@ using UnityStandardAssets.CrossPlatformInput;
     public void SetJumping(bool v)
     {
         JumpingAvaliable = v;
+        if (m_Character && m_Character.m_Anim)
+        {
+            m_Character.m_Anim.SetBool("Ground", true);
+        }
     }
 
         private float w;

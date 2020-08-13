@@ -53,7 +53,7 @@ namespace UnityStandardAssets._2D
         const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
 
         [SerializeField]
-        private Animator m_Anim;            // Reference to the player's animator component.
+        public Animator m_Anim;            // Reference to the player's animator component.
 
 
         private Rigidbody m_Rigidbody2D;
@@ -95,6 +95,8 @@ namespace UnityStandardAssets._2D
                     m_Grounded = IsGrounded();
                     Debug.Log(m_Grounded);
                     m_Anim.SetBool("Ground", m_Grounded);
+
+                    Debug.Log(m_Grounded);
                 }
 
                 groundCheck = false;
@@ -226,6 +228,8 @@ namespace UnityStandardAssets._2D
                 m_Rigidbody2D.velocity = new Vector3(moveH * m_MaxSpeed, m_Rigidbody2D.velocity.y, moveV * m_MaxSpeed);
 
             }
+
+          
             // If the player should jump...
             if (m_Grounded && jump) //m_Anim.GetBool("Ground")
             {

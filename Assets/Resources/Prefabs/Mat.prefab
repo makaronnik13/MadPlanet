@@ -10400,8 +10400,9 @@ MonoBehaviour:
   DieTime: 3
   Grabed: 0
   Visual: {fileID: 4914142461032532636}
-  k_GroundedRadius: 1.13
+  k_GroundedRadius: 0.5
   m_Anim: {fileID: 4914142461032532627}
+  AfterJumpGroundcheckDelay: 0.5
 --- !u!114 &4914142460384463609
 MonoBehaviour:
   m_ObjectHideFlags: 0

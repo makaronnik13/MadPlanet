@@ -19,7 +19,7 @@ public class MobLogic : MonoBehaviour
     private AnimationCurve MoveSpeed;
 
     [SerializeField]
-    private MobBahaviour Behaviour = MobBahaviour.Attack; 
+    private MobBahaviour Behaviour = MobBahaviour.Attack;
 
     public float WaitingTime = 1;
     public float AtackTime = 2;
@@ -28,6 +28,7 @@ public class MobLogic : MonoBehaviour
     public AtackModule Atack;
 
     private bool canAtack = true;
+
 
     [SerializeField]
     private MobVision Vision;
@@ -53,11 +54,11 @@ public class MobLogic : MonoBehaviour
         set
         {
             _currentPoint = value;
-            if (_currentPoint<Line.positionCount && _currentPoint>=0)
+            if (_currentPoint < Line.positionCount && _currentPoint >= 0)
             {
                 nextPos = Line.transform.TransformPoint(Line.GetPosition(_currentPoint));
             }
-            
+
         }
     }
     private bool forward = true;
@@ -79,6 +80,7 @@ public class MobLogic : MonoBehaviour
         Vision.OnOutside += UnTriggerMob;
         currentPoint = 0;
         movement = StartCoroutine(LoopMove());
+
     }
 
     private void OnDisable()
@@ -86,7 +88,7 @@ public class MobLogic : MonoBehaviour
         StopCoroutine(movement);
         Vision.OnInside -= TriggerMob;
         Vision.OnOutside -= UnTriggerMob;
-        StopCoroutine(LoopMove());
+        StopCoroutine(movement);
     }
 
 
@@ -99,7 +101,7 @@ public class MobLogic : MonoBehaviour
                 break;
             case MobBahaviour.Run:
                 break;
-        }      
+        }
     }
 
     private void TriggerMob(PlayerIdentity obj)
@@ -148,7 +150,7 @@ public class MobLogic : MonoBehaviour
                     }
                     else
                     {
-                        if (canAtack && followingObject == null || (followingObject!=null && followingObject.GetComponent<PlatformerCharacter2D>().Grabed))
+                        if (canAtack && followingObject == null || (followingObject != null && followingObject.GetComponent<PlatformerCharacter2D>().Grabed))
                         {
                             if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(nextPos.x, nextPos.z)) > 0.2f)
                             {
@@ -171,7 +173,7 @@ public class MobLogic : MonoBehaviour
                                     OnPathStarted.Invoke();
                                 }
 
-       
+
 
                                 if (forward)
                                 {
@@ -199,7 +201,7 @@ public class MobLogic : MonoBehaviour
                         }
                         else
                         {
-                            if (Vector3.Distance(new Vector3(Atack.transform.position.x, 0, Atack.transform.position.z) , new Vector3(followingObject.transform.position.x, 0, followingObject.transform.position.z)) > 0.2f)
+                            if (Vector3.Distance(new Vector3(Atack.transform.position.x, 0, Atack.transform.position.z), new Vector3(followingObject.transform.position.x, 0, followingObject.transform.position.z)) > 0.2f)
                             {
                                 MoveInDir(followingObject.transform.position);
                             }
@@ -231,15 +233,28 @@ public class MobLogic : MonoBehaviour
                                 Char.Move(0, 0, false, false);
                                 StopAllCoroutines();
                                 OnPathCompleted.Invoke();
-                               break;
+                                break;
                             }
                         }
                     }
                     break;
-            }  
+            }
             yield return null;
         }
     }
+
+    public void Pause()
+    {
+        MoveInDir(transform.position);
+         StopCoroutine(movement);
+    }
+
+    public void ContinueMovement()
+    {
+        movement = StartCoroutine(LoopMove());
+    }
+
+
 
     private void MoveInDir(Vector3 currentPoint)
     {

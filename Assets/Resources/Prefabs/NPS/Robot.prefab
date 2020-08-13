@@ -157,6 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08f91df3bd212f429df17f53ce2f364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundSource: {fileID: 0}
+  GroundSound: {fileID: 0}
+  JumpSound: {fileID: 0}
   View: {fileID: 6304677787570219712}
   SideView: 0
   m_MaxSpeed: 7
@@ -177,6 +180,7 @@ MonoBehaviour:
   Visual: {fileID: 6304677787570219715}
   k_GroundedRadius: 0.22
   m_Anim: {fileID: 6304677787570219719}
+  AfterJumpGroundcheckDelay: 0.5
 --- !u!54 &6304677786436798696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -225,6 +229,7 @@ MonoBehaviour:
   AtackTime: 0.5
   CanJump: 0
   Atack: {fileID: 6304677787213464984}
+  moving: 1
   Vision: {fileID: 6304677786860318996}
   Line: {fileID: 0}
   Char: {fileID: 6304677786436798699}
@@ -466,7 +471,7 @@ MonoBehaviour:
   AttackDelay: 1
   Animator: {fileID: 6304677787570219719}
   canceled: 0
-  ReleaseTime: 2
+  ReleaseTime: 3
 --- !u!114 &6304677787213464986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftFoot: {fileID: 0}
   RightFoot: {fileID: 0}
+  source: {fileID: 0}
   EmmitionEnabled: 1
 --- !u!114 &6304677787570219718
 MonoBehaviour:
