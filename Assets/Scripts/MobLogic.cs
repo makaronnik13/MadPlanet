@@ -201,16 +201,20 @@ public class MobLogic : MonoBehaviour
                         }
                         else
                         {
-                            if (Vector3.Distance(new Vector3(Atack.transform.position.x, 0, Atack.transform.position.z), new Vector3(followingObject.transform.position.x, 0, followingObject.transform.position.z)) > 0.2f)
+                            if (followingObject)
                             {
-                                MoveInDir(followingObject.transform.position);
+                                if (Vector3.Distance(new Vector3(Atack.transform.position.x, 0, Atack.transform.position.z), new Vector3(followingObject.transform.position.x, 0, followingObject.transform.position.z)) > 0.2f)
+                                {
+                                    MoveInDir(followingObject.transform.position);
+                                }
+                                else
+                                {
+                                    MoveInDir(transform.position);
+                                    yield return new WaitForSeconds(AtackTime);
+                                    Atack.Atack();
+                                }
                             }
-                            else
-                            {
-                                MoveInDir(transform.position);
-                                yield return new WaitForSeconds(AtackTime);
-                                Atack.Atack();
-                            }
+                           
                         }
                     }
                     break;
