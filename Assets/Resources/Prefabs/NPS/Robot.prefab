@@ -229,7 +229,6 @@ MonoBehaviour:
   AtackTime: 0.5
   CanJump: 0
   Atack: {fileID: 6304677787213464984}
-  moving: 1
   Vision: {fileID: 6304677786860318996}
   Line: {fileID: 0}
   Char: {fileID: 6304677786436798699}
@@ -471,7 +470,7 @@ MonoBehaviour:
   AttackDelay: 1
   Animator: {fileID: 6304677787570219719}
   canceled: 0
-  ReleaseTime: 3
+  ReleaseTime: 6
 --- !u!114 &6304677787213464986
 MonoBehaviour:
   m_ObjectHideFlags: 0

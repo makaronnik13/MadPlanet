@@ -79,6 +79,29 @@ MonoBehaviour:
       translation: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u043C\u0443\u0437\u044B\u043A\u0438"
     - language: 10
       translation: Music volume
+  - key: Loading
+    translations:
+    - language: 30
+      translation: "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430"
+    - language: 10
+      translation: Loading
+  - key: Titles
+    translations:
+    - language: 30
+      translation: "\u041D\u0430\u0434 \u0438\u0433\u0440\u043E\u0439 \u0440\u0430\u0431\u043E\u0442\u0430\u043B\u0438\n\n\u0412\u043E\u0439\u043D\u043E\u0432\u0430
+        \u0410\u043D\u044F\n\u0422\u0438\u0448\u043A\u0438\u043D \u041D\u0438\u043A\u0438\u0442\u0430\n\u0412\u0438\u043A\u0442\u043E\u0440
+        \u0412\u0435\u0440\u0445\u043E\u0432\u0441\u043A\u0438\u0439\nSnegovski\n"
+    - language: 10
+      translation: 'Worked on the game
+
+
+        Voinova Anya
+
+        Tishkin Nikita
+
+        Victor Verkhovsky
+
+        Snegovski'
   Languages: 1e0000000a000000
   TableId: 1M9dvtiXKIEiem9kW5bjnwmOBCnDC1mlGWAk6M8XUigw
   PageId: 0

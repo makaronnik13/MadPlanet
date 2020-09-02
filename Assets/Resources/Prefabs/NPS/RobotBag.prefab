@@ -4928,6 +4928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftFoot: {fileID: 0}
   RightFoot: {fileID: 0}
+  source: {fileID: 0}
   EmmitionEnabled: 1
 --- !u!114 &2533030452344413020
 MonoBehaviour:
@@ -5022,6 +5023,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08f91df3bd212f429df17f53ce2f364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundSource: {fileID: 0}
+  GroundSound: {fileID: 0}
+  JumpSound: {fileID: 0}
   View: {fileID: 2533030452344413018}
   SideView: 0
   m_MaxSpeed: 6
@@ -5042,6 +5046,7 @@ MonoBehaviour:
   Visual: {fileID: 2533030452344413017}
   k_GroundedRadius: 0.22
   m_Anim: {fileID: 2533030452344413021}
+  AfterJumpGroundcheckDelay: 0.5
 --- !u!54 &2533030453356263794
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5195,12 +5200,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c406fb8ddb6dc1e42b20208983de4e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundSource: {fileID: 0}
+  AtackSound: {fileID: 0}
+  ReleaseSound: {fileID: 0}
   InteractionModule: {fileID: 2533030453606151168}
   CanAtack: 1
   AttackDelay: 1
   Animator: {fileID: 2533030452344413021}
   canceled: 0
-  ReleaseTime: 2
+  ReleaseTime: 6
 --- !u!114 &2533030453606151168
 MonoBehaviour:
   m_ObjectHideFlags: 0
