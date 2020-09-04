@@ -427,7 +427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.2999268, y: 13.299988}
+  m_AnchoredPosition: {x: -7.2999573, y: 13.299988}
   m_SizeDelta: {x: 368.1, y: 204.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108808129
@@ -13951,7 +13951,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 163.45
+  m_fontSize: 157.15
   m_fontSizeBase: 182.72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20843,7 +20843,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7917215220812501842, guid: dc545e274e6f2594e8d89d33e441d4d6,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8cfeb727b74ebfa4db5a4b72e3461028, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b4b766cbfa4bb3841946258bddcd40bb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
