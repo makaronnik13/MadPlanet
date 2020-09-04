@@ -157,7 +157,7 @@ public class MenuController : MonoBehaviour
 
     private void OnComplete(AsyncOperation v)
     {
-        LoadingPanel.SetActive(true);
+        LoadingPanel.SetActive(false);
         StartCoroutine(FinishLoading());
     }
 

@@ -90,7 +90,6 @@ namespace UnityStandardAssets._2D
                         SoundSource.PlayOneShot(GroundSound);
                         m_Anim.SetFloat("Dir", 0);
                         m_Anim.SetFloat("Dir2", 0);
-                       
                     }
                     m_Grounded = IsGrounded();
                     Debug.Log(m_Grounded);
@@ -252,7 +251,7 @@ namespace UnityStandardAssets._2D
             }*/
 
 
-            if (groundCheck && IsGrounded())
+            if (IsGrounded())
             {
                 if (Mathf.Abs(moveH) + Mathf.Abs(moveV) > 0)
                 {

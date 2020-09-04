@@ -106,8 +106,8 @@ public class MusicSource : MonoBehaviour
             musicMasterLevel = Mathf.Lerp(startMusicVolume, music, 1 / t);
             menuMasterLevel = Mathf.Lerp(startMenuVolume, menu, 1 / t);
 
-            Music.outputAudioMixerGroup.audioMixer.SetFloat("MusicVol", musicMasterLevel*100f-80f);
-            Menu.outputAudioMixerGroup.audioMixer.SetFloat("MenuVol", menuMasterLevel * 100f - 80f);
+            Music.outputAudioMixerGroup.audioMixer.SetFloat("MusicVol", musicMasterLevel*100f-100f);
+            Menu.outputAudioMixerGroup.audioMixer.SetFloat("MenuVol", menuMasterLevel * 100f - 100f);
             t -= Time.deltaTime;
             yield return null;
         }
@@ -117,13 +117,14 @@ public class MusicSource : MonoBehaviour
     {
         Music.volume = v;
         Menu.volume = v;
+        currentVolume = v;
     }
 
 
     public void SetVolume(float v)
     {
         currentVolume = v;
-        Music.outputAudioMixerGroup.audioMixer.SetFloat("MusicVol", v*100f-80f);
+        Music.outputAudioMixerGroup.audioMixer.SetFloat("MusicVol", v*100f-100f);
     }
 
     public void Play(int id)
