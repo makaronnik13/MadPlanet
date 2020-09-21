@@ -5209,6 +5209,16 @@ PrefabInstance:
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8581953322035732251, guid: 3e0c0f858168c3b4293c495a2d5fed84,
+        type: 3}
+      propertyPath: Clip.Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5bfcbad391aef664c9536c8254747d70, type: 3}
+    - target: {fileID: 8581953322035732251, guid: 3e0c0f858168c3b4293c495a2d5fed84,
+        type: 3}
+      propertyPath: Clip.Group
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3867543778393520846, guid: 3e0c0f858168c3b4293c495a2d5fed84, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3e0c0f858168c3b4293c495a2d5fed84, type: 3}
