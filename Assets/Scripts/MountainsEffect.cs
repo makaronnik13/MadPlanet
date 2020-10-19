@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public class MountainsEffect : MonoBehaviour
 {
     public Cinemachine.CinemachineVirtualCamera camera;
-    public float Delay = 3;
+    public float Delay = 0;
     public float ShakeTime = 6;
     public UnityEvent OnComplete;
 
