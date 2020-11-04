@@ -427,7 +427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.2999573, y: 13.299988}
+  m_AnchoredPosition: {x: -7.2999268, y: 13.299988}
   m_SizeDelta: {x: 368.1, y: 204.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108808129
@@ -13951,7 +13951,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 157.15
+  m_fontSize: 163.45
   m_fontSizeBase: 182.72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14307,6 +14307,7 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: d65121c25e532b443bc132664e7877a7, type: 3}
     Group: {fileID: 0}
   SceneName: Scene_1_21_09
+  SceneName2: End
   Animator: {fileID: 1357049921}
   Particles: {fileID: 174874602}
   ContinueBtn: {fileID: 948293765}
