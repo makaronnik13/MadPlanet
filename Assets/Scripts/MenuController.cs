@@ -52,9 +52,13 @@ public class MenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7"))
         {
-            if (SceneManager.GetActiveScene().buildIndex == 1)
+            if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2)
             {
+                if (SceneManager.GetActiveScene().buildIndex == 2)
+                {
+                    SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
 
+                }
                 Game.Instance.Paused.SetState(!Game.Instance.Paused.State);
             }
 

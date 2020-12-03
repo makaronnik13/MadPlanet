@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneLauncher : MonoBehaviour
 {
-    public string SceneName;
-
+    public GameObject End;
+   
     public void Load()
     {
-        SceneManager.LoadSceneAsync(SceneName);
+        End.SetActive(true);
     }
 }
