@@ -75,7 +75,7 @@ public class Game : MonoBehaviour
             return string.Format("{0}/", Application.persistentDataPath);
         }
     }
-
+    
     private string GameSessionSaveFilename
     {
         get
@@ -139,5 +139,19 @@ public class Game : MonoBehaviour
         }
         
         MiscUtil.SaveState(gameData, GameSessionSaveFolder, GameSessionSaveFilename, true);
+    }
+
+    public void ClearSaveFile()
+    {
+        Debug.Log("Clear save file");
+
+        if (Controller)
+        {
+            Controller.transform.position = PlatformerCharacter2D.InitialPos;
+        }
+
+        MiscUtil.SaveState(gameData, GameSessionSaveFolder, GameSessionSaveFilename, true);
+
+        Debug.Log("Clear save file was successful");
     }
 }

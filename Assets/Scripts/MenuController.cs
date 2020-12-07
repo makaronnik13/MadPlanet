@@ -133,7 +133,7 @@ public class MenuController : MonoBehaviour
         if (errase)
         {
             Game.Instance.gameData = new GameData();
-            Game.Instance.Save();
+            Game.Instance.ClearSaveFile();
             MusicSource.Instance.Play(Game.Instance.gameData.CurrentTrackId);
         }
         else
@@ -154,9 +154,11 @@ public class MenuController : MonoBehaviour
         Animator.SetTrigger("Loading");
         Particles.Stop();
         LoadingPanel.SetActive(true);
+        // нужно ресетнуть игровую сцену.
+        //_loadingOp = SceneManager.UnloadSceneAsync(SceneName);
+        //_loadingOp.completed += OnComplete;
         _loadingOp = SceneManager.LoadSceneAsync(SceneName);
         _loadingOp.completed += OnComplete;
-
     }
 
     private void OnComplete(AsyncOperation v)

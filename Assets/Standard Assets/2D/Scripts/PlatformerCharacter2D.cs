@@ -7,6 +7,9 @@ namespace UnityStandardAssets._2D
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {
+        [SerializeField] private static Vector3 _initialPos;
+        public static Vector3 InitialPos => _initialPos;
+
         public AudioSource SoundSource;
         public AudioClip GroundSound, JumpSound;
 

@@ -14307,7 +14307,6 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: d65121c25e532b443bc132664e7877a7, type: 3}
     Group: {fileID: 0}
   SceneName: Scene_1_21_09
-  SceneName2: End
   Animator: {fileID: 1357049921}
   Particles: {fileID: 174874602}
   ContinueBtn: {fileID: 948293765}
