@@ -5046,6 +5046,7 @@ MonoBehaviour:
   Visual: {fileID: 2533030452344413017}
   k_GroundedRadius: 0.22
   m_Anim: {fileID: 2533030452344413021}
+  m_AnimSH: {fileID: 2533030452344413021}
   AfterJumpGroundcheckDelay: 0.5
 --- !u!54 &2533030453356263794
 Rigidbody:

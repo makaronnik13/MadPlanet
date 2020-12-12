@@ -57,6 +57,7 @@ namespace UnityStandardAssets._2D
 
         [SerializeField]
         public Animator m_Anim;            // Reference to the player's animator component.
+        public Animator m_AnimSH;            // Reference to the player's animator component. Сделала Аня
 
 
         private Rigidbody m_Rigidbody2D;
@@ -93,10 +94,13 @@ namespace UnityStandardAssets._2D
                         SoundSource.PlayOneShot(GroundSound);
                         m_Anim.SetFloat("Dir", 0);
                         m_Anim.SetFloat("Dir2", 0);
+                        m_AnimSH.SetFloat("Dir", 0); //
+                        m_AnimSH.SetFloat("Dir2", 0); //
                     }
                     m_Grounded = IsGrounded();
                     Debug.Log(m_Grounded);
                     m_Anim.SetBool("Ground", m_Grounded);
+                    m_AnimSH.SetBool("Ground", m_Grounded);//
 
                     Debug.Log(m_Grounded);
                 }
@@ -163,6 +167,7 @@ namespace UnityStandardAssets._2D
         public void Grab(bool v)
         {
             m_Anim.SetBool("Grabbed", v);
+            m_AnimSH.SetBool("Grabbed", v);
             GetComponent<Rigidbody>().useGravity = !v;
             GetComponent<Rigidbody>().isKinematic = v;
             Grabed = v;
@@ -193,9 +198,11 @@ namespace UnityStandardAssets._2D
             }
 
             m_Anim.SetFloat("Horizontal", -moveV);
-           
+            m_AnimSH.SetFloat("Horizontal", -moveV);//
+
 
             m_Anim.SetFloat("Vertical", moveH);
+            m_AnimSH.SetFloat("Vertical", moveH);//
 
             if (!m_Grounded && m_AirControl && !canJumpBack)
             {
@@ -214,7 +221,7 @@ namespace UnityStandardAssets._2D
 
             // Set whether or not the character is crouching in the animator
             m_Anim.SetBool("Crouch", crouch);
-
+            m_AnimSH.SetBool("Crouch", crouch);//
 
             //only control the player if grounded or airControl is turned on
             if (m_Grounded || m_AirControl)
@@ -225,6 +232,7 @@ namespace UnityStandardAssets._2D
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                 m_Anim.SetFloat("Speed", Mathf.Abs(moveH)+ Mathf.Abs(moveV));
+                m_AnimSH.SetFloat("Speed", Mathf.Abs(moveH) + Mathf.Abs(moveV));//
 
                 // Move the character
                 m_Rigidbody2D.velocity = new Vector3(moveH * m_MaxSpeed, m_Rigidbody2D.velocity.y, moveV * m_MaxSpeed);
@@ -238,6 +246,7 @@ namespace UnityStandardAssets._2D
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
+                m_AnimSH.SetBool("Ground", false);//
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce), ForceMode.Acceleration);
                 groundCheck = false;
                 StartCoroutine(ContinueGroundCheck());
@@ -260,12 +269,16 @@ namespace UnityStandardAssets._2D
                 {
                     m_Anim.SetFloat("Dir", moveH);
                     m_Anim.SetFloat("Dir2", moveV);
+                    m_AnimSH.SetFloat("Dir", moveH);//
+                    m_AnimSH.SetFloat("Dir2", moveV);//
                 }
             }
             else
             {
                 m_Anim.SetFloat("Dir", 0);
                 m_Anim.SetFloat("Dir2", 0);
+                m_AnimSH.SetFloat("Dir", 0);//
+                m_AnimSH.SetFloat("Dir2", 0);//
             }
         }
 

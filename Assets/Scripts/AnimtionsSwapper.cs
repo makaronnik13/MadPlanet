@@ -17,10 +17,11 @@ public class AnimtionsSwapper : MonoBehaviour
 
     [SerializeField]
     private RuntimeAnimatorController[] Animations;
-
+   
 
     [SerializeField]
     private Animator Animator;
+
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class AnimtionsSwapper : MonoBehaviour
     public void SetPerson(int i)
     {
         Animator.runtimeAnimatorController = Animations[i];
+  
         Game.Instance.gameData.Skin = i;
     }
 
@@ -37,5 +39,6 @@ public class AnimtionsSwapper : MonoBehaviour
     {
         SetPerson((int)skin);
         Animator.SetBool("Ground", true);
+    
     }
 }

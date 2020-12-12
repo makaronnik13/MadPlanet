@@ -10171,6 +10171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftFoot: {fileID: 673407228}
   RightFoot: {fileID: 1474783069}
+  source: {fileID: 0}
   EmmitionEnabled: 1
 --- !u!114 &1794204919
 MonoBehaviour:
@@ -10271,6 +10272,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08f91df3bd212f429df17f53ce2f364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundSource: {fileID: 0}
+  GroundSound: {fileID: 0}
+  JumpSound: {fileID: 0}
   View: {fileID: 8918309620532875708}
   SideView: 0
   m_MaxSpeed: 19
@@ -10291,6 +10295,8 @@ MonoBehaviour:
   Visual: {fileID: 3642729225676321111}
   k_GroundedRadius: 0.22
   m_Anim: {fileID: 1794204921}
+  m_AnimSH: {fileID: 0}
+  AfterJumpGroundcheckDelay: 0.5
 --- !u!54 &2870516600513212890
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10423,6 +10429,7 @@ GameObject:
   - component: {fileID: 2870516599775438514}
   - component: {fileID: 2870516599775438515}
   - component: {fileID: 2870516599775438512}
+  - component: {fileID: 3446314025315796196}
   m_Layer: 0
   m_Name: scared_mary3_lapa_2_levaya_0
   m_TagString: Untagged
@@ -10461,7 +10468,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0b80c9f871888f24386e6623b55a6758, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10525,6 +10532,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentOrder: {fileID: 0}
+--- !u!114 &3446314025315796196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870516599775438513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ff863ec13a6a446a85b748b5f88e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRend: {fileID: 0}
 --- !u!1 &2870516600015463063
 GameObject:
   m_ObjectHideFlags: 0
@@ -10649,7 +10669,7 @@ Animator:
   m_GameObject: {fileID: 2870516600115497814}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6060d302f83cde4692db278cfd7347c, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10888,7 +10908,7 @@ SpriteRenderer:
   m_Size: {x: 7.3, y: 6.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &2870516600913621536
@@ -10935,6 +10955,7 @@ GameObject:
   - component: {fileID: 2870516600958527694}
   - component: {fileID: 2870516600958527695}
   - component: {fileID: 2870516600958527692}
+  - component: {fileID: 5579567075893728168}
   m_Layer: 0
   m_Name: scared_mary3_lapa_2_pravaya_0
   m_TagString: Untagged
@@ -10973,7 +10994,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0b80c9f871888f24386e6623b55a6758, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11037,6 +11058,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentOrder: {fileID: 0}
+--- !u!114 &5579567075893728168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870516600958527693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ff863ec13a6a446a85b748b5f88e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRend: {fileID: 0}
 --- !u!95 &3642729224832599840
 Animator:
   serializedVersion: 3
@@ -11047,7 +11081,7 @@ Animator:
   m_GameObject: {fileID: 2870516601358647268}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6060d302f83cde4692db278cfd7347c, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11068,6 +11102,7 @@ GameObject:
   - component: {fileID: 2870516601453612797}
   - component: {fileID: 2870516601453612786}
   - component: {fileID: 2870516601453612799}
+  - component: {fileID: 2675965216051806863}
   m_Layer: 0
   m_Name: scared_mary_perednye_nogi02_0
   m_TagString: Untagged
@@ -11106,7 +11141,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0b80c9f871888f24386e6623b55a6758, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11170,6 +11205,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentOrder: {fileID: 0}
+--- !u!114 &2675965216051806863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870516601453612787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ff863ec13a6a446a85b748b5f88e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRend: {fileID: 0}
 --- !u!1 &3642729225676321104
 GameObject:
   m_ObjectHideFlags: 0
@@ -11753,15 +11801,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 58abd1fcfb9e84376a6e41a4ae821648, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec3c61048345d7d48918fa9b8744c994, type: 3}
---- !u!4 &2870516601358148548 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: ec3c61048345d7d48918fa9b8744c994,
-    type: 3}
-  m_PrefabInstance: {fileID: 2870516601358547268}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2870516601358647268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ec3c61048345d7d48918fa9b8744c994,
+    type: 3}
+  m_PrefabInstance: {fileID: 2870516601358547268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2870516601358148548 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: ec3c61048345d7d48918fa9b8744c994,
     type: 3}
   m_PrefabInstance: {fileID: 2870516601358547268}
   m_PrefabAsset: {fileID: 0}
