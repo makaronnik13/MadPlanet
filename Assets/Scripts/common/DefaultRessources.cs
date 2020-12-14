@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class DefaultRessources
 {
-    public static float SoundVolume = 1;
+    public static float SoundVolume = 0.5f;
 
     public static Action<float> OnMusicVolumeChanged = (f) => { };
     public static float MusicVolume

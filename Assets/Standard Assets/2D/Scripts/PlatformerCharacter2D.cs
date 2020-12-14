@@ -91,11 +91,12 @@ namespace UnityStandardAssets._2D
                     }
                     else
                     {
-                        SoundSource.PlayOneShot(GroundSound);
+                      SoundSource.PlayOneShot(GroundSound);// то что было у Никиты
                         m_Anim.SetFloat("Dir", 0);
                         m_Anim.SetFloat("Dir2", 0);
                         m_AnimSH.SetFloat("Dir", 0); //
                         m_AnimSH.SetFloat("Dir2", 0); //
+                   
                     }
                     m_Grounded = IsGrounded();
                     Debug.Log(m_Grounded);

@@ -57,16 +57,22 @@ public class MenuController : MonoBehaviour
                 if (SceneManager.GetActiveScene().buildIndex == 2)
                 {
                     SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+                 //   Cursor.visible = true; // курсор работает не до конца корректно
 
                 }
-                Game.Instance.Paused.SetState(!Game.Instance.Paused.State);
+           
+                    Game.Instance.Paused.SetState(!Game.Instance.Paused.State);
+               
+                
+            
             }
-
+  
             if (SettingsShowing)
             {
                 ToggleSettings();
             }
         }
+       
     }
 
     private void Start()
@@ -185,6 +191,7 @@ public class MenuController : MonoBehaviour
         Reset.SetActive(Game.Instance.Paused.State);
         MusicVolume.value = DefaultRessources.MusicVolume;
         SoundsVolume.value = DefaultRessources.SoundVolume;
+ 
         if (LocalizationManager.Language == SystemLanguage.English)
         {
             Lang.value = 1;
