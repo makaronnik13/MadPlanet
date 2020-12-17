@@ -133,14 +133,14 @@ MonoBehaviour:
   deferredFlags: 0
   inclusion: 0
   transformObserver:
-    lastPosition: {x: 65.17999, y: 6.050002, z: 70.85005}
+    lastPosition: {x: 43.259995, y: -116.10662, z: 30.51}
     lastScale: {x: 7, y: 2, z: 7}
     lastRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
     transform: {fileID: 5022211952760816079}
   needsDynamicGeometry: 1
   Mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32768
   projectionTarget: {fileID: 0}
   mode: 0
   source: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
   surfaceRotation: 0
   quality: 1
   sharedMesh: {fileID: 0}
-  instanceID: 335416
+  instanceID: 2274940
 --- !u!1 &8924404946675983058
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a887d2181a5cc343ac114a90856338a, type: 2}
+  - {fileID: 2100000, guid: e86381d6304eb894291c9a1868f10c50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

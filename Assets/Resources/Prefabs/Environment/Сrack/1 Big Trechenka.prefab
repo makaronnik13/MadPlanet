@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 690984019417933475}
   - component: {fileID: 5184758114004862710}
   m_Layer: 0
-  m_Name: TrechenkaDecal (3)
+  m_Name: 1 Big Trechenka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   surfaceRotation: 0
   quality: 1
   sharedMesh: {fileID: 0}
-  instanceID: 335416
+  instanceID: 2274732
 --- !u!1 &4034519824451978686
 GameObject:
   m_ObjectHideFlags: 0
